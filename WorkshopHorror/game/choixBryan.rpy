@@ -17,16 +17,16 @@ A "Vous flippez vraiment tous pour rien !"
 B "Ferme-la, je te jure que j’ai entendu quelque chose... Je ne comprends pas."
 A "Aller, venez on redescend. La prochaine fois je vous jure que je ne bouge pas mon cul du canapé si c’est pour ce genre de connerie..."
 B "Ouais... pourtant je te jure que j’ai entendu un truc bizarre..."
-E "Une marche après l’autre, Bryan et Anna descendent les escaliers, laissant Jason et Kim seuls à l’étage de la maison".
+E "Une marche après l’autre, Bryan et Anna descendent les escaliers, laissant Jason et Kim seuls à l’étage de la maison."
 K "Enfin débarrassés des deux cons. Je n’arrive pas à croire qu’ils n’arrivent pas à se tenir pour au moins une soirée..."
 J "Ça leur passera, ne t'inquiète pas pour eux."
 K "Bon aller, viens, j’ai une petite surprise à te donner... Si tu vois ce que je veux dire ?"
 
 menu:
-    "Accepter"
+    "Accepter":
         jump accepter2
 
-    "Refuser"
+    "Refuser":
         jump refuser2
 
 label accepter2:
@@ -41,9 +41,9 @@ label refuser2:
     menu:
         "Inquiet":
             jump inquiet2
-        "Pourquoi les avoir invité ?"
+        "Pourquoi les avoir invité ?":
             jump pourquoi_invite
-        "Nancy"
+        "Nancy":
             jump discussion_Nancy
 
     label inquiet2:

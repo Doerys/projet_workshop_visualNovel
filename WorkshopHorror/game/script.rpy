@@ -47,8 +47,31 @@ label start:
     J_think "On se connait déjà depuis plusieurs années, et je n'ai pas envie de savoir comment elle réagira... Surtout depuis la dispute d’hier."
 
 
-
+    
     scene chambre_jason
+
+    # Chargement des items dans la scène
+    show bouffe:
+        xpos 1820
+        ypos 1215
+    show telecommande:
+        xpos 350
+        ypos 1840
+    show boisson:
+        xpos 2900
+        ypos 10
+    show vetement:
+        xpos 3030
+        ypos 1825
+    show placard:
+        xpos 1983
+        ypos 1303
+    show velux:
+        xpos 0
+        ypos -39
+    show tabouret:
+        xpos 1250
+        ypos 1567
 
     J "Ca sera l'occasion de revoir Bryan. Ça fait plusieurs semaines que je ne l’ai pas revu. Je crois que Kim a décidé d’inviter Anna aussi. J’espère que tout va bien se passer malgré leurs différents."
     J "Bon, je dois finir de me préparer avant d’arriver en retard. Je ne suis pas très convaincu de ma tenue mais tant pis, plus de temps à perdre."
@@ -150,28 +173,13 @@ label start:
 
         hide nancy_normal with dissolve
 
-
         J_think "Bon, il ne me reste plus beaucoup de temps. Kim m’a donné sa liste, si j’oublie le moindre objet, c’est un coup à ce que la soirée parte en vrille. J’espère juste que Bryan et Anna arriveront à se tenir."
 
-
-        # objet = 0
-        # Séquence point and clic chambre Jason
-
-        # De quoi j'ai besoin déjà ?
-        # Affichage liste d'objet
-
-        # Possibilité de partir à tout moment de la séquence, 3 répliques selon le nb d'objet pris
+        jump openAppart
         
-        #if objet == 0 :
-            # J_think "Hé merde, j'espère que Kim ne m'en voudras pas de enir les mains vides..."
-        #elif objet < 6 :
-            # J_think "Bon, au moins je n'arriverai pas les mains vides !"
-        
-        #elif objet == 6 :
-            # J_think "Ok, je pense que je suis bon pour ce soir !"
 
-        J_think "Oulah, il est déjà l'heure! Si je me dépêche assez, j'ai moyen d'arriver à temps'."
 
+    label chezKim:
         scene fenetre_kim
         with dissolve
 
@@ -191,32 +199,32 @@ label start:
         J "Désolé, j'ai pris trop de temps sur le chemin, le bus a fait un détour."
         K "Ne t'en fais pas va ! Alors, tu as pensé à ce que tu devais ramener ?"
 
-        #if objet == 0 :
-            #jump mainsvides
-        #elif objet < 6 :
-            #jump moitie
-        #elif objet == 6 :
-            #jump tout
+        if (objetTrouve == 0 ):
+            jump mainsvides
+        elif (objetTrouve >=1 and objetTrouve <= 3) :
+            jump moitie
+        elif (objetTrouve == 4) :
+            jump tout
 
-        #label mainsvides : 
-            #J "Merde, je suis déoslé j'ai complètement oublié ce que tu voulais que je prenne..."
-            #K "Tu te moques de moi là j'espère ? Non mais, tu espères vraiment me faire croire que tu as complètement oublié et tu ne m'as même pas envoyé un message pour me prévenir ?"
-            #K "Jay... Je... Tu m'énerves ! Viens, sinon je vais finir par t'étriper avant même que tu rentres..."
+        label mainsvides : 
+            J "Merde, je suis déoslé j'ai complètement oublié ce que tu voulais que je prenne..."
+            K "Tu te moques de moi là j'espère ? Non mais, tu espères vraiment me faire croire que tu as complètement oublié et tu ne m'as même pas envoyé un message pour me prévenir ?"
+            K "Jay... Je... Tu m'énerves ! Viens, sinon je vais finir par t'étriper avant même que tu rentres..."
 
-            #jump suite3
+            jump suite3
         
-        #label moitie :
-            #J "Euh non, je crois qu'il fallait que je prenne un truc en plus, mais je ne me souviens plus quoi."
-            #K "Oh t'es lourd ! Je n'aais pas prévu que tu allais oublier de ramener les affaires de ce soir. Il va nous manquer de quoi passer la soirée !"
-            #K "Bon viens, sinon en plus d'etre con tu vas vraiment être en retard."
+        label moitie :
+            J "Euh non, je crois qu'il fallait que je prenne un truc en plus, mais je ne me souviens plus quoi."
+            K "Oh t'es lourd ! Je n'ai pas prévu que tu allais oublier de ramener les affaires de ce soir. Il va nous manquer de quoi passer la soirée !"
+            K "Bon viens, sinon en plus d'etre con tu vas vraiment être en retard."
 
-            #jump suite3
+            jump suite3
 
-        #label tout :
-            #J "Ouais, j'ai pensé à ce que tu m'avais dit, normalement je n'ai rien oublié."
-            #K "Incroyable ! Je ne pensais pas que tu te souviendrais de tout. T'es vraiment parfait mon coeur."
-            #K "Bon, allons dans le salon, on était en train de jouer et... Ne t'inquiètes pas, j'ai une petite surprise pour toi après la soirée, une petite récompense..."
-            #E "Un clien d'oeil plus tard, Kim invite Jason à le suivre dans l'appartement où ils retrouvent Bryan et Anna autour d'une table de jeu dans le salon."
+        label tout :
+            J "Ouais, j'ai pensé à ce que tu m'avais dit, normalement je n'ai rien oublié."
+            K "Incroyable ! Je ne pensais pas que tu te souviendrais de tout. T'es vraiment parfait mon coeur."
+            K "Bon, allons dans le salon, on était en train de jouer et... Ne t'inquiètes pas, j'ai une petite surprise pour toi après la soirée, une petite récompense..."
+            E "Un clien d'oeil plus tard, Kim invite Jason à le suivre dans l'appartement où ils retrouvent Bryan et Anna autour d'une table de jeu dans le salon."
 
         scene canape_kim
 

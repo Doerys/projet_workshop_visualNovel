@@ -5,7 +5,7 @@
 
 # Modifie la taille des images pour l'inventaire
 transform inv :
-    size(55,55)
+    size(300,300)
 
 
 # INVENTAIRE
@@ -44,57 +44,57 @@ screen inventory:
 #Load Placard
 screen placard:
     imagebutton:
-        xpos 180
-        ypos 450
+        xpos 1983
+        ypos 1303
         idle "placard"
         action Jump("openPlacard")
 #Load Velux
 screen velux:
     imagebutton:
-        xpos 180
-        ypos 450
+        xpos 0
+        ypos -39
         idle "velux"
         action Jump("toVelux")
 #Load Tabouret
 screen tabouret:
     imagebutton:
-        xpos 500
-        ypos 450
+        xpos 1250
+        ypos 1567
         idle "tabouret"
         action Jump("toTabouret")
 #Load Tabouret cliqué
 screen tabouretClick:
     imagebutton:
-        xpos 500
-        ypos 450
+        xpos 800
+        ypos 2000
         idle "tabouret"
         action Jump("toTabouret")
     #Load Bouffe
 screen bouffe:
     imagebutton:
-        xpos 500
-        ypos 450
+        xpos 1820
+        ypos 1215
         idle "bouffe"
         action Jump("getBouffe")
     #Load Boisson
 screen boisson:
     imagebutton:
-        xpos 500
-        ypos 450
+        xpos 2900
+        ypos 10
         idle "boisson"
         action Jump("getBoisson")
     #Load Telecommande
 screen telecommande:
     imagebutton:
-        xpos 500
-        ypos 450
+        xpos 350
+        ypos 1840
         idle "telecommande"
         action Jump("getTelecommande")
     #Load vêtement
 screen vetement:
     imagebutton:
-        xpos 500
-        ypos 450
+        xpos 3030
+        ypos 1825
         idle "vetement"
         action Jump("getVetement")
 
@@ -103,22 +103,22 @@ screen vetement:
     #Load Flêche de retour
 screen flecheAppart:
     imagebutton:
-        xpos 500
-        ypos 450
+        xpos 200
+        ypos 1600
         idle "fleche"
         action Jump("openAppart")
     #Load Piles
 screen piles:
     imagebutton:
-        xpos 500
-        ypos 450
+        xpos 1450
+        ypos 1880
         idle "piles"
         action Jump("getPiles")
     #Load beuh
 screen beuh:
     imagebutton:
-        xpos 500
-        ypos 450
+        xpos 2665
+        ypos 300
         idle "beuh"
         action Jump("getBeuh")
 

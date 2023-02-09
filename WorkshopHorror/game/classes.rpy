@@ -35,6 +35,9 @@ init python:
                 self.slots.append(item)
                 return True
 
+        def removeItem(self,item):
+            self.slots.remove(item)
+            
         def selectItem(self,index):
             for item in self.slots:
                 item.setSelected(False)

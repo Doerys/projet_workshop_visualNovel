@@ -3,44 +3,62 @@
 # ou tel scène, ou la redirection vers d'autres scène
 
 # GESTION INVENTAIRE =================================================
+label selectCraft :
+    if (act_label == 'openPlacard' or act_label == 'openAppart'):
+        if (inventory.getInv().count(telecommande) > 0 and inventory.getInv().count(piles) > 0):
+            jump craftTelecommande
+        else :
+            jump openAppart
 
 label slotSelect0 :
     $ inventory.selectItem(0)
-    call screen inventory
-
+    jump selectCraft
+    
 label slotSelect1 :
     $ inventory.selectItem(1)
-    call screen inventory
+    jump selectCraft
 
 label slotSelect2 :
     $ inventory.selectItem(2)
-    call screen inventory
+    jump selectCraft
 
 label slotSelect3 :
     $ inventory.selectItem(3)
-    call screen inventory
+    jump selectCraft
 
 label slotSelect4 :
     $ inventory.selectItem(4)
-    call screen inventory
+    jump selectCraft
 
 label slotSelect5 :
     $ inventory.selectItem(5)
-    call screen inventory
+    jump selectCraft
 
 label slotSelect6 :
     $ inventory.selectItem(6)
-    call screen inventory
+    jump selectCraft
 
 label slotSelect7 :
     $ inventory.selectItem(7)
-    call screen inventory
+    jump selectCraft
 
 # APPART PP ==========================================================
 
+
+
 label openPlacard :
 
-    scene bg placard
+    $ act_label = 'openPlacard'
+
+    hide screen bouffe
+    hide screen boisson
+    hide screen telecommande
+    hide screen vetement
+    hide screen placard
+    hide screen tabouret
+    hide screen velux
+
+    scene placard_jason
     show screen flecheAppart
 
     if (canGetItemAppart.count(piles)>0):
@@ -54,8 +72,10 @@ label getBeuh :
     $ possible = inventory.addItem(beuh)
     if (possible and phaseTimer) :
         hide screen beuh
-        $ objetTrouve = objetTrouve + 1
         $ canGetItemAppart.remove(beuh)
+        $ objetTrouve += 1
+        
+        
     else :
         J_think "Je ne peux pas prendre ça..." 
     call screen inventory
@@ -75,9 +95,15 @@ label getPiles :
 
 label openAppart :
 
-    if (veluxOpen) :
-        scene bg appartLight
+    $ act_label = 'openAppart'
 
+    hide screen flecheAppart
+    hide screen beuh
+    hide screen piles
+
+    if (veluxOpen) :
+        scene chambre_jason
+      
         if (canGetItemAppart.count(bouffe)>0):
             show screen bouffe
         if (canGetItemAppart.count(telecommande)>0):
@@ -90,32 +116,53 @@ label openAppart :
         show screen placard
         show screen velux
 
-        if (tabouretClick) :
-            show screen tabouretClick
-        else :
+        if (not tabouretClick) :
             show screen tabouret
+    
+        if (piles.getSelected() and inventory.getInv().count(telecommande)>0):
+            jump craftTelecommande
  
 
     else :
-        scene bg appartDark
+        scene chambre_jason_sombre
 
-        J_think "C'est bon je suis prêt."
+        J_think "Oulah, il est déjà l'heure! Si je me dépêche assez, j'ai moyen d'arriver à temps'."
+
+        # De quoi j'ai besoin déjà ?
+        # Affichage liste d'objet
+
+        # Possibilité de partir à tout moment de la séquence, 3 répliques selon le nb d'objet pris
+        if (objetTrouve == 0):
+            J_think "Hé merde, j'espère que Kim ne m'en voudras pas de venir les mains vides..."
+        elif (objetTrouve >= 1 or objetTrouve <= 3):
+            J_think "Bon, au moins je n'arriverai pas les mains vides !"
+        elif (objetTrouve == 4):
+            J_think "Ok, je pense que je suis bon pour ce soir !"
+
+        hide screen bouffe
+        hide screen boisson
+        hide screen telecommande
+        hide screen vetement
+        hide screen placard
+        hide screen tabouret
+        hide screen velux
+        jump chezKim
+    
+    call screen inventory
 
 label toTabouret :
 
-    if (tabouretClick == False) :
-        $ tabouretClick = True
-        hide screen tabouret
-        show screen tabouretClick
-    else :
-        J_think "Ça pourrait me servir..."
+    $ tabouretClick = True
+    hide screen tabouret 
+ 
+    J_think "Ça pourrait me servir..."
     
     jump openAppart
 
 label toVelux :
 
-    if (inventory.count(telecommande)>0 and telecommande.specialAttribute == True):
-        $ veluxOpen = True
+    if (inventory.getInv().count(telecommande)>0 and telecommande.specialAttribute == True):
+        $ veluxOpen = False
     else :
         J_think "J'ai besoin d'une télécommande qui marche..."
 
@@ -126,24 +173,26 @@ label getBouffe :
     $ possible = inventory.addItem(bouffe)
     if (possible and phaseTimer) :
         hide screen bouffe
-        $ objetTrouve = objetTrouve + 1
         $ canGetItemAppart.remove(bouffe)
+        $objetTrouve += 1
     else :
         J_think "Je ne peux pas prendre ça..." 
     call screen inventory
-    jump openPlacard
+    jump openAppart
 
 label getBoisson :
 
-    $ possible = inventory.addItem(boisson)
+    $ possible = False
+    if (tabouretClick) :
+        $ possible = inventory.addItem(boisson)
     if (possible and phaseTimer and tabouretClick) :
         hide screen boisson
-        $ objetTrouve = objetTrouve + 1
         $ canGetItemAppart.remove(boisson)
+        $ objetTrouve += 1
     else :
         J_think "Je ne peux pas prendre ça..." 
     call screen inventory
-    jump openPlacard
+    jump openAppart
 
 label getTelecommande :
 
@@ -154,19 +203,34 @@ label getTelecommande :
     else :
         J_think "Je ne peux pas prendre ça..." 
     call screen inventory
-    jump openPlacard
+    jump openAppart
 
 label getVetement :
 
     $ possible = inventory.addItem(vetement)
-    if (possible and phaseTimer and tabouretClick) :
+    if (possible and phaseTimer) :
         hide screen vetement
-        $ objetTrouve = objetTrouve + 1
         $ canGetItemAppart.remove(vetement)
+        $ objetTrouve += 1
     else :
         J_think "Je ne peux pas prendre ça..." 
     call screen inventory
-    jump openPlacard
+    jump openAppart
+
+label craftTelecommande:
+    #call screen inventory
+    menu:
+        "Voulez vous mettre les piles dans la telecommande ?"
+        "Oui":
+            $ telecommande.specialAttribute = True
+            $ inventory.selectItem(inventory.getInv().index(telecommande))
+            $ inventory.removeItem(piles)
+            call screen inventory
+            jump openAppart
+        "Non":
+            $ inventory.selectItem(inventory.getInv().index(telecommande))
+            call screen inventory
+            jump openAppart
         
     
     

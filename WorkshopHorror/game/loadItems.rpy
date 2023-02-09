@@ -3,7 +3,7 @@
 # -------------------- Images Clickable ------------- #
 # ----------------- FLECHE DE RETOUR ---------------- #
 
-image fleche = "fleche.png" 
+image fleche = "items/fleche.png" 
 
 # -------------------- Items et Images Clickable ------------- #
 # -------------------------- APPART PP ----------------------- #
@@ -13,19 +13,19 @@ init python :
     # Ici on load le nom de l'item, l'image de l'item puis l'image en version selectioné
 
         # Principale
-    bouffe = Item("Bouffe", "bouffeItem.png", "bouffeItemSelect.png",False)
-    telecommande = Item("Télécommande", "telecommandeItem.png", "telecommandeItemSelect.png",False)
-    boisson = Item("Boisson", "boissonItem.png", "boissonItemSelect.png",False)
-    vetement = Item("Vêtement", "vetementItem.png", "vetementItemSelect.png",False)
+    bouffe = Item("Bouffe", "items/bouffeItem.png", "items/bouffeItemSelect.png",False)
+    telecommande = Item("Télécommande", "items/telecommandeItem.png", "items/telecommandeItemSelect.png",False)
+    boisson = Item("Boisson", "items/boissonItem.png", "items/boissonItemSelect.png",False)
+    vetement = Item("Vêtement", "items/vetementItem.png", "items/vetementItemSelect.png",False)
         # Placard
-    beuh = Item("Sachet de Beuh", "beuhItem.png", "beuhItemSelect.png",False)
-    piles = Item("Piles", "pilesItem.png", "pilesItemSelect.png",False)
+    beuh = Item("Sachet de Beuh", "items/beuhItem.png", "items/beuhItemSelect.png",False)
+    piles = Item("Piles", "items/pilesItem.png", "items/pilesItemSelect.png",False)
 
-    canGetItemAppart = [bouffe, telecommande, boisson, vetement, beuh, piles] 
+    canGetItemAppart = [bouffe, telecommande, boisson, vetement, beuh, piles]
 
-    veluxOpen = False
+    veluxOpen = True
     tabouretClick = False
-    phaseTimer = False
+    phaseTimer = True
     phaseCraft = False
 
     objetTrouve = 0
@@ -33,17 +33,16 @@ init python :
 
 # Ici, on load les images utilisable par renPy (ça fait un peu un double mais pas grave) 
 
-image bouffe = "bouffe.png"
-image boisson = "boisson.png"
-image telecommande = "telecommande.png"
-image vetement = "vetement.png"
-image tabouret = "tabouret.png"
-image velux = "velux.png"
-image placard = "placard.png"
+image bouffe = "items/bouffe.png"
+image boisson = "items/boisson.png"
+image telecommande = "items/telecommande.png"
+image vetement = "items/vetement.png"
+image tabouret = "items/tabouret.png"
+image velux = "items/velux.png"
+image placard = "items/placard.png"
 
-image beuh = "beuh.png"
-image piles = "piles.png"
-
+image beuh = "items/beuh.png"
+image piles = "items/piles.png"
 
 # -------------------- Items et Images Clickable ------------- #
 # -------------------------- ... ----------------------- #

@@ -63,7 +63,7 @@ screen tabouret:
         idle "tabouret"
         action Jump("toTabouret")
 #Load Tabouret cliqué
-screen tabouretClick:
+screen tabouretClick: 
     imagebutton:
         xpos 800
         ypos 2000
@@ -106,7 +106,12 @@ screen flecheAppart:
         xpos 200
         ypos 1600
         idle "fleche"
-        action Jump("openAppart")
+        hovered (SetVariable("directionGauche", "Vers l'appartement"))
+        unhovered (SetVariable("directionGauche", " "))
+        action [SetVariable("directionGauche", ""),Jump("openAppart")]
+    text directionGauche size 80 :
+        xpos 200
+        ypos 1450
     #Load Piles
 screen piles:
     imagebutton:
@@ -121,6 +126,110 @@ screen beuh:
         ypos 300
         idle "beuh"
         action Jump("getBeuh")
+
+
+# CUISINE - SALON ==========================================================
+
+screen partir:
+    imagebutton:
+        xpos 3000
+        ypos 1600
+        idle "partir"
+        hovered (SetVariable("directionDroit", "Partir"))
+        unhovered (SetVariable("directionDroit", " "))
+        action [SetVariable("directionDroit", ""),Jump("versCriCave")]
+    text directionDroit size 80 :
+        xpos 3000
+        ypos 1450
+
+# Salon -----------------------------------------
+screen affairesKim:
+    imagebutton:
+        xpos 2166
+        ypos 1053
+        idle "affairesKim"
+        action Jump("openAffairesKim")
+
+screen tiroirCasse:
+    imagebutton:
+        xpos 0
+        ypos 475
+        idle "tiroirCasse"
+        action Jump("openTiroirCasse")
+
+# Tiroir Cassé ----------------------------------
+screen mdpCarnet:
+    imagebutton:
+        xpos 1983
+        ypos 1303
+        idle "mdpCarnet"
+        action Jump("getMdpCarnet")
+
+# Affaires Kim ----------------------------------
+screen photoNancy:
+    imagebutton:
+        xpos 1800
+        ypos 1500
+        idle "photoNancy"
+        action Jump("getPhotoNancy")
+
+screen lettreCoquine:
+    imagebutton:
+        xpos 1100
+        ypos 1200
+        idle "lettreCoquine"
+        action Jump("getLettreCoquine")
+
+# Cuisine ---------------------------------------
+screen infirmerie:
+    imagebutton:
+        xpos 2100
+        ypos 1340
+        idle "infirmerie"
+        action Jump("openInfirmerie")
+
+screen tiroirCuisine:
+    imagebutton:
+        xpos 1125
+        ypos 1622
+        idle "tiroirCuisine"
+        action Jump("openTiroirCuisine")
+
+screen livreRecette:
+    imagebutton:
+        xpos 1400
+        ypos 1500
+        idle "livreRecette"
+        action Jump("getLivreRecette")
+
+screen flecheSalon:
+    imagebutton:
+        xpos 200
+        ypos 1600
+        idle "fleche"
+        hovered (SetVariable("directionGauche", "Vers le Salon"))
+        unhovered (SetVariable("directionGauche", " "))
+        action [SetVariable("directionGauche", ""),Jump("openSalon")]
+    text directionGauche size 80 :
+        xpos 200
+        ypos 1450
+
+
+    #Load Flêche de retour
+screen flecheCuisine:
+    imagebutton:
+        xpos 200
+        ypos 1600
+        idle "fleche"
+        hovered (SetVariable("directionGauche", "Vers la Cuisine"))
+        unhovered (SetVariable("directionGauche", " "))
+        action [SetVariable("directionGauche", ""),Jump("openCuisine")]
+    text directionGauche size 80 :
+        xpos 200
+        ypos 1450
+
+
+
 
 
 

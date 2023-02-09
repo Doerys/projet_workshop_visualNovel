@@ -45,4 +45,47 @@ image beuh = "items/beuh.png"
 image piles = "items/piles.png"
 
 # -------------------- Items et Images Clickable ------------- #
-# -------------------------- ... ----------------------- #
+# -------------------------- Cuisine - Salon ----------------------- #
+
+init python :
+
+    # Ici on load le nom de l'item, l'image de l'item puis l'image en version selectioné
+
+        # Cuisine
+    livreRecette = Item("Livre de Recette", "items/livreRecetteItem.png", "items/livreRecetteItemSelect.png",False)
+        # Sac de Nancy
+    lettreCoquine = Item("Lettre Coquine", "items/lettreCoquineItem.png", "items/lettreCoquineItemSelect.png",False)
+    photoNancy = Item("Photo de Nancy", "items/photoNancyItem.png", "items/photoNancyItemSelect.png",False)
+        # Tiroir cassé
+    mdpCarnet = Item("Carnet de mot de passe", "items/mdpCarnetItem.png", "items/mdpCarnetItemSelect.png",False)
+        # Infirmerie    
+    trousse = Item("Trousse de soin", "items/trousseItem.png", "items/trousseItemSelect.png",False)
+        # Tiroir Cuisine
+    ciseaux = Item("Ciseaux", "items/ciseauxItem.png", "items/ciseauxItemSelect.png",False)
+
+    canGetItemSoin = [trousse, mdpCarnet, photoNancy, lettreCoquine, livreRecette, ciseaux]
+
+    cadenaOpen = False
+    tiroirForce = False
+    phaseTimerSoin = True
+    phaseCraftSoin = False
+
+    directionGauche = ' '
+    directionDroit = ' '
+
+# Ici, on load les images utilisable par renPy (ça fait un peu un double mais pas grave) 
+
+image livreRecette = "items/livreRecette.png"
+image lettreCoquine = "items/lettreCoquine.png"
+image photoNancy = "items/photoNancy.png"
+image mdpCarnet = "items/mdpCarnet.png"
+image trousse = "items/trousse.png"
+image infirmerie = "items/infirmerie.png"
+image tiroirCuisine = "items/tiroirCuisine.png"
+image tiroirCasse = "items/tiroirCasse.png"
+image affairesKim = "items/affairesKim.png"
+image partir = "items/partir.png"
+image livreRecetteContenu = "items/livreRecetteContenu.png"
+image mdpCarnetContenu = "items/mdpCarnetContenu.png"
+image cadena = "items/cadena.png"
+

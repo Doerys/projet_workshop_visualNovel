@@ -2,9 +2,29 @@
 errors listed below, and try again.
 
 
-File "game/arcSauvetageKim.rpy", line 23: expected ':' not found.
-    "Aller sauver Bryan"!:
-                        ^
+File "game/allie_Bryan.rpy", line 179: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Accepter"
+              ^
+
+File "game/allie_Bryan.rpy", line 188: expected statement.
+    J_murmure “Bon, ok. Mais fais attention à toi !”
+                  ^
+
+File "game/allie_Bryan.rpy", line 189: expected statement.
+    B_murmure “Ne t’inquiète pas pour moi, inquiète-toi plus pour Kim maintenant”
+                                         ^
+
+File "game/allie_Bryan.rpy", line 190: expected statement.
+    E “Sans un bruit, Bryan se faufile hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison.”
+                    ^
+
+File "game/allie_Bryan.rpy", line 191: expected statement.
+    E “Dans son dos, la femme s’est lancée à sa poursuite.”
+                   ^
+
+File "game/script.rpy", line 129: expected statement.
+    traitement_conseil = True;
+                       ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Thu Feb  9 18:22:43 2023
+Thu Feb  9 22:58:04 2023

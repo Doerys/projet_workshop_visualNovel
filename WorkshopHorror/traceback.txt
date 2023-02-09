@@ -1,22 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 310, in script
-    jump choix_Anna3
-ScriptError: could not find label 'choix_Anna3'.
+  File "game/loadLabels.rpy", line 202, in script
+    $ canGetItemAppart.remove(telecommande)
+  File "game/loadLabels.rpy", line 202, in <module>
+    $ canGetItemAppart.remove(telecommande)
+ValueError: list.remove(x): x not in list
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 310, in script
-    jump choix_Anna3
-  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 1974, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'choix_Anna3'.
+  File "game/loadLabels.rpy", line 202, in script
+    $ canGetItemAppart.remove(telecommande)
+  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/loadLabels.rpy", line 202, in <module>
+    $ canGetItemAppart.remove(telecommande)
+  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\revertable.py", line 97, in do_mutation
+    return method(self, *args, **kwargs)
+ValueError: list.remove(x): x not in list
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 J 1.0
-Wed Feb  8 16:31:27 2023
+Thu Feb  9 18:21:44 2023

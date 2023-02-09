@@ -6,11 +6,17 @@
 # Déclarez les personnages utilisés dans le jeu.
 define J = Character('Jason', color="#ffffff")
 define J_think = Character(kind = J, what_italic = True, what_xalign = 0.5, what_layout ='subtitle')
-define J_shout = Character(kind = J, what_bold = True, what_size = 30) # Kind permet de copier un style de perso, perso qui crie
+define J_shout = Character(kind = J, what_bold = True, what_size = 100) # Kind permet de copier un style de perso, perso qui crie
+define J_murmure = Character(kind = J, what_bold = True, what_size = 60)
 define K = Character('Kim', color= "#ff00bf")
+define K_murmure = Character (kind = K, what_size = 60)
+define K_shout = Character (kind = K, what_size = 100)
 define B = Character('Bryan', color= "#ff0000")
-define B_murmure = Character(kind = B, what_size = 10)
-define A = Character('Anna', color= "#2600ff")
+define B_murmure = Character(kind = B, what_size = 60)
+define B_shout = Character(kind = B, what_size = 100)
+define A = Character('Anna', color= "#ff9100")
+define A_shout = Character(kind = A, what_size = 100)
+define A_murmure = Character(kind = A, what_size = 60)
 define N = Character('Nancy', color= "#f9fd15")
 define I = Character('Voix inconnue', color= "#48ff00")
 
@@ -21,11 +27,10 @@ define E = Character('', color= "#ffdabc", what_italic = True) # bruitage et env
 label start:
 
 
-
     # Mettre toutes les variables ici
     $ relationJtoK = 0
     $ relationJtoB = 0
-    $ relationJtoA = 0
+    $ relationJtoA = 50
     $ relationJtoN = 50
     $ relationKtoB = 0
     $ relationKtoA = 0
@@ -40,6 +45,13 @@ label start:
     $ lifeA = 100
     $ lifeN = 100
 
+
+    $ seul = True
+    $ torche = False
+    $ vu_fenetre_ouverte = False
+    $ go_with_Anna = False
+    $ go_with_Bryan = False
+
     play music "audio/Music/Prologue1.mp3" loop
 
     J_think "Aujourd'hui, c'est le grand jour. Il ne me reste plus beaucoup de temps avant de devoir partir, et il ne faut pas que je gâche la soirée, sinon Kim ne me le pardonnera jamais."
@@ -47,7 +59,7 @@ label start:
     J_think "On se connait déjà depuis plusieurs années, et je n'ai pas envie de savoir comment elle réagira... Surtout depuis la dispute d’hier."
 
 
-    
+
     scene chambre_jason
 
     # Chargement des items dans la scène
@@ -147,8 +159,8 @@ label start:
         jump suite2
 
     label desole:
-        J "Je suis désolé que tu aies à vivre ça, Kim m'avait promis d'arrêter pourtant…"
-        N "Mouais, bah si elle était du genre à respecter ses promesses, on le saurait…"
+        J "Je suis désolé que tu aies à vivre ça, Kim m'avait promis d'arrêter pourtant..."
+        N "Mouais, bah si elle était du genre à respecter ses promesses, on le saurait..."
         J "Arrête Nancy..."
 
         jump suite2
@@ -207,7 +219,7 @@ label start:
             jump tout
 
         label mainsvides : 
-            J "Merde, je suis déoslé j'ai complètement oublié ce que tu voulais que je prenne..."
+            J "Merde, je suis désolé j'ai complètement oublié ce que tu voulais que je prenne..."
             K "Tu te moques de moi là j'espère ? Non mais, tu espères vraiment me faire croire que tu as complètement oublié et tu ne m'as même pas envoyé un message pour me prévenir ?"
             K "Jay... Je... Tu m'énerves ! Viens, sinon je vais finir par t'étriper avant même que tu rentres..."
 
@@ -226,10 +238,9 @@ label start:
             K "Bon, allons dans le salon, on était en train de jouer et... Ne t'inquiètes pas, j'ai une petite surprise pour toi après la soirée, une petite récompense..."
             E "Un clien d'oeil plus tard, Kim invite Jason à le suivre dans l'appartement où ils retrouvent Bryan et Anna autour d'une table de jeu dans le salon."
 
-        scene canape_kim
-
 
         label suite3 :
+            scene canape_kim
             E "Dans le salon, Bryan et Anna sont tous les deux assis autour d'une  table où s'étaient déjà écoulées quelques bouteilles d'alcool."
             B "Hééééé ! Mais c'est l'autre qui se décide enfin à arriver ! Viens dépêches-toi, je te sers un verre, il faut que tu me rattrapes !"
             A "Tu vas vraiment continuer de boire toute la soirée ? T'es déjà explosé..."
@@ -340,18 +351,20 @@ label start:
             play sound "audio/Sounds/Bruit Sourd.mp3"
             B "Vous avez entendu ?"
             A "Quoi ?"
-            B "Je ne sais pas, ça vient de l’étage… Kim, tu n’as pas de chat ?"
+            B "Je ne sais pas, ça vient de l’entrée... Kim, tu n’as pas de chat ?"
             K "Non, non… Arrête tu commences à me faire flipper..."
             A "Non mais laisse tomber, regarde tout ce qu’il a bu, il est encore en train d’avoir des hallucinations."
             B "Anna, arrête. Je suis sûr de ce que j’ai entendu..."
             K "Mais c’était quoi, une voix, un bruit de pas..."
             B "Je n’en sais rien..."
     
+
+
             menu:
                 "Croire Bryan":
-                    jump suite6
-
-
+                    jump choix_Bryan4
+                "Croire Anna":
+                    jump choix_Anna4
 
 
     return # Quitte la partie, partie terminée

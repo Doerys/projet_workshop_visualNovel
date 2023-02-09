@@ -1,4 +1,5 @@
 ﻿label choix_Bryan4:
+    $ vu_fenetre_ouverte = True
     J "Tu veux qu’on aille voir ce que c’était ?"
     A "Ne me dites pas que vous allez le croire quand même !"
     J "On ne sait jamais... Et puis si jamais c’est juste un courant d’air on n’aura qu’à fermer la porte."
@@ -33,6 +34,8 @@ label accepter2:
     J "Hmmm... non je ne sais pas, dis-m'en plus ?"
     K "Oh si tu vois très bien... Tu m'as manqué tu sais ?"
     J "Toi aussi tu m'as manqué mon coeur..."
+
+    jump suite10
 
 label refuser2:
     J "Kim, arrête... arrête !"
@@ -145,12 +148,13 @@ label refuser2:
                     jump suite13
 
         label suite13:
-            N "Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non." (de plus en plus vite) 
+            N "Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non. Non." #(de plus en plus vite) 
             J "Nancy ?"
             N "C’est trop tard Jason. Bien trop tard." #(tres lent et en gras)
             J "Nancy ? Nancy !"
             J_think "Il n’y a plus de réseau... J’espère qu’elle va bien."
             J "Kim ? Pourquoi est-ce que tu ne m’a pas attendu... Il fallait que je réponde, c’était urgent. Kim ?"
 
+            $ seul = True
 
-
+            jump scene_cave

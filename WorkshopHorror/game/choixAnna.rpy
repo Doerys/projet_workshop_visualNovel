@@ -65,8 +65,11 @@
         J "Bon, viens on va voir où en est Anna, mais s'il te plait, ne fais pas de conneries d'accord ?"
         E "Bryan gromelle en suivant Jason à travers la maison."
 
-        #jump xxx
-        # Manque une partie là non ?
+        jump reunion
+
+
+
+
 
     label Anna_salon:
         E "Kim s’en va dans la cave, laissant Jason et Anna seuls dans le salon"
@@ -146,8 +149,31 @@
 
 
     label suite9:
-
         J "Bon aller, viens voir, peut-être que Bryan a fini par se calmer."
 
+
+
+    label reunion:
+
+        # Kim a son téléphone
+        E "Ensemble, les trois amis finissent par se retrouver sur le canapé du salon, bière à la main, essayant tant bien que mal d’enterrer la hache de guerre."
+        B "Du coup, il faut que je vous raconte ! J’ai rencontré quelqu’un !"
+        J "Pardon ? Depuis quand ?"
+        B "Ça fait quelques semaines, mais je crois que c’est bien parti entre nous !"
+        A "Trop bien, je suis contente pour toi !"
+        J "Il faut que tu me la montre que je…"
+        E "Soudain le téléphone de Jason se met à sonner. Sur l’écran, le nom de Kim apparaît."
+        J "Kim ? Pourquoi est-ce que tu…"
+        K_shout "Jason !"
+        K_shout "Jason ! Elle… !"
+        E "Le téléphone se coupe, un message d’erreur de réseau apparaît."
+        J "Les gars ! Putain de merde !"
+        B "Quoi ? Qu’est-ce qu’il se passe ?"
+        J "Kim a un problème. Putain de… putain !"
+        E "Ensemble, les trois amis sortent de la maison en trombe en direction de la cave."
+        
+        $ seul = False
+
+        jump scene_cave
 
         #Résultat final ???

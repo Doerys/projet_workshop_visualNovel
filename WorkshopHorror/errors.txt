@@ -2,9 +2,47 @@
 errors listed below, and try again.
 
 
-File "game/allie_Bryan.rpy", line 178: menu statement expects a non-empty block.
-    menu:
+File "game/arcSauvetageKim.rpy", line 4: reached end of line when expecting ':'.
+    if 
+       ^
+
+File "game/arcSauvetageKim.rpy", line 6: expected statement.
+    elif 
+         ^
+
+File "game/arcSauvetageKim.rpy", line 8: expected statement.
+    else:
         ^
 
+File "game/arcSauvetageKim.rpy", line 52: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Porter Kim"
+                ^
+
+File "game/arcSauvetageKim.rpy", line 84: if statement expects a non-empty block.
+    if (relationJtoA >= 100):
+                             ^
+
+File "game/arcSauvetageKim.rpy", line 86: expected statement.
+    else:
+        ^
+
+File "game/arcSauvetageKim.rpy", line 127: choice menuitem expects a non-empty block.
+    "Sauver Kim":
+                 ^
+
+File "game/choixAnna.rpy", line 54: Indentation mismatch.
+
+File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    menu:
+    ^
+
+File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
+    if (harcelement_kim_info == True)
+                                     ^
+
+File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
+    if (harcelement_kim_info == False)
+                                      ^
+
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Thu Feb  9 23:03:20 2023
+Fri Feb 10 01:52:17 2023

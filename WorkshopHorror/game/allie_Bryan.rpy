@@ -319,7 +319,7 @@ label refuser3:
     J_murmure "Mais t’es pas bien ! Si ça se trouve elle court beaucoup plus vite que toi ! Tu vas faire quoi face à une arme blanche ?"
     B_murmure "Hmmmm."
     B_murmure "Dans ce cas, il faut qu’on s’arme, et vite"
-    J_murmure "Ah, là je suis d’accord avec toi, mais pour l’instant reste caché et ferme-la !"
+    J "Ah, là je suis d’accord avec toi, mais pour l’instant reste caché et ferme-la !"
     E "Accroupis dans la pénombre du couloir, Jason et Bryan observent la jeune femme passer dans la pièce, vêtue d’une longue robe et d’un masque blanc, cachant son visage aux deux jeunes hommes."
     E "Malheureusement pour eux, plus temps avance, plus la femme se rapproche de leur emplacement."
 

@@ -218,7 +218,7 @@ label start:
 
         play sound "audio/Sounds/Carillon.mp3"
         E "Ding dong"
-        play music "audio/Music/Soiree1.mp3"
+        play music "audio/Music/Soiree1.mp3" loop fadeout 1
 
         scene entree
         show kim_content:

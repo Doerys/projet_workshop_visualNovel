@@ -25,7 +25,7 @@ label postTelephone:
             jump kimAbri
         "Aller sauver Bryan":
             jump sauvetageBryan
-    jump sequence4
+    jump mauve
 
 label kimAbri:
     J "Ok, porte la… Il faut qu’on se dépêche, avant qu’elle ne perde trop de sang !"

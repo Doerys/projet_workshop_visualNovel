@@ -12,14 +12,14 @@
     scene escalier
     with dissolve
 
-    E "Anna et Jason remontent les escaliers en direction du rez-de-chaussée."
+    E "Sans perdre un instant, Anna et Jason remontent les escaliers en direction du rez-de-chaussée."
     A "Hé, Jason... Merci de m’avoir écouté..."
     J "Bryan n’a pas totalement tort, tu sais... On ne doit pas perdre de temps."
     A "Je sais... mais je ne veux pas risquer de faire une erreur. On n’a pas de deuxième chance..."
 
     if (relationJtoK >= 0 and blessure_kim == 1):
         A "Hé d’ailleurs, quand j’ai aidé Kim elle m’a demandé de te donner ça... Je pense que ça pourrait nous être utile... Tiens, prends-la !"
-        E "Anna vous tend une lampe torche."
+        E "Anna tend à Jason une lampe torche."
         $ torche = True
 
     elif (relationJtoK < 0 and blessure_kim == 1):
@@ -399,7 +399,7 @@ label combat_SK_Anna:
 
 label aveugler_Anna:
 
-    J_murmure "Hé, j’ai une idée débile, mais ça peut marcher ! Je vais utiliser ma lampe torche pour l’aveugler."
+    J_murmure "Hé, j’ai une idée débile, mais ça peut marcher ! Je vais utilise ma lampe torche pour l’aveugler."
     A_murmure "Bonne idée ! Ca nous laissera peut-être assez de temps de la semer !"
     J_murmure "Ok, bonne idée ! A trois !"
     J_murmure  "Un"

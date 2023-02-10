@@ -103,7 +103,7 @@ label start:
     # ouverture interface portable OU fondu au noir avec scène scindé, chaque perso sur son téléphone
 
     show telephone_appel:
-        xalign 1.5 yalign -0.5
+        xalign 1.5 yalign 9
         linear 0.8 xalign 0.9
 
     E "Le téléphone de Jason sonne."

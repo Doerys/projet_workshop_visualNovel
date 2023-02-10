@@ -55,7 +55,9 @@ label start:
     $ go_with_Bryan = False
     $ telephone_oublie = False
     $compagnie_bryan = False
+    $compagnie_anna = False
     $menacer_psychopathe = False
+
 
     $ traitement_conseil = False
 

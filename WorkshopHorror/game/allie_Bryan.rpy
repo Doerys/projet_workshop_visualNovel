@@ -320,7 +320,7 @@ label refuser3:
     B_murmure "Hmmmm."
     B_murmure "Dans ce cas, il faut qu’on s’arme, et vite"
     J "Ah, là je suis d’accord avec toi, mais pour l’instant reste caché et ferme-la !"
-    E "Accroupis dans la pénombre du couloir, Jason et Bryan observent la jeune femme passer devant eux, vêtue d’une longue robe et d’un masque blanc, cachant son visage aux deux jeunes hommes."
+    E "Accroupis dans la pénombre du couloir, Jason et Bryan observent la jeune femme passer dans la pièce, vêtue d’une longue robe et d’un masque blanc, cachant son visage aux deux jeunes hommes."
     E "Malheureusement pour eux, plus temps avance, plus la femme se rapproche de leur emplacement."
 
     jump combat_SK
@@ -333,18 +333,13 @@ label combat_SK:
     if (menacer_psychopathe = True):
         if (torche == True):
         menu:
-            "Rester caché":
-                jump rester_cache
             "L'aveugler avec la lampe":
                 jump aveugler_Bryan
             "Fuir":
                 jump fuite_Bryan
         else : 
         menu:
-            "Rester caché":
-                jump rester_cache
-            "Fuir":
-                jump fuite_Bryan
+            jump fuite_Bryan
 
     else if (menacer_psychopathe = False):
         if (torche == True):
@@ -362,7 +357,18 @@ label combat_SK:
             "Fuir":
                 jump fuite_Bryan
     
+label fuite_Bryan:
+    J_murmure "Elle arrive vers nous..."
+    B_murmure "Merde... qu’est-ce qu’on fait ?"
+    J_murmure "Je ne sais pas... Elle arrive..."
+    B_murmure "Il faut qu’on se sépare, on n’a pas le choix. Tu sais quoi, tant pis. Je vais courir, toi pendant ce temps là, cours dans l’autre direction."
+    B_murmure "Avec un peu de chance, je vais pouvoir la retenir assez longtemps que pour que t’aille chercher du soin."
+    J_murmure "T’es sûr de ton coup ?"
+    B_murmure "Ne t’en fais pas pour moi, on n’a pas d’autre choix... Au pire, je vais essayer de trouver de l’aide dehors, d’accord ? Aller."
+    B_shout "Maintenant !"
+    E "Poussant la porte de toutes ses forces, Bryan réussi presque à renverser la femme lorsqu’il l’attira à l’extérieur. Attendant que la femme passe la porte, Jason se précipite dans la maison."
 
+    jump pointNclicCuisineSeul
         
 label rester_cache:
     E "Malgré tout, elle s’arrête à quelques mètres de la porte. Jetant un œil par-dessus son épaule, elle se décide à faire demi-tour, s’engouffrant sans un bruit à travers la fenêtre ouverte."
@@ -411,15 +417,19 @@ label suite21:
             B "Putain Jason, dépêche toi !"
             jump suite22
         "Foncer":
-            E "Sans réfléchir, Jason court à toute vitesse à travers le corridor pour rattraper son retour sur Bryan."
+            E "Sans réfléchir, Jason court à toute vitesse à travers le corridor pour rattraper son retard sur Bryan."
             jump suite22
         "Se cacher":
             E "Courant à travers le corridor, Jason plonge dans la pièce tapie dans l'ombre. Il entend la tueuse passer en coup de vent dans le corridor sans s'arrêter, avant de faire place au silence."
             jump pointNclicCuisineSeul
 
 label suite22:
+
+    scene sceau
+    with dissolve
+    
     J "Et maintenant, on fait quoi ?"
-    B "Par là ! On va pouvoir se cacher, vite !"
+    B "Par là ! Vite !"
     E "Continuant la fuite, Bryan commence petit à petit à distancer Bryan."
 
     menu:
@@ -434,6 +444,10 @@ label suite22:
 
 
 label suite23:
+
+    scene porte_fin
+    with dissolve
+
     if (obstacles ==3):
         E "Jason arrive en trombe dans le séjour. Les bruits de pas de la tueuse ne se font plus entendre, mais Bryan a disparu, l'ayant visiblement distancé."
         jump pointNclicCuisineSeul
@@ -446,19 +460,6 @@ label suite23:
         $compagnie_bryan = True
 
         jump pointNclicCuisineAllie
-
-label fuite_Bryan:
-    J_murmure "Elle arrive vers nous..."
-    B_murmure "Merde... qu’est-ce qu’on fait ?"
-    J_murmure "Je ne sais pas... Elle arrive..."
-    B_murmure "Il faut qu’on se sépare, on n’a pas le choix. Tu sais quoi, tant pis. Je vais courir, toi pendant ce temps là, cours dans l’autre direction."
-    B_murmure "Avec un peu de chance, je vais pouvoir la retenir assez longtemps que pour que t’aille chercher du soin."
-    J_murmure "T’es sûr de ton coup ?"
-    B_murmure "Ne t’en fais pas pour moi, on n’a pas d’autre choix... Au pire, je vais essayer de trouver de l’aide dehors, d’accord ? Aller."
-    B_shout "Maintenant !"
-    E "Poussant la porte de toutes ses forces, Bryan réussi presque à renverser la femme lorsqu’il l’attira à l’extérieur. Attendant que la femme passe la porte, Jason se précipite dans la maison."
-
-    jump pointNclicCuisineSeul
 
 label pointNclicCuisineAllie:
 

@@ -2,27 +2,19 @@
 errors listed below, and try again.
 
 
-File "game/allie_Anna.rpy", line 297: end of line expected.
+File "game/allie_Anna.rpy", line 309: end of line expected.
     J "Héééééééééé !" cri
                       ^
 
-File "game/allie_Anna.rpy", line 324: expected 'label_name' not found.
-    jump 
-        ^
-
-File "game/allie_Anna.rpy", line 342: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    jump pointNclicChambreSeul
-    ^
-
-File "game/allie_Anna.rpy", line 354: if statement expects a non-empty block.
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
     if (torche == True):
                         ^
 
-File "game/allie_Anna.rpy", line 362: expected statement.
+File "game/allie_Anna.rpy", line 381: expected statement.
     else : 
          ^
 
-File "game/allie_Anna.rpy", line 369: expected ':' not found.
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
     else if (menacer_psychopathe = False):
          ^
 
@@ -30,13 +22,17 @@ File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
     if (torche == True):
                         ^
 
-File "game/allie_Bryan.rpy", line 342: expected statement.
+File "game/allie_Bryan.rpy", line 340: expected statement.
     else : 
          ^
 
-File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
     else if (menacer_psychopathe = False):
          ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Feb 10 09:13:36 2023
+Fri Feb 10 09:53:40 2023

@@ -167,7 +167,7 @@ label tuer_Bryan:
     menu:
         "Tuer Bryan":
             jump tuer_Bryan2
-        "Ne pas tirer"
+        "Ne pas tirer":
             J "Je... je suis désolé."
             B "Hé, pitié arrête ! Tu n’as pas besoin de faire ça ! Jason pitié !"
             E "Vous placez votre doigt sur la détente."
@@ -215,7 +215,6 @@ label Nancy_trahie:
 $ persuasion_Nancy = 0
 
 if (lettre_Nancy == True):
-else
     menu:
         "Gagner du temps":
             J "Hé, non ! Je ne voulais pas te décevoir !"
@@ -235,7 +234,7 @@ else
             J "Je te connais, Nancy. Je sais qui tu es. S’il te plaît, il faut que tu te calmes !"
             jump suite_Nancy
 
-        "Lui parler de sa lettre"
+        "Lui parler de sa lettre":
             $ persuasion_Nancy += 1
             J "Nancy ! Hé, je sais ce que tu as traversé !"
             N "Non ! Tu ne sais rien... Tu t’en ai toujours foutu..."

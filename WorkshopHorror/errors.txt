@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/allie_Bryan.rpy", line 342: expected menuitem
-    jump fuite_Bryan
-    ^
+File "game/choixAnna.rpy", line 274: expected statement.
+    xalign 0.9
+            ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Feb 10 10:31:51 2023
+Fri Feb 10 10:51:53 2023

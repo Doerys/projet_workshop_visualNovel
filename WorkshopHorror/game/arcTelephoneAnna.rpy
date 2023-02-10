@@ -126,11 +126,48 @@ J "C’était quoi ça ?"
 A "Elle arrive ! Oh mon dieu, elle arrive !"
 jump kimHurlement_Anna
 
+label kimHurlement:
+
+    if (compagnie_Bryan):
+        jump kimHurlement_Bryan
+    else:
+        jump kimHurlement_seul
+
 label kimHurlement_Anna:
+    E "Un cri aigu retentit dans la maison."
+    A "Kim ! Nom de Dieu."
+    J_shout "T’as pas intérêt à la toucher !"
+    E "Vous courez en direction de la cave avec Anna, où vous aviez laissé Kim blessée."
+
+    scene entree_nuit
+    with dissolve
+
+    E "Vous retrouvez Kim, seule, ensanglantée, sur le sol du hall d'entrée."
+
+jump arcSauvetageKim
+
+label kimHurlement_Bryan:
+    E "Un cri aigu retentit dans la maison."
+    B "Kim ! Nom de Dieu."
+    J_shout "T’as pas intérêt à la toucher !"
+    E "Vous courez en direction de la cave avec Bryan, où vous aviez laissé Kim blessée."
+
+    scene entree_nuit
+    with dissolve
+
+    E "Vous retrouvez Kim, seule, ensanglantée, sur le sol du hall d'entrée."
+
+jump arcSauvetageKim
+
+label kimHurlement_seul:
     E "Un cri aigu retentit dans la maison."
     J "Kim ! Nom de Dieu."
     J_shout "T’as pas intérêt à la toucher !"
-    E "Vous courez en direction de la cave avec Anna, où vous aviez laissé Kim blessée."
+    E "Vous courez en direction de la cave, où vous aviez laissé Kim blessée."
+
+    scene entree_nuit
+    with dissolve
+
     E "Vous retrouvez Kim, seule, ensanglantée, sur le sol du hall d'entrée."
 
 jump arcSauvetageKim

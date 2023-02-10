@@ -5,7 +5,7 @@
 
 # Modifie la taille des images pour l'inventaire
 transform inv :
-    size(300,300)
+    size(200,200)
 
 
 # INVENTAIRE
@@ -138,7 +138,7 @@ screen partir:
         idle "partir"
         hovered (SetVariable("directionDroit", "Partir"))
         unhovered (SetVariable("directionDroit", " "))
-        action [SetVariable("directionDroit", ""),Jump("versCriCave")]
+        action [SetVariable("directionDroit", ""),Jump("kimHurlement")]
     text directionDroit size 80 :
         xpos 3000
         ypos 1450
@@ -229,6 +229,129 @@ screen flecheCuisine:
         xpos 200
         ypos 1450
 
+
+# CAVE ===================================================================
+
+screen flecheCave:
+    imagebutton:
+        xpos 200
+        ypos 1600
+        idle "fleche"
+        hovered (SetVariable("directionGauche", "Vers la Cave Principale"))
+        unhovered (SetVariable("directionGauche", " "))
+        action [SetVariable("directionGauche", ""),Jump("openCave")]
+    text directionGauche size 80 :
+        xpos 200
+        ypos 1450
+
+screen flecheCouloirBox:
+    imagebutton:
+        xpos 200
+        ypos 1600
+        idle "fleche"
+        hovered (SetVariable("directionGauche", "Vers le couloir du Box"))
+        unhovered (SetVariable("directionGauche", " "))
+        action [SetVariable("directionGauche", ""),Jump("openCouloirBox")]
+    text directionGauche size 80 :
+        xpos 200
+        ypos 1450
+
+screen flecheCouloir:
+    imagebutton:
+        xpos 200
+        ypos 1600
+        idle "fleche"
+        hovered (SetVariable("directionGauche", "Vers l'autre couloir"))
+        unhovered (SetVariable("directionGauche", " "))
+        action [SetVariable("directionGauche", ""),Jump("openCouloir")]
+    text directionGauche size 80 :
+        xpos 200
+        ypos 1450
+
+
+#Cave
+
+screen kimDead:
+    imagebutton:
+        xpos 0
+        ypos 820
+        idle "kimDead"
+        action Jump("toKimDead")
+
+#CouloirBox
+
+screen clou:
+    imagebutton:
+        xpos 490
+        ypos 1200
+        idle "clou"
+        action Jump("getClou")
+
+screen lettreSK:
+    imagebutton:
+        xpos 900
+        ypos 495
+        idle "lettreSK"
+        action Jump("getLettreSK")
+
+screen porteBarricade1:
+    imagebutton:
+        xpos 645
+        ypos 600
+        idle "porteBarricade1"
+        action Jump("toBarricade")
+
+screen porteBarricade2:
+    imagebutton:
+        xpos 630
+        ypos 0
+        idle "porteBarricade2"
+        action Jump("toBarricade")
+
+screen porteBox:
+    imagebutton:
+        xpos 2318
+        ypos 0
+        idle "porteBox"
+        action Jump("toPorteBox")
+
+#Couloir
+
+screen planches:
+    imagebutton:
+        xpos 2300
+        ypos 1475
+        idle "planches"
+        action Jump("getPlanches")
+
+screen cle:
+    imagebutton:
+        xpos 1250
+        ypos 100
+        idle "cle"
+        action Jump("getCle")
+
+#Box
+
+screen marteau:
+    imagebutton:
+        xpos 2100
+        ypos 1340
+        idle "marteau"
+        action Jump("getMarteau")
+
+
+screen partirCave:
+    imagebutton:
+        xpos 3000
+        ypos 1600
+        idle "partir"
+        hovered (SetVariable("directionDroit", "Partir"))
+        unhovered (SetVariable("directionDroit", " "))
+        action [SetVariable("directionDroit", ""),Jump("choix_cave")]
+    text directionDroit size 80 :
+        xpos 3000
+        ypos 1450
 
 
 

@@ -54,12 +54,10 @@ label start:
     $ go_with_Anna = False
     $ go_with_Bryan = False
     $ telephone_oublie = False
+    $compagnie_bryan = False
+    $compagnie_anna = False
     $menacer_psychopathe = False
-    $trahison_Anna = False
-    $distraction_Bryan = False
 
-    $compagnie_Anna = False
-    $compagnie_Bryan = False
 
     $ traitement_conseil = False
 
@@ -68,6 +66,10 @@ label start:
     J_think "Aujourd'hui, c'est le grand jour. Il ne me reste plus beaucoup de temps avant de devoir partir, et il ne faut pas que je gâche la soirée, sinon Kim ne me le pardonnera jamais."
     J_think " Depuis le temps qu'elle s'embête à tout bien organiser, la moindre petite faute de goût pourrait me coûter très cher."
     J_think "On se connait déjà depuis plusieurs années, et je n'ai pas envie de savoir comment elle réagira... Surtout depuis la dispute d’hier."
+
+######################################
+    jump openCave
+######################################
 
     scene chambre_jason
 
@@ -216,7 +218,7 @@ label start:
 
         play sound "audio/Sounds/Carillon.mp3"
         E "Ding dong"
-        play music "audio/Music/Soiree1.mp3" loop fadeout 1
+        play music "audio/Music/Soiree1.mp3"
 
         scene entree
         show kim_content:

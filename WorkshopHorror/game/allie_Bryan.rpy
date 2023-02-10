@@ -12,20 +12,20 @@
     B "Je sais... mais je ne peux pas rester là sans rien faire. Pas pour Kim."
 
 
-if (relationJtoK >= 0 and blessure_kim = 1):
-        B "Hé d’ailleurs, quand j’ai aidé Kim elle m’a demandé de te donner ça... Je pense que ça pourrait nous être utile... Tiens, prends-la !"
-        E "Bryan tend à Jason une lampe torche."
-        $ torche = True
+if (relationJtoK >= 0 and blessure_kim == 1):
+    B "Hé d’ailleurs, quand j’ai aidé Kim elle m’a demandé de te donner ça... Je pense que ça pourrait nous être utile... Tiens, prends-la !"
+    E "Bryan tend à Jason une lampe torche."
+    $ torche = True
 
-    else if (relation JtoK < 0 and blessure_kim = 1):
-        B "Hé d’ailleurs, quand j’ai aidé Kim elle m’a confié ça... Je pense que ça nous sera utile."
-        E "Bryan montre une lampe torche."
-        $ torche = False
+elif (relation JtoK < 0 and blessure_kim == 1):
+    B "Hé d’ailleurs, quand j’ai aidé Kim elle m’a confié ça... Je pense que ça nous sera utile."
+    E "Bryan montre une lampe torche."
+    $ torche = False
 
-    else if (blessure_kim = 2) :
-        B "Hé d’ailleurs, je viens de trouver ça dans la cave... Je pense que ça nous sera utile."
-        E "Bryan montre une lampe torche."
-        $ torche = False
+elif (blessure_kim == 2) :
+    B "Hé d’ailleurs, je viens de trouver ça dans la cave... Je pense que ça nous sera utile."
+    E "Bryan montre une lampe torche."
+    $ torche = False
 
     J "Ok, parfait."
 
@@ -41,28 +41,28 @@ if (relationJtoK >= 0 and blessure_kim = 1):
         E "Allumant sa lampe torche, Jason passe devant, avançant doucement à pas feutré jusqu'au hall d'entrée de la maison."
 
     elif (torche == False):
-    E "Allumant sa lampe torche, Bryan passe devant, un peu trop sûr de lui, jusqu'au hall d'entrée de la maison."
-    J "T’as une idée de qui pourrait avoir fait ça, toi ?"
-    B "J’en ai aucune idée, mais c’est forcément un malade. Mon dieu... qui pourrait faire ça..."
-    J "C’est une bonne chose d’avoir laissé Anna avec Kim, elle connait plus de choses que nous pour la soigner, elle sera capable de la maintenir en état jusqu'à notre retour."
-    B "Ouais, il faut juste espérer qu’il y ait bien qu’une seule personne à vouloir notre peau ici..."
-    E "Une porte claque violemment derrière le duo !"
-    B "Wouaw, c’était quoi ça ?"
-    J "Rien, la porte vient de claquer...J’ai eu une de ces peurs !"
-    B "Tu parles, j’ai carrément failli me pisser dessus !"
-    B "Attends, tu sens le courant d’air ?"
-    J "Ouais..."
-    E "Avançant pas à pas, les deux amis suivent le vent à travers le hall d’entrée."
+        E "Allumant sa lampe torche, Bryan passe devant, un peu trop sûr de lui, jusqu'au hall d'entrée de la maison."
+        J "T’as une idée de qui pourrait avoir fait ça, toi ?"
+        B "J’en ai aucune idée, mais c’est forcément un malade. Mon dieu... qui pourrait faire ça..."
+        J "C’est une bonne chose d’avoir laissé Anna avec Kim, elle connait plus de choses que nous pour la soigner, elle sera capable de la maintenir en état jusqu'à notre retour."
+        B "Ouais, il faut juste espérer qu’il y ait bien qu’une seule personne à vouloir notre peau ici..."
+        E "Une porte claque violemment derrière le duo !"
+        B "Wouaw, c’était quoi ça ?"
+        J "Rien, la porte vient de claquer...J’ai eu une de ces peurs !"
+        B "Tu parles, j’ai carrément failli me pisser dessus !"
+        B "Attends, tu sens le courant d’air ?"
+        J "Ouais..."
+        E "Avançant pas à pas, les deux amis suivent le vent à travers le hall d’entrée."
 
     if(vu_fenetre_ouverte == False):
-    B "Elle n’était pas fermée tout à l’heure celle-là ?"
-    J "Si. Si, je crois bien." 
+        B "Elle n’était pas fermée tout à l’heure celle-là ?"
+        J "Si. Si, je crois bien." 
 
     jump fenetre_ouverte_Bryan
 
     if(vu_fenetre_ouverte == True):
-    B "Putain, c'est la même fenêtre que tout à l'heure ! Je vous l'avais dit !"
-    J "Ca commence à devenir extrêmement flippant."
+        B "Putain, c'est la même fenêtre que tout à l'heure ! Je vous l'avais dit !"
+        J "Ca commence à devenir extrêmement flippant."
 
     jump fenetre_ouverte_Bryan
 
@@ -92,7 +92,7 @@ label fenetre_ouverte_Bryan:
 
     elif (torche == False):
     
-    J "Hé, je crois que j’ai une idée !"
+        J "Hé, je crois que j’ai une idée !"
     
         if (relationJtoB >= 0):
 

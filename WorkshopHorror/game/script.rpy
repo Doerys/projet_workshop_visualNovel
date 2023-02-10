@@ -253,6 +253,12 @@ label start:
 
         label suite3 :
             scene canape_kim
+            show kim_normal:
+                xalign 0.5
+            show bryan_drague:
+                xalign 0.9
+            show anna_normal:
+                xalign 0.1
             E "Dans le salon, Bryan et Anna sont tous les deux assis autour d'une table où quelques bouteilles d'alcool ont déjà été vidées."
             B "Hééééé ! Mais c'est l'autre qui se décide enfin à arriver ! Viens dépêches-toi, je te sers un verre, il faut que tu me rattrapes !"
             A "Tu vas vraiment continuer de boire toute la soirée ? T'es déjà explosé..."
@@ -274,31 +280,61 @@ label start:
         
         label choix_Bryan:
             J "Elle est nulle la question… Pour moi ça restera toujours Bryan. Il a beau être un peu con, il me colle au train depuis trop longtemps pour que je le laisse de côté."
+            hide bryan_drague
+            show bryan_content:
+                xalign 0.9
+            hide kim_normal
+            show kim_colere:
+                xalign 0.5
             B "Ah ! Vous voyez je vous l’avais dit ! Il fait passer la famille avant le coeur !"
             K "Ouais, je vois ça… Je vois surtout qu’il va finir par dormir tout seul ce soir..."
 
             $relationJtoB += 1
+            hide bryan_content
+            hide kim_colere
+            hide anna_normal
 
             jump suite4
 
         label choix_Anna:
             J "En vrai, si je dois choisir entre vous trois… je pense que je prendrai Anna."
             B "Hé ! C’est quoi ce choix de merde là !"
+            hide bryan_drague
+            show bryan_colere:
+                xalign 0.9
+            hide anna_normal
+            show anna_contente:
+                xalign 0.1
             J "Non mais juste réfléchis un peu : elle est la plus calme, elle est la plus réfléchie d’entre nous, si il y a bien une personne qui peut me sauver le cul sans trembler c’est bien elle !"
             A "Et faut arrêter d’être jaloux Bryan. Elle baisse ta cote, assume-le, il préfère passer par d’autres gens que par toi."
 
             $relationJtoA += 1
+            hide bryan_colere
+            hide anna_contente
+            hide kim_normal
             jump suite4
 
         label choix_Kim:
             
             J "Non mais ne me posez pas la question, je suis le seul en couple. Si je dois appeler quelqu’un entre vous trois, c’est forcément Kim, je sais que je peux lui faire confiance."
+            hide kim_normal
+            show kim_content:
+                xalign 0.5
             A "Ah ! Tu vois Bryan, c’était évident. Son couple passera toujours devant toi, ne viens pas chialer."
 
             $relationJtoK += 1
+            hide kim_content
+            hide anna_normal
+            hide bryan_drague
             jump suite4
         
         label suite4:
+            show bryan_drague:
+                xalign 0.9
+            show kim_normal:
+                xalign 0.5
+            show anna_normal:
+                xalign 0.1
             J "Forcément, elle était trop simple cette question... Vous en avez une autre ?"
             K "On a eu plein tout à l’heure mais on est à court d'idées. Genre par exemple, si jamais on devait vivre pendant une apocalypse, tu penses que lequel d’entre nous finirai par mourir en premier ?"
 
@@ -315,11 +351,18 @@ label start:
         label choix_Bryan2:
             B "Arrête de me regarder en rigolant, tu sais très bien que je serai le best survivor !"
             J "Je suis désolé mais celui d’entre nous qui durera le moins longtemps, c’est toi."
+            hide bryan_drague
+            show bryan_colere:
+                xalign 0.9
             B "Mais n’importe quoi ! Je suis le seul qui fait du sport, vous allez être tellement lent que vous allez crever en moins de deux."
             B "Regarde Anna, même réfléchir ça lui prend du temps, alors je te dis pas si il faut qu’elle court !"
             A "Hé ! Va te faire ! Assume-le, t’es juste trop con, tu tomberais dans tous les pièges."
+            hide anna_normal
+            show anna_colere:
+                xalign 0.1
             B "Humpf… Je savais que ça allait être un jeu de merde de toute manière..."
-
+            hide bryan_colere
+            hide anna_colere
             $relationJtoB -= 1
 
             jump suite5
@@ -328,11 +371,14 @@ label start:
             J "Bah, écoute..."
             A "Hé, arrête de me fixer comme ça, si il y en a bien une qui peut survivre c’est bien moi !"
             J "Alors oui, mais tu n’es pas assez sportive. Si on se fait attaquer, je pense que celle qui a le moins de chance..."
+            hide anna_normal
+            show anna_colere:
+                xalign 0.1
             A "Sans moi vous ne durerez pas plus de quelques jours."
             B_murmure "Tu parles, sans toi, putain, on serait tranquille..."
             A "Tu viens de dire quoi là ?"
             K "Bryan laisse-la tranquille un peu, tu veux ?"
-
+            hide anna_colere
             $relationJtoA -= 1
 
             jump suite5

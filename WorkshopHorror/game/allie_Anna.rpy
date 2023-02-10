@@ -13,17 +13,17 @@
     J "Bryan n’a pas totalement tort, tu sais... On ne doit pas perdre de temps."
     A "Je sais... mais je ne veux pas risquer de faire une erreur. On n’a pas de deuxième chance..."
 
-    if (relationJtoK >= 0 and blessure_kim = 1):
+    if (relationJtoK >= 0 and blessure_kim == 1):
         A "Hé d’ailleurs, quand j’ai aidé Kim elle m’a demandé de te donner ça... Je pense que ça pourrait nous être utile... Tiens, prends-la !"
         E "Anna tend à Jason une lampe torche."
         $ torche = True
 
-    else if (relation JtoK < 0 and blessure_kim = 1):
+    elif (relationJtoK < 0 and blessure_kim == 1):
         A "Hé d’ailleurs, quand j’ai aidé Kim elle m’a confié ça... Je pense que ça nous sera utile."
         E "Anna montre une lampe torche."
         $ torche = False
 
-    else if (blessure_kim = 2) :
+    elif (blessure_kim == 2) :
         A "Hé d’ailleurs, je viens de trouver ça dans la cave... Je pense que ça nous sera utile."
         E "Anna montre une lampe torche."
         $ torche = False
@@ -38,10 +38,10 @@
     J "Qu’est-ce qui se passe..."
 
     if (torche == True):
-    E "Allumant sa lampe torche, Jason passe devant, avançant doucement à pas feutré jusqu'au hall d'entrée de la maison."
+        E "Allumant sa lampe torche, Jason passe devant, avançant doucement à pas feutré jusqu'au hall d'entrée de la maison."
 
     elif (torche == False):
-    E "Allumant sa lampe torche, Anna passe devant, balayant le sol de son faisceau avec une prudence exacerbée."
+        E "Allumant sa lampe torche, Anna passe devant, balayant le sol de son faisceau avec une prudence exacerbée."
     
     J "T’as une idée de qui pourrait avoir fait ça, toi ?"
     A "Aucune idée. Et je n'ai pas envie de le savoir. Plus vite on sera parti d'ici, plus vite on pourra oublier ça."
@@ -57,17 +57,17 @@
 
     if(vu_fenetre_ouverte == False):
 
-    A "Elle n’était pas fermée tout à l’heure celle-là ?"
-    J "Si. Si, je crois bien." 
+        A "Elle n’était pas fermée tout à l’heure celle-là ?"
+        J "Si. Si, je crois bien." 
 
-    jump fenetre_ouverte_Anna
+        jump fenetre_ouverte_Anna
 
     if(vu_fenetre_ouverte == True):
     
-    A "C'est la même fenêtre que tout à l'heure..."
-    J "Ca commence à devenir extrêmement flippant."
+        A "C'est la même fenêtre que tout à l'heure..."
+        J "Ca commence à devenir extrêmement flippant."
 
-    jump fenetre_ouverte_Anna
+        jump fenetre_ouverte_Anna
 
 label fenetre_ouverte_Anna:
 
@@ -92,7 +92,7 @@ label fenetre_ouverte_Anna:
 
     elif (torche == False):
     
-    J "Hé, je crois que j’ai une idée !"
+        J "Hé, je crois que j’ai une idée !"
     
         if (relationJtoA >= 0):
 

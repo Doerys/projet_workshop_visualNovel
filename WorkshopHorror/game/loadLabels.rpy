@@ -12,17 +12,28 @@ label selectCraft :
             jump openAppart
     
     if (act_label == 'openCuisine' or act_label == 'openSalon' or act_label == 'openAffairesKim') :
-        if (livreRecette.selected == True):
-            show livreRecetteContenu
-        if (mdpCarnet.selected == True):
-            show mdpCarnetContenu
+        if livreRecette.selected == True:
+            $ livreRecetteSelect = True
+            $ mdpCarnetSelect = False
+            $ lettreCoquineSelect = False
+        elif mdpCarnet.selected == True:
+            $ mdpCarnetSelect = True
+            $ livreRecetteSelect = False
+            $ lettreCoquineSelect = False
+        elif lettreCoquine.selected == True:
+            $ lettreCoquineSelect = True
+            $ mdpCarnetSelect = False
+            $ livreRecetteSelect = False
         else :
-            if(act_label == 'openCuisine'):
-                jump openCuisine
-            if(act_label == 'openAffairesKim'):
-                jump openAffairesKim
-            else :
-                jump openSalon
+            $ livreRecetteSelect = False
+            $ mdpCarnetSelect = False
+            $ lettreCoquineSelect = False
+        if(act_label == 'openCuisine'):
+            jump openCuisine
+        if(act_label == 'openAffairesKim'):
+            jump openAffairesKim
+        else :
+            jump openSalon
 
 label slotSelect0 :
     $ inventory.selectItem(0)
@@ -278,6 +289,39 @@ label openAffairesKim :
     if (canGetItemSoin.count(lettreCoquine)>0):
         show screen lettreCoquine
 
+    if (livreRecetteSelect == True) :
+        hide screen mdpCarnetContent
+        hide screen lettreCoquineContent
+        hide screen photoNancy
+        show livreRecetteContent :
+            xpos 0
+            ypos 400
+    else :
+        hide livreRecetteContent
+
+    if (mdpCarnetSelect == True) :
+        hide screen livreRecetteContent
+        hide screen lettreCoquineContent
+        
+        show mdpCarnetContent :
+            xpos 600
+            ypos 500
+    else :
+        hide mdpCarnetContent
+
+    if (lettreCoquineSelect == True) :
+        hide screen livreRecetteContent
+        hide screen mdpCarnetContent
+        hide screen photoNancy
+        show lettreCoquineContent :
+            xpos 350
+            ypos 1000
+
+        J_think "Qu'est-ce que c'est que ça ?! 'B' ? Est-ce que ce serait... ?"
+
+    else :
+        hide lettreCoquineContent
+
     call screen inventory 
 
 label openTiroirCasse :
@@ -296,17 +340,18 @@ label openTiroirCasse :
 
     elif(tiroirForce == True):
 
-        $ act_label = 'openTiroirCasse'
+        if (canGetItemSoin.count(mdpCarnet) > 0):
 
-        hide screen partir
-        hide screen tiroirCasse
-        hide screen affairesKim
+            $ possible = inventory.addItem(mdpCarnet)
+            if (possible) :
+                $ canGetItemSoin.remove(mdpCarnet)
+                J_think "Un carnet de mots de passe..."
+            else :
+                J_think "Je ne peux pas prendre ça..." 
+        else :
+            J_think "J'ai déjà tout récupéré..."
 
-        scene tiroir_casse
-        show screen flecheSalon
-
-        if (canGetItemSoin.count(mdpCarnet)>0):
-            show screen mdpCarnet
+        jump openSalon
 
     else :
         J_think "Je dois pouvoir forcer ce tiroir..."
@@ -365,12 +410,45 @@ label openSalon :
 
     
     scene salon
-      
+    
     show screen affairesKim
     show screen tiroirCasse
     show screen partir
 
     show screen flecheCuisine
+
+    if (livreRecetteSelect == True) :
+        hide screen mdpCarnetContent
+        hide screen lettreCoquineContent
+        hide screen tiroirCasse
+        show livreRecetteContent :
+            xpos 0
+            ypos 400
+    else :
+        hide livreRecetteContent
+
+    if (mdpCarnetSelect == True) :
+        hide screen livreRecetteContent
+        hide screen lettreCoquineContent
+        hide screen tiroirCasse
+        show mdpCarnetContent :
+            xpos 600
+            ypos 500
+    else :
+        hide mdpCarnetContent
+
+    if (lettreCoquineSelect == True) :
+        hide screen livreRecetteContent
+        hide screen mdpCarnetContent
+        hide screen tiroirCasse
+        show lettreCoquineContent :
+            xpos 350
+            ypos 1000
+
+        J_think "Qu'est-ce que c'est que ça ?! 'B' ? Est-ce que ce serait... ?"
+
+    else :
+        hide lettreCoquineContent
     
     
     call screen inventory
@@ -379,15 +457,13 @@ label openSalon :
 
 label openTiroirCuisine :
 
-    $ act_label = 'openTiroirCuisine'
-
-    hide screen tiroirCuisine
-    hide screen livreRecette
-    hide screen partir
-    hide screen infirmerie
-    hide screen flecheSalon
-
     if (canGetItemSoin.count(ciseaux) > 0):
+
+        hide screen tiroirCuisine
+        hide screen livreRecette
+        hide screen partir
+        hide screen infirmerie
+        hide screen flecheSalon
 
         scene tiroir_cuisine
 
@@ -405,20 +481,14 @@ label openTiroirCuisine :
 label openInfirmerie :
 
     if (cadenaOpen):
-        $ act_label = 'openInfirmerie'
-
-        hide screen tiroirCuisine
-        hide screen livreRecette
-        hide screen partir
-        hide screen infirmerie
-
-        scene infirmerie
 
         if (canGetItemSoin.count(trousse) > 0):
 
             $ possible = inventory.addItem(trousse)
             if (possible) :
                 $ canGetItemSoin.remove(trousse)
+                $ troussedeSoin = 1
+                J_think "J'ai trouvé la trousse de soin !"
             else :
                 J_think "Je ne peux pas prendre ça..."
         else :
@@ -430,14 +500,22 @@ label openInfirmerie :
 
     else :
 
-        show cadena
-        python :
-            code = renpy.input("Quel est le code", length=4)
+        show cadena :
+            xpos 800
+            ypos 400
 
-        if (code == "1234") :
+        J_think "Le premier est chiffre est bloqué sur 0, il doit faire partie du code..." 
+
+        python :
+            code = renpy.input("Code du cadenas", length=5, default='0')
+
+        if (code == "09201") :
             $ cadenaOpen = True 
-            $ inventory.removeItem(mdpCarnet)
-            $ inventory.removeItem(livreRecette)
+            if (inventory.getInv().count(mdpCarnet)>0):
+                $ inventory.removeItem(mdpCarnet)
+            if (inventory.getInv().count(livreRecette)>0):
+                $ inventory.removeItem(livreRecette)
+
             J_think "Ça a marché !" 
             jump openCuisine
         else :
@@ -467,17 +545,56 @@ label openCuisine :
     hide screen tiroirCasse
     hide screen partir
     hide screen affairesKim
+    hide livreRecetteContent
     
 
     scene cuisine_nuit
-        
+    
     show screen infirmerie
     show screen tiroirCuisine
-    show screen livreRecette
+    if (canGetItemSoin.count(livreRecette)>0):
+        show screen livreRecette
     show screen partir
     show screen flecheSalon
+
+    if (livreRecetteSelect == True) :
+        hide screen tiroirCuisine
+        hide screen mdpCarnetContent
+        hide screen lettreCoquineContent
+        show livreRecetteContent :
+            xpos 0
+            ypos 400
+    else :
+        hide livreRecetteContent
+
+    if (mdpCarnetSelect == True) :
+        hide screen tiroirCuisine
+        hide screen livreRecetteContent
+        hide screen lettreCoquineContent
+        hide screen livreRecette
+        show mdpCarnetContent :
+            xpos 600
+            ypos 500
+    else :
+        hide mdpCarnetContent
+
+    if (lettreCoquineSelect == True) :
+        hide screen tiroirCuisine
+        hide screen livreRecetteContent
+        hide screen mdpCarnetContent
+        hide screen livreRecette
+        show lettreCoquineContent :
+            xpos 350
+            ypos 1000
+
+        J_think "Qu'est-ce que c'est que ça ?! 'B' ? Est-ce que ce serait... ?"
+        
+    else :
+        hide lettreCoquineContent
     
     call screen inventory
+
+
 
 
 

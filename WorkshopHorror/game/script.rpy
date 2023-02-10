@@ -220,7 +220,7 @@ label start:
         play music "audio/Music/Soiree1.mp3" loop fadeout 1
 
         scene entree
-        show kim_content:
+        show kim_content_j:
             yalign -0.5
 
         K "Ah bah enfin te voilà ! T'es le dernier à arriver, on a cru que tu allais oublier la soirée !"
@@ -261,11 +261,11 @@ label start:
         label suite3 :
             scene salon_jour
             with dissolve
-            show kim_normal:
+            show kim_normal2_j:
                 xalign 0.5
-            show bryan_drague:
+            show bryan_dragueur_j:
                 xalign 0.9
-            show anna_normal:
+            show anna_normal_j:
                 xalign 0.1
             E "Dans le salon, Bryan et Anna sont tous les deux assis autour d'une table où quelques bouteilles d'alcool ont déjà été vidées."
             B "Hééééé ! Mais c'est l'autre qui se décide enfin à arriver ! Viens dépêches-toi, je te sers un verre, il faut que tu me rattrapes !"
@@ -288,30 +288,30 @@ label start:
         
         label choix_Bryan:
             J "Elle est nulle la question… Pour moi ça restera toujours Bryan. Il a beau être un peu con, il me colle au train depuis trop longtemps pour que je le laisse de côté."
-            hide bryan_drague
-            show bryan_content:
+            hide bryan_dragueur_j
+            show bryan_confiant_j:
                 xalign 0.9
-            hide kim_normal
-            show kim_colere:
+            hide kim_normal2_j
+            show kim_colere_j:
                 xalign 0.5
             B "Ah ! Vous voyez je vous l’avais dit ! Il fait passer la famille avant le coeur !"
             K "Ouais, je vois ça… Je vois surtout qu’il va finir par dormir tout seul ce soir..."
 
             $relationJtoB += 1
-            hide bryan_content
-            hide kim_colere
-            hide anna_normal
+            hide bryan_confiant_j
+            hide kim_colere_j
+            hide anna_normal_j
 
             jump suite4
 
         label choix_Anna:
             J "En vrai, si je dois choisir entre vous trois… je pense que je prendrai Anna."
             B "Hé ! C’est quoi ce choix de merde là !"
-            hide bryan_drague
-            show bryan_colere:
+            hide bryan_dragueur_j
+            show bryan_colere_j:
                 xalign 0.9
-            hide anna_normal
-            show anna_contente:
+            hide anna_normal_j
+            show anna_content_j:
                 xalign 0.1
             J "Non mais juste réfléchis un peu : elle est la plus calme, elle est la plus réfléchie d’entre nous, si il y a bien une personne qui peut me sauver le cul sans trembler c’est bien elle !"
             A "Et faut arrêter d’être jaloux Bryan. Elle baisse ta cote, assume-le, il préfère passer par d’autres gens que par toi."

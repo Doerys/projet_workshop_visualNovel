@@ -334,6 +334,9 @@ label combat_SK:
     scene entree_nuit
     with dissolve
 
+    show sk_normal3_n:
+        xalign 0.5
+
     if (menacer_psychopathe):
         if (torche):
             menu:

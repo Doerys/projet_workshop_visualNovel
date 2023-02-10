@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/arcTelephoneAnna.rpy", line 155: else clause expects a non-empty block.
-    else:
-         ^
+File "game/allie_Bryan.rpy", line 338: expected statement.
+    xalign 0.5
+            ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Feb 10 13:20:34 2023
+Fri Feb 10 14:20:24 2023

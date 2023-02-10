@@ -1,12 +1,12 @@
 J "Kim ! Regarde-moi… Bordel, Bryan vient m’aider ! Elle se vide de son sang !"
 B "Appuie sur ses plaies, il faut que l’on trouve de quoi bander vite !"
-
-if #(troussedeSoin =False):
-    jump postTelephone
-elif #(truc on est avec bryan):
-    jump postSoinsBryan
-else:
-    jump postSoinsSeul
+#
+#if (troussedeSoin == 1):
+#    jump postTelephone
+#elif (#truc on est avec bryan):
+#    jump postSoinsBryan
+#else:
+#    jump postSoinsSeul
 
 label postTelephone:
     #Son manquant à la sonothèque, cri d'un homme
@@ -49,7 +49,7 @@ label fuiteEnsemble:
     E "Vous tirez Anna par le bras et vous vous enfuyez."
     E "Derrière vous, la femme se lance à votre poursuite."
     menu:
-        "Porter Kim"
+        "Porter Kim":
             jump porterKim
         
         "Faire diversion":
@@ -81,9 +81,9 @@ label confrontationTueuse:
     J "La police va arriver, ok ? Alors tire-toi putain !"
     E "Reculant dans les arbres, vous vous cognez à l’un d’entre eux."
     E "La femme se rapproche, tend le bras, et vous assène un violent coup. Vous vous effondrez, inconscient."
-    if (relationJtoA >= 100):
+    #if (relationJtoA >= 100):
         #Anna et Kim survivent
-    else:
+    #else:
         #Anna survit, Kim meurt
 
 label sauvetageBryan:
@@ -125,9 +125,10 @@ label lamentationNancy:
 label postSoinsSeul:
     menu:
         "Sauver Kim":
-
+            jump saveKim
         "Sauver Anna":
-
+            jump saveAnna
+            
 label saveKim:
     J "Hé, je reste avec toi alors ne me laisse pas, ok ?"
     E "Vous utilisez le contenu de la trousse pour sauver Kim."

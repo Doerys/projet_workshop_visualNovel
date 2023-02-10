@@ -102,7 +102,7 @@ label start:
 
     # ouverture interface portable OU fondu au noir avec scène scindé, chaque perso sur son téléphone
 
-    show nancy_normal:
+    show telephone_appel:
         xalign 1.5 yalign -0.5
         linear 0.8 xalign 0.9
 
@@ -197,7 +197,7 @@ label start:
 
         play sound "audio/Sounds/Phone off.mp3"
 
-        hide nancy_normal with dissolve
+        hide telephone_appel with dissolve
 
         J_think "Bon, il ne me reste plus beaucoup de temps. Kim m’a donné sa liste, si j’oublie le moindre objet, c’est un coup à ce que la soirée parte en vrille. J’espère juste que Bryan et Anna arriveront à se tenir."
 

@@ -15,6 +15,9 @@
 
 #Prévoir K_murmure
 
+scene jour
+with dissolve
+
 E "Ensemble, à pas feutrés, les quatres amis se rendent sur le palier de l’entrée, dévoilant sous leurs yeux une fenêtre légèrement entrouverte."
 A "Tu vois que ce n’était rien, juste la fenêtre ouverte..."
 K_murmure "Je n’avais pas laissé la fenêtre ouverte pourtant..."

@@ -8,6 +8,10 @@
     A "Jason, si tu veux m’aider, c’est maintenant ou jamais !"
     J "J’arrive ! Juste Bryan... Fais moi confiance. S’il te plait. Le temps qu’on soit parti, essaie de maintenir la pression, assure-toi qu’elle reste en sécurité ici. On va faire vite."
     B "Ouais, ouais... C’est ça... Allez-y, mais dépêchez-vous. Par pitié, grouillez-vous !"
+
+    scene escalier
+    with dissolve
+
     E "Sans perdre un instant, Anna et Jason remontent les escaliers en direction du rez-de-chaussée."
     A "Hé, Jason... Merci de m’avoir écouté..."
     J "Bryan n’a pas totalement tort, tu sais... On ne doit pas perdre de temps."
@@ -29,6 +33,9 @@
         $ torche = False
 
     J "Ok, parfait."
+
+    scene couloir_nuit
+    with dissolve
 
     E "Le duo grimpe l'escalier menant hors de la cave, pour arriver dans un couloir."    
     J "Euh... Anna... ôte moi d’un doute, les lumières étaient éteintes tout à l’heure ?"
@@ -71,6 +78,8 @@
 
 label fenetre_ouverte_Anna:
 
+    scene fenetre_nuit
+    with dissolve
 
     A "Vas-y, va la fermer..."
     E "Peu rassuré, Jason s'avance vers la fenêtre." 
@@ -201,6 +210,10 @@ label chouette2:
     A "Il faut qu'on atteigne sa chambre, à l'étage. On pourra appeler les secours avec ce téléphone."
     J "Ok, allons voir ça !"
     A_murmure "Attends ! Ne. Bouge. Surtout. Pas." #(chuchote, doucement)
+
+    scene porte_entree
+    with dissolve
+
     E "De l’autre côté de la porte d’entrée, des bruits de pas commencent à crisser sous des semelles de chaussures."
     J_murmure "Tu crois que c’est lui ?" 
     A_murmure "Chut ! Tais-toi !"
@@ -213,13 +226,174 @@ label chouette2:
         "Bloquer la porte":
             jump bloquer_Anna
 
+label menacer_Anna:
+    E "Plus ils attendent, plus les bruits de pas commencent à s’approcher dangereusement de la porte."
+    A_murmure "Il va rentrer !"
+    J "Euh... N’entrez pas ! On est armés, et euh... on n’hésitera pas à vous tirer dessus !"
+    A_murmure "Mais arrête Bryan, ça ne marche pas ton truc !"
+    J "Arrêtez d’avancer ! Stop !"
+    E "Les bruits de pas, lents et sinistres, continuaient inlassablement d’avancer jusqu’au pas de la porte."
+
+    $menacer_psychopathe = True
+
+    scene tueur
+    with dissolve
+
+    E "Doucement le bruit de la poignée grince dans l’entrée de la maison, laissant apparaître dans l’encadrement de la porte une jeune femme vêtue d’une robe et le visage caché par un masque blanc, tenant un couteau à la main."
+
+    jump combat_SK_Anna
+
+label bloquer_Anna:
+
+    E "Plus ils attendent, plus les bruits de pas commencent à s’approcher dangereusement de la porte."
+    J_murmure "Il va rentrer !"
+    J "J’ai une idée !"
+    E "D’un bon, Jason jette son corps sur la porte en bois. Il peut alors sentir des coups frénétiques contre la porte, comme si la personne plantait sa lame dans l’espoir de la faire traverser."
+    A "On ne va pas pouvoir rester comme ça très longtemps !"
+    J "Tu vois une autre idée, toi ?"
+    A "Merde... Réfléchis, réfléchis, réfléchis..."
+    A "Je vois pas d'autres solutions, mais Kim est en danger ! On doit appeler les secours au plus vite ! Je vais te devoir te laisser."
+    J "Quoi ?"
+    A " Tiens bon, je vais les contacter !"
+    J "Qu’est-ce que tu fais ? Anna, non !"
+    E "Enjambant la fenêtre ouverte, Anna plonge dans l’obscurité de la nuit. Les coups continuent de résonner contre la porte, avant de cesser au bout d'une minute. Le silence."
+    E "Jetant un coup d'oeil à travers la serrure de la porte, Jason ne voit personne. Il est désormais seul."
+
+    jump pointNclicChambreSeul #point and clic sans allié
 
 label se_cacher_Anna:
 
+    J_murmure "Viens avec moi. Doucement."
+    E "Le plus discrètement possible, les deux amis reculent, recroquevillés sur eux-mêmes."
+    J_murmure "On n’a pas le choix, va dans le couloir. Maintenant !"
+    A_murmure "Non ! Si elle nous entend, on peut être sûr qu’elle finira par buter Kim !"
+    J_murmure "Fais moi confiance, je sais ce que je fais, Jason ! Vite !"
+    E "A contre-coeur, Anna accepte et suit les instructions de Jason. A peine ont-ils le temps de se cacher que la porte s’ouvre."
+
+    scene tueur
+    with dissolve
+
+    pause 1
+
+    scene cachette_placard
+    with dissolve
+
+    A_murmure "Attends, ne ferme pas la porte..."
+    A_murmure "Il faut voir qui c’est !"
+    J_murmure "Regarde, on dirait une femme."
+    A_murmure "Une femme ? Tu connais une femme qui serai capable de planter Kim, toi ?"
+    J_murmure "Non... Maintenant tais-toi, on va se faire chopper..."
+    A_murmure "Pourquoi, t’as un plan de génie pour nous sortir de la maison, peut-être ?"
+    J_murmure "Sortir peut-être pas, mais oui j’ai un plan !"
+
+    if (relationJtoA < 0):
+        jump se_cacher_Anna2
+    else :
+        jump plan_fuite_Anna
 
 
-label menacer_Anna:
+label plan_fuite_Anna:
+    J_murmure "Alors voilà mon plan ! Si tu..."
+    J "Héééééééééé !" cri
+    E "Anna pousse Jason contre la porte, faisant tomber son ami dans le hall d’entrée. Au-dessus de lui, la femme est entrée."
 
+    scene entree_nuit
+    with dissolve
 
+    if (torche  == True):
+        menu:
+            "Fuir":
+                jump vase
+            "Eblouir avec la lampe torche":
+                E "Au sol, Jason n’a pas le temps de se relever lorsque la femme vient se placer au-dessus de lui."
+                E "Fouillant le sol de sa main, ses doigts rencontrent sa lampe torche."
+                J_shout "Mange toi ça salope !"
+                E "La femme est aveuglée ! Profitant des quelques secondes de répit, Jason se relève et court aussi vite que possible dans la maison."
+                jump pointNclicChambreSeul
+    else :
+        jump vase
+
+label se_cacher_Anna2:
+    J_murmure "Reste silencieuse... Ne fait aucun bruit... A partir du moment où elle passera à côté de nous, là on aura le dessus sur elle. A deux contre un, dans son dos, on peut l’avoir !"
+    A_murmure "Je te fais confiance, ok..."
+    J_murmure "Ok, reste derrière moi. Logiquement, elle ne sait pas qu’on est ici... Reste. Cachée."
+    E "Anna reste cachée derrière Jason. Les yeux rivés sur la femme masquée, celle-ci avance d’un pas lent vers le couloir de la maison. "
+    A_murmure "Où est-ce qu’elle va ?"
+    J_murmure "Elle doit nous chercher dans le salon, elle ne doit pas penser qu’on se trouve ici..."
+
+    jump 
 
 label bloquer_Anna:
+    E "Plus ils attendent, plus les bruits de pas commencent à s’approcher dangereusement de la porte."
+    A_murmure "Il va rentrer ! Oh mon dieu, elle va rentrer !"
+    J "J’ai une idée ! Fais comme moi, vite !"
+    E "D’un bon, Bryan jette son corps sur la porte en bois. Faisant de même, Anna pouvait sentir contre la porte quelques coups, comme si la personne plantait sa lame dans l’espoir de la faire traverser."
+    N "Laissez-moi entrer..."
+    N "Laissez-moi entrer..." #plus vite
+    N "Laissez-moi entrer..." #tres vite et gras et cri
+    A "On ne va pas pouvoir rester comme ça très longtemps !"
+    J "Tu vois une autre idée, toi ?"
+    A "Réfléchis, réfléchis, réfléchis..."
+    A "Hé Jason ? Si je te laisse le temps d’aller chercher le téléphone, tu m’assures que tu y arriveras ?"
+    J "Quoi ?"
+    B "Profites-en pour aller chercher ce téléphone."
+    J "Qu’est-ce que tu fais ? Anna, non !"
+    E "S’élançant à travers la vitre ouverte, Anna plonge dans l’obscurité de la nuit, entraînant derrière elle l’agresseur. Profitant de l’instant, Jason se précipita dans la maison, se rendant dans la chambre pour y trouver le téléphone."
+        jump pointNclicChambreSeul
+
+label vase:
+    E "Poussant sur ses bras pour se relever, Jason tombe nez à nez face à la femme. Plus petite que lui, plus frêle. Tétanisé, il n’a pas le temps de s’échapper avant que la femme n’abatte un énorme vase sur sa tête. Inconscient, il tombe au sol."
+    #FONDU AU NOIR
+    E "Lorsqu’il se réveille, l’entrée est vide. Plus aucune trace de la femme, ni d’Anna."
+    jump pointNclicChambreSeul
+
+
+label combat_SK_Anna:
+
+    if (menacer_psychopathe = True):
+        if (torche == True):
+        menu:
+            "Rester caché":
+                jump rester_cache_Anna
+            "L'aveugler avec la lampe":
+                jump aveugler_Anna
+            "Fuir":
+                jump fuite_Anna
+        else : 
+        menu:
+            "Rester caché":
+                jump rester_cache_Anna
+            "Fuir":
+                jump fuite_Anna
+
+    else if (menacer_psychopathe = False):
+        if (torche == True):
+        menu:
+            "Rester caché":
+                jump rester_cache_Anna
+            "L'aveugler avec la lampe":
+                jump aveugler_Anna
+            "Fuir":
+                jump fuite_Anna
+        else : 
+        menu:
+            "Rester caché":
+                jump rester_cache_Anna
+            "Fuir":
+                jump fuite_Anna
+
+
+label aveugler_Anna:
+
+label fuite_Anna:
+
+label rester_cache_Anna:
+
+
+
+
+
+
+label pointNclicChambreSeul:
+
+label pointNclicChambreAllie:

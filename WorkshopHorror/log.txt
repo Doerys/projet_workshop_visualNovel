@@ -1,418 +1,117 @@
-Fri Feb 10 02:19:35 2023
+Fri Feb 10 07:39:45 2023
 Windows-10-10.0.19045
 Ren'Py 8.0.3.22090809
  
 
-Bootstrap to the start of init.init took 0.05s
+Bootstrap to the start of init.init took 0.08s
 Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.88s
-Loading save slot metadata. took 0.04s
-Loading persistent took 0.00s
-
-File "game/arcSauvetageKim.rpy", line 4: reached end of line when expecting ':'.
-    if 
-       ^
-
-File "game/arcSauvetageKim.rpy", line 6: expected statement.
-    elif 
-         ^
-
-File "game/arcSauvetageKim.rpy", line 8: expected statement.
-    else:
-        ^
-
-File "game/arcSauvetageKim.rpy", line 52: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Porter Kim"
-                ^
-
-File "game/arcSauvetageKim.rpy", line 84: if statement expects a non-empty block.
-    if (relationJtoA >= 100):
-                             ^
-
-File "game/arcSauvetageKim.rpy", line 86: expected statement.
-    else:
-        ^
-
-File "game/arcSauvetageKim.rpy", line 127: choice menuitem expects a non-empty block.
-    "Sauver Kim":
-                 ^
-
-File "game/choixAnna.rpy", line 54: Indentation mismatch.
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.53s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 170.82s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.85s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/arcSauvetageKim.rpy", line 52: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Porter Kim"
-                ^
-
-File "game/arcSauvetageKim.rpy", line 84: if statement expects a non-empty block.
-    if (relationJtoA >= 100):
-                             ^
-
-File "game/arcSauvetageKim.rpy", line 86: expected statement.
-    else:
-        ^
-
-File "game/arcSauvetageKim.rpy", line 127: choice menuitem expects a non-empty block.
-    "Sauver Kim":
-                 ^
-
-File "game/choixAnna.rpy", line 54: Indentation mismatch.
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.41s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 172.43s
-Early init took 0.00s
-Loader init took 0.07s
+Loader init took 0.06s
 Loading error handling took 0.05s
-Loading script took 0.85s
-Loading save slot metadata. took 0.02s
+Loading script took 0.70s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 
-File "game/arcSauvetageKim.rpy", line 52: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Porter Kim"
-                ^
-
-File "game/arcSauvetageKim.rpy", line 84: if statement expects a non-empty block.
-    if (relationJtoA >= 100):
-                             ^
-
-File "game/arcSauvetageKim.rpy", line 86: expected statement.
-    else:
-        ^
-
-File "game/arcSauvetageKim.rpy", line 127: choice menuitem expects a non-empty block.
-    "Sauver Kim":
-                 ^
-
-File "game/choixAnna.rpy", line 54: Indentation mismatch.
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+File "game/choixAnna.rpy", line 45: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
     menu:
     ^
 
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
+File "game/choixAnna.rpy", line 127: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    menu:
+    ^
+DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Interface start took 0.41s
+Interface start took 0.61s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
 Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 516.94'
 Display Info: None
 Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 185.55s
+Bootstrap to the start of init.init took 6.32s
 Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.84s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.43s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 
-File "game/arcSauvetageKim.rpy", line 84: if statement expects a non-empty block.
-    if (relationJtoA >= 100):
-                             ^
-
-File "game/arcSauvetageKim.rpy", line 86: expected statement.
-    else:
-        ^
-
-File "game/arcSauvetageKim.rpy", line 127: choice menuitem expects a non-empty block.
-    "Sauver Kim":
-                 ^
-
-File "game/choixAnna.rpy", line 54: Indentation mismatch.
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+File "game/choixAnna.rpy", line 45: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
     menu:
     ^
 
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
+File "game/choixAnna.rpy", line 127: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    menu:
+    ^
+DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Interface start took 0.41s
+Interface start took 0.51s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
 Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 516.94'
 Display Info: None
 Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 187.16s
+Bootstrap to the start of init.init took 7.63s
 Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.87s
-Loading save slot metadata. took 0.02s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
 Loading persistent took 0.00s
 
-File "game/arcSauvetageKim.rpy", line 84: if statement expects a non-empty block.
-    if (relationJtoA >= 100):
-                             ^
-
-File "game/arcSauvetageKim.rpy", line 86: expected statement.
-    else:
-        ^
-
-File "game/arcSauvetageKim.rpy", line 127: choice menuitem expects a non-empty block.
-    "Sauver Kim":
-                 ^
-
-File "game/choixAnna.rpy", line 54: Indentation mismatch.
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+File "game/choixAnna.rpy", line 45: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
     menu:
     ^
 
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
+File "game/choixAnna.rpy", line 127: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    menu:
+    ^
+DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Interface start took 0.44s
+Interface start took 0.51s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
 Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 516.94'
 Display Info: None
 Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 216.78s
+Bootstrap to the start of init.init took 8.92s
 Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.85s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.42s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 
-File "game/arcSauvetageKim.rpy", line 127: choice menuitem expects a non-empty block.
-    "Sauver Kim":
-                 ^
-
-File "game/choixAnna.rpy", line 54: Indentation mismatch.
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+File "game/choixAnna.rpy", line 45: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
     menu:
     ^
 
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.40s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 218.38s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.87s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/arcSauvetageKim.rpy", line 127: choice menuitem expects a non-empty block.
-    "Sauver Kim":
-                 ^
-
-File "game/choixAnna.rpy", line 54: Indentation mismatch.
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+File "game/choixAnna.rpy", line 127: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
     menu:
     ^
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.42s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 264.20s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.86s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/choixAnna.rpy", line 54: Indentation mismatch.
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.40s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 265.80s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.86s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/choixAnna.rpy", line 54: Indentation mismatch.
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
+DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
 Interface start took 0.52s
@@ -422,336 +121,4322 @@ primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
 Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 516.94'
 Display Info: None
 Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 429.31s
+Bootstrap to the start of init.init took 30.49s
 Early init took 0.00s
 Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.81s
+Loading error handling took 0.03s
+Loading script took 0.53s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
-
-File "game/choixAnna.rpy", line 131: Indentation mismatch.
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.41s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 430.87s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.83s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/choixAnna.rpy", line 131: Indentation mismatch.
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.43s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 514.99s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.83s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/choixAnna.rpy", line 29: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Accompagner Kim discrètement"
-                                  ^
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.40s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 516.57s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.87s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/choixAnna.rpy", line 29: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Accompagner Kim discrètement"
-                                  ^
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.41s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 531.19s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.84s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.41s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 532.79s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.82s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.41s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 556.50s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.86s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.41s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 558.10s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.05s
-Loading script took 0.82s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Interface start took 0.41s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 516.94'
-Display Info: None
-Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 592.84s
-Early init took 0.00s
-Loader init took 0.07s
-Loading error handling took 0.04s
-Loading script took 0.86s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\marin\\Docuement\\Workshop2\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.10s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.11s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\marin\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
-Dump and make backups. took 0.07s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.12s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.500000
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.34s
+Creating interface object took 0.42s
 Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.01s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
 Save pyanalysis. took 0.02s
-Save bytecode. took 0.04s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.05s
+Interface start took 0.06s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
 Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1060 6GB/PCIe/SSE2'
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 397.75s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.11s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.45s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 436.28s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.43s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 441.12s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.22s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 475.10s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 522.47s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.41s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 527.51s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.26s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.41s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 550.68s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.22s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 600.22s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.24s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 640.05s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.36s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.42s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 692.57s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.45s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 699.09s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.32s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.41s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 722.28s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.37s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.41s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 782.37s
+Early init took 0.00s
+Loader init took 0.08s
+Loading error handling took 0.03s
+Loading script took 0.25s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Dump and make backups. took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.42s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.09s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 793.45s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.33s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.42s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 874.37s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.32s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 961.11s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.32s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1000.99s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.44s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1003.10s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.32s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.39s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1129.30s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.25s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Bryan.rpy", line 356: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        J_murmure "Hé, j’ai une idée débile, mais ça peut marcher ! Je vais utilise ma lampe torche pour l’aveugler. 
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.58s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1134.09s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.32s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.07s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1213.26s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.29s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Bryan.rpy", line 364: end of line expected.
+    scene entree_ouverte.png
+                        ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1291.86s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.47s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1304.44s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.33s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.42s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1317.04s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1350.80s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1384.62s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.33s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.45s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1416.85s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.33s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1482.42s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.41s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1488.98s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1521.25s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.33s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1532.34s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.33s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1567.60s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1663.44s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.48s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1733.55s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.11s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1783.96s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.40s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 1845.02s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.42s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2027.11s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.41s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.10s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2094.08s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'C:\\Users\\Yann\\Downloads\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Yann\\AppData\\Roaming/RenPy/backups\\WorkshopHorror':
+Dump and make backups. took 0.10s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.55s
+Cleaning stores took 0.00s
+Init translation took 0.08s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.12s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2404.97s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 232: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 253: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    A_murmure "Viens avec moi. Doucement."
+    ^
+
+File "game/allie_Anna.rpy", line 280: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/drive-download-20230210T071624Z-001/allie_Anna_John.rpy", line 216: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/drive-download-20230210T071624Z-001/allie_Anna_John.rpy", line 221: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/drive-download-20230210T071624Z-001/allie_Anna_John.rpy", line 270: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2427.84s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.32s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 231: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 252: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    A_murmure "Viens avec moi. Doucement."
+    ^
+
+File "game/allie_Anna.rpy", line 279: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 309: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+
+File "game/drive-download-20230210T071624Z-001/allie_Anna_John.rpy", line 216: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/drive-download-20230210T071624Z-001/allie_Anna_John.rpy", line 221: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/drive-download-20230210T071624Z-001/allie_Anna_John.rpy", line 270: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2434.13s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 231: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 252: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    A_murmure "Viens avec moi. Doucement."
+    ^
+
+File "game/allie_Anna.rpy", line 279: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 309: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+
+File "game/drive-download-20230210T071624Z-001/allie_Anna_John.rpy", line 216: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/drive-download-20230210T071624Z-001/allie_Anna_John.rpy", line 221: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/drive-download-20230210T071624Z-001/allie_Anna_John.rpy", line 270: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.57s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2440.41s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 231: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 252: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    A_murmure "Viens avec moi. Doucement."
+    ^
+
+File "game/allie_Anna.rpy", line 279: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 309: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+
+File "game/drive-download-20230210T071624Z-001/allie_Anna_John.rpy", line 216: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/drive-download-20230210T071624Z-001/allie_Anna_John.rpy", line 221: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/drive-download-20230210T071624Z-001/allie_Anna_John.rpy", line 270: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.62s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2448.22s
+Early init took 0.00s
+Loader init took 0.08s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 231: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 252: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    A_murmure "Viens avec moi. Doucement."
+    ^
+
+File "game/allie_Anna.rpy", line 279: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 309: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2511.78s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.27s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 231: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 252: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    A_murmure "Viens avec moi. Doucement."
+    ^
+
+File "game/allie_Anna.rpy", line 279: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 309: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2537.65s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 231: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 279: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 309: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2551.49s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 254: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 280: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 310: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2583.43s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 253: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 279: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 309: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2802.27s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 253: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 278: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 308: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2807.03s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.27s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 253: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 278: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 308: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2817.86s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.30s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 253: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 278: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 308: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2837.72s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.27s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 253: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 278: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 308: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2875.66s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 253: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 278: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 308: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2883.45s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.33s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 253: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 278: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 308: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2909.34s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.28s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 262: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 287: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 317: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2956.29s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.31s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 262: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 287: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 317: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.57s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 2961.04s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.27s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 262: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 287: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 317: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3157.18s
+Early init took 0.00s
+Loader init took 0.08s
+Loading error handling took 0.03s
+Loading script took 0.36s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 262: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 287: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 317: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3160.44s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.33s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 262: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 287: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 317: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3168.24s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 262: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 287: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 317: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3255.89s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 278: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 303: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 333: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.58s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3259.17s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 278: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 303: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 333: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3276.01s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 278: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 303: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 333: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3297.34s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.36s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3393.98s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3427.35s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3477.33s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.38s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3634.32s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3645.10s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.33s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3678.50s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.56s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3683.29s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3734.78s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3947.57s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+
+File "game/allie_Bryan.rpy", line 418: end of line expected.
+    jump label pointNclicCuisineSeul:
+               ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 3978.00s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.36s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4055.12s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4424.54s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4438.34s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.38s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump on_continu_Anna
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.61s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4620.89s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 336: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4667.90s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 324: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4713.39s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 324: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.80s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4758.85s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 324: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 357: expected statement.
+    else : 
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4762.10s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.39s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 324: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 348: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.62s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4766.90s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.39s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 281: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 306: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 324: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.68s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4789.77s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.39s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 283: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 308: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 326: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 338: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 346: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 353: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4832.20s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.39s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 283: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 308: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 326: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 338: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 346: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 353: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4864.10s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.39s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 283: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 308: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 326: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 338: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 346: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 353: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Anna.rpy", line 378: expected 'label_name_declare' not found.
+    label 
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 4873.42s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.04s
+Loading script took 0.43s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 283: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 308: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 326: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 338: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 346: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 353: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5063.57s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 283: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 308: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 326: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 338: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 346: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 353: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5196.43s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.45s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 283: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 308: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 326: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 338: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 346: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 353: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5217.75s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.38s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 283: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 308: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 326: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 338: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 346: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 353: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.56s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5255.67s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 283: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 308: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 326: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 338: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 346: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 353: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.56s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5356.91s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.43s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 297: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 322: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 340: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 352: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 360: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 367: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.59s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5403.90s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 297: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 322: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 340: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 352: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 360: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 367: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5450.81s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 297: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 322: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 340: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 352: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 360: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 367: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5509.85s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 297: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 325: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 343: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 355: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 363: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 370: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5537.21s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 297: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 324: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 342: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 354: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 362: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 369: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5543.49s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.38s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 297: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 324: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 342: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 354: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 362: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 369: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5549.80s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 297: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 324: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 342: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 354: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 362: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 369: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if ($menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5630.00s
+Early init took 0.00s
+Loader init took 0.12s
+Loading error handling took 0.06s
+Loading script took 0.62s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 297: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 324: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 342: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 354: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 362: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 369: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
 Version: b'4.6.0 NVIDIA 516.94'
 Display Info: None
 Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)

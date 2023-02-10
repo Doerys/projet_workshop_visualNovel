@@ -6,16 +6,25 @@
     elif (seul == False & telephone_oublie == False):
         jump tous_cave_kim_blesse
 
+    pause .5
+
 label seul_cave:
 
     $blessure_kim = 1
+
+    scene escalier
+    with dissolve
 
     J "Kim ? Qu’est-ce qu’il se passe !"
     K_shout "Aahhhhhhh"
     J "Kim ! T’es où, j’arrive !"
     J "Réponds-moi, où est-ce que tu es ?"
-    E "Alors que Jason descend les escaliers, une silhouette vive disparaît au détour d’un couloir."
+    E "Alors que Jason descend les escaliers, une silhouette vive disparaît au détour d’un couloir."   
     J "Kim qu’est-ce qu’il se passe ?"
+    
+    scene corps
+    with dissolve
+    
     J "Nom de Dieu, Kim ! Hé Kim ! Regarde-moi, qu’est-ce qu’il s’est passé ?"
     K "Je... je ne sais pas... Jason... J’ai mal."
     E "Une grosse plaie au couteau perce le dos de Kim. Elle perd beaucoup de sang."
@@ -32,11 +41,23 @@ label poursuite:
     J "Kim, maintient ta main sur la blessure. Le plus fort possible !"
     K "Arrrrgh"
     J "Tu vas y arriver, je reviens vite !"
-    E "Lâchant la main de sa petite amie, Jason poursuit une ."
+    E "Lâchant la main de sa petite amie, Jason poursuit la silhouette ayant disparue un instant auparavant."
+
+    scene couloir_box
+    with dissolve
+    
     E "Là où la silhouette avait disparu se tient désormais une grille entrouverte. Plus aucune trace de la silhouette."
     J_think "Comment est-ce que..."
     K_shout "Jason !"
+
+    scene corps
+    with dissolve
+
     E "Jason revient auprès de Kim, et prend conscience qu'il ne pourra la sauver sans aide. Il grimpe les escaliers de la cave, quatre à quatre, avant d'appeler en urgence ses amis."
+
+    scene escalier
+    with dissolve
+
     J_shout "Bryan, Anna ! Venez vite m'aider !"
 
     jump suite14
@@ -45,6 +66,9 @@ label rester_Kim:
     K "J’ai mal Jason... J’ai... mal..."
     J "Je sais mon coeur, je sais. Maintient la pression sur ta plaie, je vais demander à Anna et Bryan de venir nous aider. Voilà. Tu t’en sors bien."
 
+    scene escalier
+    with dissolve
+
     E "Jason grimpe les escaliers de la cave, quatre à quatre, avant d'appeler en urgence ses amis."
     J_shout "Bryan, Anna ! Venez vite m'aider !"
 
@@ -52,6 +76,10 @@ label rester_Kim:
 
 
 label suite14:
+
+    scene corps
+    with dissolve
+
     E "Une minute plus tard, Bryan et Anna ont franchi la maison en courant jusqu'à la cave, et découvre, horrifiés, l'état dans lequel se trouve Kim."
     A "Putain, qu'est-ce qu'il s'est passé ?"
     J "Kim s’est faite attaquer, elle est blessée, elle a besoin d’aide !"
@@ -65,12 +93,18 @@ label suite14:
 
 label tous_cave_kim_blesse:
 
+    scene escalier
+    with dissolve
+
     $blessure_kim = 1
 
     E "Une minute plus tard, Bryan, Anna et Jason ont franchi la maison en courant jusqu'à la cave."
     J "Kim ? Où es-tu ?"
     A "Kim ?"
     B "Kim, répond ! T'es où ?"
+
+    scene corps
+    with dissolve
 
     B "Les gars ? Je crois qu’elle est là !"
     A_shout "AHHHHH" #(crié rapide)
@@ -99,6 +133,9 @@ label tous_cave_kim_blesse:
  
 label tous_cave_kim_quasimorte:
 
+    scene escalier
+    with dissolve
+
     $blessure_kim = 2
 
     E "Bryan, Anna et Jason arrivent dans la cave."
@@ -106,6 +143,9 @@ label tous_cave_kim_quasimorte:
     J "Kim ? Où es-tu ?"
     A "Kim ?"
     B "Kim, répond ! T'es où ?"
+
+    scene corps
+    with dissolve
 
     B "Les gars ? Je crois qu’elle est là !"
     A_shout "AHHHHH" #(crié rapide)
@@ -121,6 +161,10 @@ label tous_cave_kim_quasimorte:
 
 
 label suite15:
+
+    scene cave
+    with dissolve
+
     A "Ok, d’abord, il faut que je regarde sa blessure. J’ai suivi des cours de premiers soins. Bryan il faut que tu maintienne la pression sur la plaie !"
     A "Pendant ce temps là Jason, fouilles la cave, et barricade l'accès. Qui que ce soit qui ait fait ça, il faut pas qu'il nous retombe dessus."
 

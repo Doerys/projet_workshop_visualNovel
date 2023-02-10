@@ -31,24 +31,26 @@
 
 label Bryan_cuisine:
 
-        E "Dans la cuisine, Bryan semble en train de calmer sa colère."
-        J "Hé Bryan ?"
-        B "Quoi, tu veux encore te foutre de ma gueule c’est ça ?"
-        J "Oh arrête un peu, tu sais que je rigole. T’as l’air à cran aujourd’hui, on voulait juste rigoler un peu avec les autres. Tout va bien ?"
-        B "C’est à vous de demander ça ! Je vous jure que j’entends quelque chose et la seule réaction que vous avez, c’est vous foutre de ma gueule ! Tout ça parce qu’Anna est trop conne pour me croire."
-        J "Hé, lâche un peu l’affaire... Vous n’avez pas réussi à vous parler depuis votre embrouille de la dernière fois ?"
-        A "Tu parles... J’ai essayé, mais la seule chose que je me prends c’est soit des critiques, soit des vents."
-        J "Alors arrête d’aller la voir ! Laisse couler !"
+    scene cuisine_jour
+    with dissolve
+    E "Dans la cuisine, Bryan semble en train de calmer sa colère."
+    J "Hé Bryan ?"
+    B "Quoi, tu veux encore te foutre de ma gueule c’est ça ?"
+    J "Oh arrête un peu, tu sais que je rigole. T’as l’air à cran aujourd’hui, on voulait juste rigoler un peu avec les autres. Tout va bien ?"
+    B "C’est à vous de demander ça ! Je vous jure que j’entends quelque chose et la seule réaction que vous avez, c’est vous foutre de ma gueule ! Tout ça parce qu’Anna est trop conne pour me croire."
+    J "Hé, lâche un peu l’affaire... Vous n’avez pas réussi à vous parler depuis votre embrouille de la dernière fois ?"
+    A "Tu parles... J’ai essayé, mais la seule chose que je me prends c’est soit des critiques, soit des vents."
+    J "Alors arrête d’aller la voir ! Laisse couler !"
 
-        menu:
-            "Anna est insuportable...":
-                jump situation_inssup
+    menu:
+        "Anna est insuportable...":
+            jump situation_inssup
 
-            "Vous êtes tous les deux insuportables...":
-                jump deux_inssup
+        "Vous êtes tous les deux insuportables...":
+            jump deux_inssup
 
-            "Tu es insuportable...":
-                jump Bryan_inssup
+        "Tu es insuportable...":
+            jump Bryan_inssup
 
 
 label situation_inssup:
@@ -113,19 +115,22 @@ label suite9bis:
 
 label Anna_salon:
 
-        E "Dans le salon, Anna est visiblement agacée par la situation."
-        J "Je suis désolé pour le comportement de Bryan... Je ne sais pas ce qui lui prend, il n’est pas comme ça d’habitude."
-        A "Ouais... tu sais, je ne suis pas contre lui. J’ai essayé d’aller le voir, mais il est toujours renfermé sur lui-même, il refuse de me parler."
-        J "Il ne t’a jamais expliqué pourquoi ?"
-        A "Non, jamais ! Après je m’en fous hein, à la base ce n’est pas mon pote, mais pour Kim j’aimerais bien qu’on arrive enfin à passer une soirée tous ensemble sans aucune embrouilles."
+    scene canape
+    with dissolve
 
-        menu:
-            "Approuver":
-                jump approuver
-            "Tous les deux coupables":
-                jump deux_coupables
-            "Désapprouver":
-                jump desapprouver
+    E "Dans le salon, Anna est visiblement agacée par la situation."
+    J "Je suis désolé pour le comportement de Bryan... Je ne sais pas ce qui lui prend, il n’est pas comme ça d’habitude."
+    A "Ouais... tu sais, je ne suis pas contre lui. J’ai essayé d’aller le voir, mais il est toujours renfermé sur lui-même, il refuse de me parler."
+    J "Il ne t’a jamais expliqué pourquoi ?"
+    A "Non, jamais ! Après je m’en fous hein, à la base ce n’est pas mon pote, mais pour Kim j’aimerais bien qu’on arrive enfin à passer une soirée tous ensemble sans aucune embrouilles."
+
+    menu:
+        "Approuver":
+            jump approuver
+        "Tous les deux coupables":
+            jump deux_coupables
+        "Désapprouver":
+            jump desapprouver
 
 
 label approuver:
@@ -205,29 +210,32 @@ label suite9:
 
 label reunion:
 
-        if (telephone_oublie == True):
-            E "Ensemble, les trois amis finissent par se retrouver sur le canapé du salon, bière à la main, essayant tant bien que mal d’enterrer la hache de guerre. Un long moment passe..."
-            A "Dîtes, ça fait quand même un sacré moment qu'on n'a pas revu Kim. C'est normal qu'elle prenne autant de temps ?"
-            J "C'est vrai que ça commence à devenir bizarre"
-            B "Bah allez, on perd pas de temps, on va la rejoindre ! Elle prépare sans doute une connerie, la connaissant."
+    scene canape
+    with dissolve
 
-            jump scene_cave
+    if (telephone_oublie == True):
+        E "Ensemble, les trois amis finissent par se retrouver sur le canapé du salon, bière à la main, essayant tant bien que mal d’enterrer la hache de guerre. Un long moment passe..."
+        A "Dîtes, ça fait quand même un sacré moment qu'on n'a pas revu Kim. C'est normal qu'elle prenne autant de temps ?"
+        J "C'est vrai que ça commence à devenir bizarre"
+        B "Bah allez, on perd pas de temps, on va la rejoindre ! Elle prépare sans doute une connerie, la connaissant."
 
-        elif (telephone_oublie == False):
-            E "Ensemble, les trois amis finissent par se retrouver sur le canapé du salon, bière à la main, essayant tant bien que mal d’enterrer la hache de guerre."
-            B "Du coup, il faut que je vous raconte ! J’ai rencontré quelqu’un !"
-            J "Pardon ? Depuis quand ?"
-            B "Ça fait quelques semaines, mais je crois que c’est bien parti entre nous !"
-            A "Trop bien, je suis contente pour toi !"
-            J "Il faut que tu me la montres que je…"
-            E "Soudain le téléphone de Jason se met à sonner. Sur l’écran, le nom de Kim apparaît."
-            J "Kim ? Pourquoi est-ce que tu…"
-            K_shout "Jason !"
-            K_shout "Jason ! Elle… !"
-            E "Le téléphone se coupe, un message d’erreur de réseau apparaît."
-            J "Les gars ! Putain de merde !"
-            B "Quoi ? Qu’est-ce qu’il se passe ?"
-            J "Kim a un problème. Putain de… putain !"
-            E "Ensemble, les trois amis sortent de la maison en trombe en direction de la cave."
-            
-            jump scene_cave
+        jump scene_cave
+
+    elif (telephone_oublie == False):
+        E "Ensemble, les trois amis finissent par se retrouver sur le canapé du salon, bière à la main, essayant tant bien que mal d’enterrer la hache de guerre."
+        B "Du coup, il faut que je vous raconte ! J’ai rencontré quelqu’un !"
+        J "Pardon ? Depuis quand ?"
+        B "Ça fait quelques semaines, mais je crois que c’est bien parti entre nous !"
+        A "Trop bien, je suis contente pour toi !"
+        J "Il faut que tu me la montres que je…"
+        E "Soudain le téléphone de Jason se met à sonner. Sur l’écran, le nom de Kim apparaît."
+        J "Kim ? Pourquoi est-ce que tu…"
+        K_shout "Jason !"
+        K_shout "Jason ! Elle… !"
+        E "Le téléphone se coupe, un message d’erreur de réseau apparaît."
+        J "Les gars ! Putain de merde !"
+        B "Quoi ? Qu’est-ce qu’il se passe ?"
+        J "Kim a un problème. Putain de… putain !"
+        E "Ensemble, les trois amis sortent de la maison en trombe en direction de la cave."
+        
+        jump scene_cave

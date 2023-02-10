@@ -6,6 +6,10 @@
     A "Mais... Vous savez au moins ce que vous allez faire une fois que vous aurez la trousse de secours ?"
     B "On improvisera ! Il faut qu’on essaie, on ne va pas la laisser crever là dans le froid !"
     A "Non mais j’hallucine... Bon allez-y dépêchez-vous !"
+
+    scene escalier
+    with dissolve
+
     E "Sans perdre un instant, Bryan et Jason remontent les escaliers en direction du rez-de-chaussée."
     B "Hé, Jason... Merci de m’avoir écouté..."
     J "Anna n’a pas totalement tort, tu sais... Je ne sais pas soigner les gens."
@@ -27,48 +31,56 @@ elif (blessure_kim == 2) :
     E "Bryan montre une lampe torche."
     $ torche = False
 
-    J "Ok, parfait."
+J "Ok, parfait."
 
-    E "Le duo grimpe l'escalier menant hors de la cave, pour arriver dans un couloir."    
-    J "Euh... Bryan... Les lumières étaient éteintes tout à l’heure ?"
-    B "Je... Je ne crois pas ?"
-    E "Bryan clique sur un interrupteur, avant de le marteler avec impatience."
-    B "Les interrupteurs ne fonctionnent plus !"
-    J "Qu’est-ce qui se passe..."
+scene couloir_nuit
+with dissolve
+
+E "Le duo grimpe l'escalier menant hors de la cave, pour arriver dans un couloir."    
+J "Euh... Bryan... Les lumières étaient éteintes tout à l’heure ?"
+B "Je... Je ne crois pas ?"
+E "Bryan clique sur un interrupteur, avant de le marteler avec impatience."
+B "Les interrupteurs ne fonctionnent plus !"
+J "Qu’est-ce qui se passe..."
 
 
-    if (torche == True):
-        E "Allumant sa lampe torche, Jason passe devant, avançant doucement à pas feutré jusqu'au hall d'entrée de la maison."
+if (torche == True):
+    E "Allumant sa lampe torche, Jason passe devant, avançant doucement à pas feutré jusqu'au hall d'entrée de la maison."
 
-    elif (torche == False):
-        E "Allumant sa lampe torche, Bryan passe devant, un peu trop sûr de lui, jusqu'au hall d'entrée de la maison."
-        J "T’as une idée de qui pourrait avoir fait ça, toi ?"
-        B "J’en ai aucune idée, mais c’est forcément un malade. Mon dieu... qui pourrait faire ça..."
-        J "C’est une bonne chose d’avoir laissé Anna avec Kim, elle connait plus de choses que nous pour la soigner, elle sera capable de la maintenir en état jusqu'à notre retour."
-        B "Ouais, il faut juste espérer qu’il y ait bien qu’une seule personne à vouloir notre peau ici..."
-        E "Une porte claque violemment derrière le duo !"
-        B "Wouaw, c’était quoi ça ?"
-        J "Rien, la porte vient de claquer...J’ai eu une de ces peurs !"
-        B "Tu parles, j’ai carrément failli me pisser dessus !"
-        B "Attends, tu sens le courant d’air ?"
-        J "Ouais..."
-        E "Avançant pas à pas, les deux amis suivent le vent à travers le hall d’entrée."
+elif (torche == False):
+    E "Allumant sa lampe torche, Bryan passe devant, un peu trop sûr de lui, jusqu'au hall d'entrée de la maison."
+    J "T’as une idée de qui pourrait avoir fait ça, toi ?"
+    B "J’en ai aucune idée, mais c’est forcément un malade. Mon dieu... qui pourrait faire ça..."
+    J "C’est une bonne chose d’avoir laissé Anna avec Kim, elle connait plus de choses que nous pour la soigner, elle sera capable de la maintenir en état jusqu'à notre retour."
+    B "Ouais, il faut juste espérer qu’il y ait bien qu’une seule personne à vouloir notre peau ici..."
+    E "Une porte claque violemment derrière le duo !"
+    B "Wouaw, c’était quoi ça ?"
+    J "Rien, la porte vient de claquer...J’ai eu une de ces peurs !"
+    B "Tu parles, j’ai carrément failli me pisser dessus !"
+    B "Attends, tu sens le courant d’air ?"
+    J "Ouais..."
+    E "Avançant pas à pas, les deux amis suivent le vent à travers le hall d’entrée."
 
-    if(vu_fenetre_ouverte == False):
-        B "Elle n’était pas fermée tout à l’heure celle-là ?"
-        J "Si. Si, je crois bien." 
+if(vu_fenetre_ouverte == False):
+    scene fenetre_nuit
+    with dissolve
+    
+    B "Elle n’était pas fermée tout à l’heure celle-là ?"
+    J "Si. Si, je crois bien." 
 
-    jump fenetre_ouverte_Bryan
+jump fenetre_ouverte_Bryan
 
-    if(vu_fenetre_ouverte == True):
-        B "Putain, c'est la même fenêtre que tout à l'heure ! Je vous l'avais dit !"
-        J "Ca commence à devenir extrêmement flippant."
+if(vu_fenetre_ouverte == True):
+    scene fenetre_nuit
+    with dissolve
 
-    jump fenetre_ouverte_Bryan
+    B "Putain, c'est la même fenêtre que tout à l'heure ! Je vous l'avais dit !"
+    J "Ca commence à devenir extrêmement flippant."
+
+jump fenetre_ouverte_Bryan
 
 label fenetre_ouverte_Bryan:
 
-    B "Attends... Elle était pas fermée tout à l’heure ?"
     J "Vas-y, va la claquer, je te couvre..."
     B "Quoi ? T’as vu comment tu trembles, tu me couvres rien du tout !"
     J "Mais si... Tu sais mieux fermer les fenêtres que moi !"
@@ -191,6 +203,10 @@ label chouette:
     J "Ouais, mais si on voulait rester discret, maintenant c’est foutu..."
     B "C’est jamais foutu, viens, il faut qu’on y aille avant qu’il soit trop tard..."
     J_murmure "Attends ! Ne. Bouge. Surtout. Pas." #(chuchote, doucement)
+
+    scene porte_entree
+    with dissolve
+
     E "De l’autre côté de la porte d’entrée, des bruits de pas commencent à crisser sous des semelles de chaussures."
     B_murmure "Tu crois que c’est lui ?" 
     J_murmure "Chut ! Tais-toi !"
@@ -205,39 +221,54 @@ label chouette:
 
 label menacer_Bryan:
     E "Plus ils attendent, plus les bruits de pas commencent à s’approcher dangereusement de la porte."
-    J_murmure "Il va rentrer !"
-    B "Euh... Vous n’entrez pas ! Je vous ai dit qu’on est armés, et euh... on n’hésitera pas à vous tirer dessus !"
-    J "Mais arrête Bryan, ça ne marche pas ton truc !"
+    B_murmure "Il va rentrer !"
+    J "Euh... N’entrez pas ! On est armés, et euh... on n’hésitera pas à vous tirer dessus !"
+    B "Mais arrête Bryan, ça ne marche pas ton truc !"
     B "Arrêtez d’avancer ! Stop !"
     E "Les bruits de pas, lents et sinistres, continuaient inlassablement d’avancer jusqu’au pas de la porte."
-    J "Tu vois que ça ne sert à rien..."
-    E "Doucement le bruit de la poignée grince dans l’entrée de la maison, laissant apparaître dans l’encadrement de la porte une jeune femme vêtue d’une robe et le visage caché par un masque blanc."
+    $menacer_psychopathe = True
+
+    scene tueur
+    with dissolve
+
+    E "Doucement le bruit de la poignée grince dans l’entrée de la maison, laissant apparaître dans l’encadrement de la porte une jeune femme vêtue d’une robe et le visage caché par un masque blanc, tenant un couteau à la main."
 
     jump combat_SK
 
 label bloquer_Bryan:
     E "Plus ils attendent, plus les bruits de pas commencent à s’approcher dangereusement de la porte."
     J_murmure "Il va rentrer !"
-    B "J’ai une idée ! Fais comme moi, vite !"
-    E "D’un bon, Bryan jeta son corps sur la porte en bois. Faisant de même, Jason pouvait sentir contre la porte quelques coups, comme si la personne plantait sa lame dans l’espoir de la faire traverser."
+    J "J’ai une idée !"
+    E "D’un bon, Jason jette son corps sur la porte en bois. Il peut alors sentir des coups frénétiques contre la porte, comme si la personne plantait sa lame dans l’espoir de la faire traverser."
     B "On ne va pas pouvoir rester comme ça très longtemps !"
     J "Tu vois une autre idée, toi ?"
     B "Merde... Réfléchis, réfléchis, réfléchis..."
-    B "Hé Jason ? Si je te laisse du temps pour régler tous les problèmes, tu m’assures que tu y arriveras ?"
+    B "Bordel, je suis désolé Jason, mais là, Kim est en danger ! Tiens bon, je vais chercher la trousse de soin !"
     J "Quoi ?"
-    B "Promets moi que tu vas sauver Kim, s’il te plait."
+    B "Promets moi de sauver ta peau, s’il te plait."
     J "Qu’est-ce que tu fais ? Bryan, non !"
-    E "S’élançant à travers la vitre ouverte, Bryan plonge dans l’obscurité de la nuit, entraînant derrière lui l’agresseur. Seul, Jason se précipite alors vers la cuisine, où par chance, il pourrait trouver de quoi sauver sa petite-amie."
+    E "S’élançant à travers la vitre ouverte, Bryan plonge dans l’obscurité de la nuit. Les coups continuent de résonner contre la porte, avant de cesser au bout d'une minute. Le silence."
+    E "Jetant un coup d'oeil à travers la serrure de la porte, Jason ne voit personne. Il est désormais seul."
 
-    jump on_continu #point and clic sans allié
+    jump pointNclicCuisineSeul #point and clic sans allié
 
 label se_cacher_Bryan:
+
     J_murmure "Viens avec moi. Tout. Doucement."
     E "Le plus discrètement possible, les deux amis reculent, recroquevillés sur eux-mêmes."
     J_murmure "Va dans le couloir. Maintenant !"
     B_murmure "Mais... et si elle vient vers nous, on fait quoi ?"
     J_murmure "On improvise. Maintenant vite !"
-    E "A peine ont-ils le temps de s’enfermer que la poignée de la porte s’ouvre."
+    E "A peine ont-ils le temps de se cacher que la porte s’ouvre."
+
+    scene tueur
+    with dissolve
+
+    pause 1
+
+    scene cachette_placard
+    with dissolve
+
     B_murmure "Attends, ne ferme pas la porte..."
     B_murmure "Il faut voir qui c’est !"
     J_murmure "Regarde, on dirait une femme."
@@ -259,14 +290,12 @@ label se_cacher_Bryan:
 label refuser:
 
     if(relationJtoB < 0):
-        J "Je peux pas te laisser faire ça, c'est trop dangereux."
-        B "Ecoute mec, je vais me passer de ton avis pour le moment, désolé."
-        E "Sans plus de débat, Bryan se faufile hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison."
-        E "Dans son dos, la femme s’est lancée à sa poursuite."
+
+        jump refuser1
 
     if(relationJtoB >= 0):
-        J "Je peux pas te laisser faire ça, c'est trop dangereux."
-        B "Très bien. C'est toi le chef."
+
+        jump refuser3
 
 
 label accepter_Bryan:
@@ -275,16 +304,16 @@ label accepter_Bryan:
     E "Sans un bruit, Bryan se faufile hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison."
     E "Dans son dos, la femme s’est lancée à sa poursuite."
 
-    jump Bryan_distraction
+    jump pointNclicCuisineSeul
 
 
 label refuser1:
     J_murmure "Mais t’es malade ! Ne fais pas ça, tu ne sais pas de quoi elle est capable !"
     B_murmure "Alors quoi, tu veux qu’on reste ici pendant que Kim se vide de son sang ? Fais moi confiance, je suis en train de sauver ta meuf !"
-    E "Sans un bruit, Bryan se faufile hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison."
+    E "Sans plus de débat, Bryan se faufile en silence hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison."
     E "Dans son dos, la femme s’est lancée à sa poursuite."
 
-    jump Bryan_distraction
+    jump pointNclicCuisineSeul
 
 label refuser3:
     J_murmure "Mais t’es pas bien ! Si ça se trouve elle court beaucoup plus vite que toi ! Tu vas faire quoi face à une arme blanche ?"
@@ -292,48 +321,72 @@ label refuser3:
     B_murmure "Dans ce cas, il faut qu’on s’arme, et vite"
     J "Ah, là je suis d’accord avec toi, mais pour l’instant reste caché et ferme-la !"
     E "Accroupis dans la pénombre du couloir, Jason et Bryan observent la jeune femme passer devant eux, vêtue d’une longue robe et d’un masque blanc, cachant son visage aux deux jeunes hommes."
-    E "Malheureusement pour eux, plus temps avance, plus la femme se dirige dans leur direction."
+    E "Malheureusement pour eux, plus temps avance, plus la femme se rapproche de leur emplacement."
 
     jump combat_SK
 
 label combat_SK:
 
-    if (torche == True):
+    scene entree_nuit
+    with dissolve
+
+    if (menacer_psychopathe = True):
+        if (torche == True):
         menu:
             "Rester caché":
                 jump rester_cache
-            "Aveugler avec la lampe":
+            "L'aveugler avec la lampe":
                 jump aveugler_Bryan
             "Fuir":
                 jump fuite_Bryan
-    else : 
+        else : 
         menu:
             "Rester caché":
                 jump rester_cache
             "Fuir":
                 jump fuite_Bryan
 
+    else if (menacer_psychopathe = False):
+        if (torche == True):
+        menu:
+            "Rester caché":
+                jump rester_cache
+            "L'aveugler avec la lampe":
+                jump aveugler_Bryan
+            "Fuir":
+                jump fuite_Bryan
+        else : 
+        menu:
+            "Rester caché":
+                jump rester_cache
+            "Fuir":
+                jump fuite_Bryan
+    
+
         
 label rester_cache:
-    E "Malgré tout, elle s’arrête à quelques mètres de la porte. Jetant un œil par-dessus son épaule, elle se décide à faire demi-tour, s’engouffrant sans un bruit dans la pénombre du couloir du salon."
+    E "Malgré tout, elle s’arrête à quelques mètres de la porte. Jetant un œil par-dessus son épaule, elle se décide à faire demi-tour, s’engouffrant sans un bruit à travers la fenêtre ouverte."
     B_murmure "Où est-ce qu’elle va ?"
-    J_murmure "Elle doit nous chercher dans le salon, elle ne doit pas penser qu’on se trouve ici..."
+    J_murmure "Elle doit nous chercher dans le jardin, elle ne doit pas penser qu’on se trouve ici..."
+    J_murmure "Perdons pas plus de temps, allons-y."
+    E "Les deux garçons quittent leur cachette, franchissant le reste de la maison en silence jusqu'à leur destination."
 
-    jump pointNclicAllie
+    jump pointNclicCuisineAllie
 
 label aveugler_Bryan:
-    B_murmure "Hé, j’ai une idée débile, mais ça peut marcher ! Utilise ta lampe torche pour l’aveugler, ça nous laissera peut-être assez de temps pour lui en coller une ou l’attirer plus loin des filles !"
+    J_murmure "Hé, j’ai une idée débile, mais ça peut marcher ! Je vais utilise ma lampe torche pour l’aveugler."
+    B_murmure "Bonne idée ! Ca nous laissera peut-être assez de temps pour lui en coller une ou l’attirer plus loin des filles !"
     J_murmure "Ok, bonne idée ! A trois !"
     J_murmure  "Un"
     J_murmure  "Deux"
     J_shout  "Trois !"
-    E "Le faisceau de lumière planté sur la femme, les deux garçons en profitent pour foncer à travers l’entrée en direction du salon."
-    J_shout "Cours ! Elle est derrière toi !"
-    B_shout "Va dans le salon, j’ai une idée !"
-    B_shout "Viens avec moi, on va la bloquer !"
-    E "Alors que les deux garçons continuent de courir dans le couloir, la femme qui les poursuit commence à les rattraper."
-    B_shout "Jay ! Maintenant !"
+    E "Le faisceau de lumière planté sur la femme, les deux garçons en profitent pour foncer à travers le hall d'entrée en direction d'un corridor."
 
+    scene entree_ouverte
+    with dissolve
+
+    J_shout "Cours ! Elle est derrière toi !"
+    
     menu:
         "Bloquer la porte":
             $ obstacles +=1
@@ -343,79 +396,70 @@ label aveugler_Bryan:
 
 
 label suite21:
-    B "Fonce dans la cuisine, je vais te rattraper ! Vas y tant que je peux tenir la porte du salon !"
-    E "Hésitant quelques instants à aider son ami, Jason continu son chemin jusque dans la cuisine."
+
+    scene couloir_choix
+    with dissolve
+
+    E "A travers le corridor, Bryan fonce à vive allure, et disparaît dans un angle. Mais la tueuse talonne non loin le duo."
+    B_shout "Fonce !"
+    E "Une pièce cachée dans l'ombre se révèle sur la droite de Jason."
 
     menu:
         "Faire tomber un meuble":
             $ obstacles+=1
-            E "Passant entre les meubles du salon, Jason pousse une commode de toutes ses forces, obstruant le passage qui pouvait mener jusqu’à la cuisine"
-            B "Putain Jason, elle me rattrape !"
+            E "Passant entre les meubles du corridor, Jason pousse une commode de toutes ses forces, obstruant le passage qui pouvait mener jusqu’à la suite du passage."
+            B "Putain Jason, dépêche toi !"
             jump suite22
         "Foncer":
-            E "Sans réfléchir, Jason passe entre les allées du salon. Connaissant la maison par cœur, il est facile pour lui de s’y repérer, la pièce est remplie d’obstacles."
+            E "Sans réfléchir, Jason court à toute vitesse à travers le corridor pour rattraper son retour sur Bryan."
             jump suite22
         "Se cacher":
-            E "Courant à travers le salon, Jason a trop peur pour écouter son ami. Fouillant la pièce du regard, il trouve rapidement un moyen de fuir en grimpant les marches des escaliers deux par deux."
-            E "Il devait se rendre dans la salle de bain. C’est le seul endroit où il connaît une cachette assez grande pour rester planqué."
-            jump on_continu
+            E "Courant à travers le corridor, Jason plonge dans la pièce tapie dans l'ombre. Il entend la tueuse passer en coup de vent dans le corridor sans s'arrêter, avant de faire place au silence."
+            jump pointNclicCuisineSeul
 
 label suite22:
     J "Et maintenant, on fait quoi ?"
-    B "A l’étage ! On va pouvoir se cacher, vite !"
-    E "Continuant la poursuite jusqu’à l’étage, Jason commence petit à petit à distancer Bryan."
-    
-   
+    B "Par là ! On va pouvoir se cacher, vite !"
+    E "Continuant la fuite, Bryan commence petit à petit à distancer Bryan."
 
     menu:
         "Renverser un seau d'eau":
             $ obstacles +=1
-            E "Sur le palier de l’étage, un seau d’eau est posé contre l’un des murs."
-            E "Dans un éclair de lucidité, Jason l’attrape et jette son contenu à travers les escaliers."
-            B "Hé Jason, qu’est-ce que tu fais ?"
+            E "Un seau d’eau est posé contre l’un des murs."
+            E "Dans un éclair de lucidité, Jason l’attrape et jette son contenu qui se déverse sur le sol."
             jump suite23
         "Foncer":
-            E "L’étage est constitué de quelques pièces. Certes, la maison de Kim n’est pas grande, mais c’est suffisant pour se cacher."
-            E "Fonçant dans le couloir, il ouvre la première porte trouvée, et s’engouffre dans ce qui semble être la salle de bain."
+            E "Fonçant, Jason arrive enfin au bout de cette série de couloirs."
             jump suite23
 
 
 label suite23:
     if (obstacles ==3):
-        E "Jason entre en trombe dans la chambre. Balayant la pièce des yeux, il n’avait pas beaucoup de choix pour se cacher."
-        E "Après s’être assuré que la porte est fermée, il se précipite dans une petite cachette, lorsqu’il entend Bryan passer devant la porte avant de disparaître un peu plus loin."
-        jump on_continu
+        E "Jason arrive en trombe dans le séjour. Les bruits de pas de la tueuse ne se font plus entendre, mais Bryan a disparu, l'ayant visiblement distancé."
+        jump pointNclicCuisineSeul
     else :
-        B_murmure "Jason ! Jason ! Jason !"
-        J_murmure "Chut, tais-toi ! Elle t’a vu rentrer ?"
-        B_murmure "Je ne crois pas ! Elle avait beaucoup trop de retard sur moi dans les escaliers."
-        E "De l’autre côté du mur, les bruits de pas commencent à se faire entendre de plus en plus fort."
-        E "Plongés dans une pièce sombre les deux amis ne bougent pas d’un cil jusqu’au moment où les bruits de pas de la femme semblent enfin s’éloigner."
-        jump pointNclicAllie
+        E "Jason arrive en trombe dans le séjour en compagnie de Bryan. Les bruits de pas de la tueuse ne se font plus entendre : les différents obstacles ont dû suffir à la ralentir suffisamment pour la semer."
+        B_murmure "Putain, c'était flippant !"
+        J_murmure "Chut, tais-toi ! Allons vite dans le salon."
+        E "Tous deux franchissent la porte les menant au salon."
 
+        $compagnie_bryan = True
 
-
-label pointNclicAllie:
-    ""
-
-
-
-label on_continu:
-
-
+        jump pointNclicCuisineAllie
 
 label fuite_Bryan:
     J_murmure "Elle arrive vers nous..."
     B_murmure "Merde... qu’est-ce qu’on fait ?"
     J_murmure "Je ne sais pas... Elle arrive..."
     B_murmure "Il faut qu’on se sépare, on n’a pas le choix. Tu sais quoi, tant pis. Je vais courir, toi pendant ce temps là, cours dans l’autre direction."
-    B_murmure "Avec un peu de chance, je vais pouvoir la retenir assez longtemps que pour que t’aille chercher du soin, ou un téléphone peu importe."
+    B_murmure "Avec un peu de chance, je vais pouvoir la retenir assez longtemps que pour que t’aille chercher du soin."
     J_murmure "T’es sûr de ton coup ?"
     B_murmure "Ne t’en fais pas pour moi, on n’a pas d’autre choix... Au pire, je vais essayer de trouver de l’aide dehors, d’accord ? Aller."
     B_shout "Maintenant !"
-    E "Poussant la porte de toutes ses forces, Bryan réussi presque à renverser la femme lorsqu’il l’attira à l’extérieur. Attendant que la femme passe la porte, Jason se précipite dans la maison, avec comme objectif en tête de s’enfermer dans la cuisine."
+    E "Poussant la porte de toutes ses forces, Bryan réussi presque à renverser la femme lorsqu’il l’attira à l’extérieur. Attendant que la femme passe la porte, Jason se précipite dans la maison."
 
+    jump pointNclicCuisineSeul
 
+label pointNclicCuisineAllie:
 
-label Bryan_distraction:
-
+label pointNclicCuisineSeul:

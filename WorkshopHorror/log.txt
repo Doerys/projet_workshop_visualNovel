@@ -4441,3 +4441,3295 @@ Version: b'4.6.0 NVIDIA 516.94'
 Display Info: None
 Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5865.39s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.39s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 292: choice menuitem expects a non-empty block.
+    "Distaire la femme":
+                        ^
+
+File "game/allie_Anna.rpy", line 304: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 331: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 349: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 361: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 369: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 376: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5894.25s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.50s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 304: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 331: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 349: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 361: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 369: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 376: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.57s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 5918.62s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 310: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 337: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 355: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 367: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 375: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 382: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6069.55s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 339: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Anna.rpy", line 357: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 369: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 377: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6087.89s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 403: Indentation mismatch.
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6155.92s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.38s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 402: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        E "Celle-ci avance d'un pas lent vers eux, avant de s'arrêter brusquement, puis faire demi-tour, s’engouffrant sans un bruit à travers la fenêtre ouverte." celle-ci avance d’un pas lent vers le couloir de la maison. "
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6159.18s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.44s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 352: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 364: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 372: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 379: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Anna.rpy", line 406: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.58s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6180.55s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 352: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 364: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 372: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 379: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Anna.rpy", line 408: expected 'label_name' not found.
+    jump 
+        ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6185.29s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 352: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 364: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 372: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 379: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6319.68s
+Early init took 0.00s
+Loader init took 0.10s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6327.50s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6345.86s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.62s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6350.61s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.45s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.58s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6390.13s
+Early init took 0.00s
+Loader init took 0.08s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.50s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6420.56s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6440.39s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6491.86s
+Early init took 0.00s
+Loader init took 0.08s
+Loading error handling took 0.03s
+Loading script took 0.44s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.63s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6496.65s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.43s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 348: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 360: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 368: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 375: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6626.51s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 348: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 360: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 368: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 375: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6637.33s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 348: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 360: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 368: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 375: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6645.09s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 348: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 360: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 368: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 375: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6676.97s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 348: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 360: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 368: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 375: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6702.86s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 348: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 360: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 368: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 375: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6742.30s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.43s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 348: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 360: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 368: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 375: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 6834.46s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 348: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 360: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 368: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 375: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7004.94s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 357: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 369: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 377: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7015.73s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.46s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 357: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 369: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 377: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7023.49s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.44s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 342: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 349: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7179.00s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 345: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7186.78s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7197.58s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7234.00s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.47s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 356: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump pointNclicChambreSeul
+    ^
+
+File "game/allie_Anna.rpy", line 368: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 376: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 383: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7356.31s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.47s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 369: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 377: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.58s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7448.46s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 350: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 358: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 365: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7475.87s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 383: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 390: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7500.23s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.40s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7599.96s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7607.76s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.55s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7638.17s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.45s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.63s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7674.60s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.47s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.62s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7721.58s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7788.16s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.43s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.62s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7814.02s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7826.33s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.51s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7838.61s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7846.39s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7849.69s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.59s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7865.02s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.41s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7871.29s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.43s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7877.55s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.43s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7880.82s
+Early init took 0.00s
+Loader init took 0.06s
+Loading error handling took 0.03s
+Loading script took 0.42s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.63s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7896.17s
+Early init took 0.00s
+Loader init took 0.08s
+Loading error handling took 0.04s
+Loading script took 0.49s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.54s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7899.45s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.44s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7917.77s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.46s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.53s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7975.29s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.35s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 466: Indentation mismatch.
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7977.10s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.45s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.52s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7993.98s
+Early init took 0.00s
+Loader init took 0.08s
+Loading error handling took 0.04s
+Loading script took 0.46s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.56s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 7997.25s
+Early init took 0.00s
+Loader init took 0.08s
+Loading error handling took 0.04s
+Loading script took 0.49s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.59s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 8000.52s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.04s
+Loading script took 0.44s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.62s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 8033.94s
+Early init took 0.00s
+Loader init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.47s
+Loading save slot metadata. took 0.03s
+Loading persistent took 0.00s
+
+File "game/allie_Anna.rpy", line 309: end of line expected.
+    J "Héééééééééé !" cri
+                      ^
+
+File "game/allie_Anna.rpy", line 375: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Anna.rpy", line 381: expected statement.
+    else : 
+         ^
+
+File "game/allie_Anna.rpy", line 384: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+
+File "game/allie_Bryan.rpy", line 334: if statement expects a non-empty block.
+    if (torche == True):
+                        ^
+
+File "game/allie_Bryan.rpy", line 340: expected statement.
+    else : 
+         ^
+
+File "game/allie_Bryan.rpy", line 342: expected menuitem
+    jump fuite_Bryan
+    ^
+
+File "game/allie_Bryan.rpy", line 344: expected ':' not found.
+    else if (menacer_psychopathe = False):
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Interface start took 0.57s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 970/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 516.94'
+Display Info: None
+Screen sizes: virtual=(3840, 2160) physical=(1739, 978) drawable=(1739, 978)
+Maximum texture size: 4096x4096

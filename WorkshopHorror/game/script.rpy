@@ -63,6 +63,10 @@ label start:
     J_think " Depuis le temps qu'elle s'embête à tout bien organiser, la moindre petite faute de goût pourrait me coûter très cher."
     J_think "On se connait déjà depuis plusieurs années, et je n'ai pas envie de savoir comment elle réagira... Surtout depuis la dispute d’hier."
 
+######################################
+    jump openCave
+######################################
+
     scene chambre_jason
 
     # Chargement des items dans la scène

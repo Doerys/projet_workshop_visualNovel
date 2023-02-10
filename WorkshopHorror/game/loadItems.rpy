@@ -44,6 +44,8 @@ image placard = "items/placard.png"
 image beuh = "items/beuh.png"
 image piles = "items/piles.png"
 
+image liste = "items/liste.png"
+
 # -------------------- Items et Images Clickable ------------- #
 # -------------------------- Cuisine - Salon ----------------------- #
 
@@ -67,8 +69,15 @@ init python :
 
     cadenaOpen = False
     tiroirForce = False
+
+    livreRecetteSelect = False
+    mdpCarnetSelect = False
+    lettreCoquineSelect = False
+
     phaseTimerSoin = True
     phaseCraftSoin = False
+
+    troussedeSoin = 0
 
     directionGauche = ' '
     directionDroit = ' '
@@ -85,7 +94,11 @@ image tiroirCuisine = "items/tiroirCuisine.png"
 image tiroirCasse = "items/tiroirCasse.png"
 image affairesKim = "items/affairesKim.png"
 image partir = "items/partir.png"
-image livreRecetteContenu = "items/livreRecetteContenu.png"
-image mdpCarnetContenu = "items/mdpCarnetContenu.png"
+
+image livreRecetteContent = "items/livreRecetteContenu.png"
+image mdpCarnetContent = "items/mdpCarnetContenu.png"
+image lettreCoquineContent = "items/lettreCoquineContenu.png"
+
 image cadena = "items/cadena.png"
+
 

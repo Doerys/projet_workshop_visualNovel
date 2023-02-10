@@ -30,6 +30,7 @@ screen inventory:
                     action Jump("slotSelect"+str(inventory.getInv().index(i)))
 
 
+
 # POINT & CLICK
 
 # open[lieu] -> On clique pour aller à cet emplacement

@@ -138,7 +138,7 @@ screen partir:
         idle "partir"
         hovered (SetVariable("directionDroit", "Partir"))
         unhovered (SetVariable("directionDroit", " "))
-        action [SetVariable("directionDroit", ""),Jump("versCriCave")]
+        action [SetVariable("directionDroit", ""),Jump("kimHurlement")]
     text directionDroit size 80 :
         xpos 3000
         ypos 1450

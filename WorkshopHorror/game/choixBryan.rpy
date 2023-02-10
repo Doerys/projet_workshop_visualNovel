@@ -3,7 +3,7 @@
     $relationJtoA -= 1
     $relationJtoB += 1
     $ vu_fenetre_ouverte = True
-    
+
     J "Tu veux qu’on aille voir ce que c’était ?"
     A "Ne me dites pas que vous allez le croire quand même !"
     J "On ne sait jamais... Et puis si jamais c’est juste un courant d’air on n’aura qu’à fermer la porte."

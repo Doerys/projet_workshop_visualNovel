@@ -25,7 +25,7 @@ label accepter2:
 
 label refuser2:
     J "Kim, arrête... arrête !"
-    K "Quoi, qu’est-ce qui t’arrives ?"
+    K "Quoi, qu’ast-ce qui t’arrives ?"
 
     if (harcelement_kim_info == True):
 

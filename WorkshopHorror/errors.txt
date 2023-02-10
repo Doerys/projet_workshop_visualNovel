@@ -2,22 +2,9 @@
 errors listed below, and try again.
 
 
-<<<<<<< Updated upstream
 File "game/script.rpy", line 259: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
     xalign 0.5
     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
 Fri Feb 10 04:44:20 2023
-=======
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-
-Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Feb 10 02:28:54 2023
->>>>>>> Stashed changes

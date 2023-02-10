@@ -1,12 +1,12 @@
 J "Kim ! Regarde-moi… Bordel, Bryan vient m’aider ! Elle se vide de son sang !"
 B "Appuie sur ses plaies, il faut que l’on trouve de quoi bander vite !"
-#
-#if (troussedeSoin == 1):
-#    jump postTelephone
-#elif (#truc on est avec bryan):
-#    jump postSoinsBryan
-#else:
-#    jump postSoinsSeul
+
+if (troussedeSoin =False):
+    jump postTelephone
+elif (truc on est avec bryan):
+    jump postSoinsBryan
+else:
+    jump postSoinsSeul
 
 label postTelephone:
     #Son manquant à la sonothèque, cri d'un homme
@@ -128,7 +128,7 @@ label postSoinsSeul:
             jump saveKim
         "Sauver Anna":
             jump saveAnna
-            
+
 label saveKim:
     J "Hé, je reste avec toi alors ne me laisse pas, ok ?"
     E "Vous utilisez le contenu de la trousse pour sauver Kim."

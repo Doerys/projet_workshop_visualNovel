@@ -1,14 +1,17 @@
-J "Kim ! Regarde-moi… Bordel, Bryan vient m’aider ! Elle se vide de son sang !"
-B "Appuie sur ses plaies, il faut que l’on trouve de quoi bander vite !"
+label arcSauvetageKim:
 
-if (troussedeSoin =False):
+if (go_with_Anna == True):
     jump postTelephone
-elif (truc on est avec bryan):
+elif (compagnie_Bryan):
     jump postSoinsBryan
 else:
     jump postSoinsSeul
 
 label postTelephone:
+
+    J "Kim ! Regarde-moi… Bordel, Anna vient m’aider ! Elle se vide de son sang !"
+    A "Appuie sur ses plaies, il faut que l’on trouve de quoi bander vite !"
+
     #Son manquant à la sonothèque, cri d'un homme
     play sound "audio/Sounds/.mp3"
     E "Un cri résonne dans la maison."
@@ -103,6 +106,9 @@ label sauvetageBryan:
 
 label postSoinsBryan:
 
+    J "Kim ! Regarde-moi… Bordel, Bryan vient m’aider ! Elle se vide de son sang !"
+    B "Appuie sur ses plaies, il faut que l’on trouve de quoi bander vite !"
+
     play sound "audio/Sounds/Cri Kim 1.mp3"
 
     E "Un cri retentit."
@@ -130,6 +136,14 @@ label lamentationNancy:
     E "Vous vous effondrez de douleur avant de recevoir un grand coup sur le crâne"
 
 label postSoinsSeul:
+
+    J "Kim ! Regarde-moi… Bordel, tout ce sang !"
+        
+    play sound "audio/Sounds/Cri Kim 1.mp3"
+
+    E "Un cri retentit."
+    J "Merde, c’est Anna !"
+
     menu:
         "Sauver Kim":
             jump saveKim

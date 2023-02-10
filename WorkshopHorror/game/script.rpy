@@ -54,10 +54,12 @@ label start:
     $ go_with_Anna = False
     $ go_with_Bryan = False
     $ telephone_oublie = False
-    $compagnie_bryan = False
-    $compagnie_anna = False
     $menacer_psychopathe = False
+    $trahison_Anna = False
+    $distraction_Bryan = False
 
+    $compagnie_Anna = False
+    $compagnie_Bryan = False
 
     $ traitement_conseil = False
 

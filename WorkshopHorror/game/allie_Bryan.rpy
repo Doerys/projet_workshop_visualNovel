@@ -310,8 +310,11 @@ label accepter_Bryan:
 label refuser1:
     J_murmure "Mais t’es malade ! Ne fais pas ça, tu ne sais pas de quoi elle est capable !"
     B_murmure "Alors quoi, tu veux qu’on reste ici pendant que Kim se vide de son sang ? Fais moi confiance, je suis en train de sauver ta meuf !"
+    J_murmure "Bryan, non... !"
     E "Sans plus de débat, Bryan se faufile en silence hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison."
     E "Dans son dos, la femme s’est lancée à sa poursuite."
+
+    $distraction_Bryan = False
 
     jump pointNclicCuisineSeul
 
@@ -375,6 +378,8 @@ label rester_cache:
     J_murmure "Elle doit nous chercher dans le jardin, elle ne doit pas penser qu’on se trouve ici..."
     J_murmure "Perdons pas plus de temps, allons-y."
     E "Les deux garçons quittent leur cachette, franchissant le reste de la maison en silence jusqu'à leur destination."
+
+    $compagnie_Bryan = True
 
     jump pointNclicCuisineAllie
 
@@ -456,10 +461,30 @@ label suite23:
         J_murmure "Chut, tais-toi ! Allons vite dans le salon."
         E "Tous deux franchissent la porte les menant au salon."
 
-        $compagnie_bryan = True
+        $compagnie_Bryan = True
 
         jump pointNclicCuisineAllie
 
 label pointNclicCuisineAllie:
 
+    scene salon_nuit_objet
+    with dissolve
+
+    E "Après avoir franchi la maison, Jason et Anna arrivent dans le salon, concomittant à la cuisine. Bryan ferme la porte à clé derrière eux."
+    B "Je surveille l'entrée. Trouve cette trousse de soin."
+    J_think "Bien. Commençons les recherches."
+
+    jump openCuisine
+
 label pointNclicCuisineSeul:
+
+    scene salon_nuit_objet
+    with dissolve
+
+    if (distraction_Bryan == True):
+        J_think "Putain, Bryan, qu'est-ce que tu peux être con quand tu t'y mets ! Jamais capable d'appliquer un plan !"
+    else:
+        J_think "'Chier. J'espère que Bryan va bien... Trouvons cette trousse au plus vite."
+    
+    jump openCuisine
+

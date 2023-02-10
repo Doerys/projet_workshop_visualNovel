@@ -309,6 +309,8 @@ label plan_fuite_Anna:
     J "Héééééééééé !" # cri
     E "Anna pousse Jason contre la porte, faisant tomber son ami dans le hall d’entrée. Au-dessus de lui, la femme est entrée."
 
+    $trahison_Anna = True
+
     scene entree_nuit
     with dissolve
 
@@ -341,6 +343,8 @@ label distraction_Anna:
     A_chuchote "Tu me dois une montre, Jason."
     J_chuchote "Maintenant ! On court vers la chambre !"
 
+    $compagnie_Anna = True
+
     jump pointNclicChambreAllie
 
 label fuite_Anna:
@@ -366,6 +370,8 @@ label rester_cache_Anna:
     J_murmure "Elle doit nous chercher dans le jardin, elle ne doit pas penser qu’on se trouve ici..."
     J_murmure "Perdons pas plus de temps, allons-y."
     E "Jason et Anna quittent leur cachette, franchissant le reste de la maison en silence jusqu'à leur destination."
+
+    $compagnie_Anna = True
 
     jump pointNclicChambreAllie
 
@@ -474,10 +480,32 @@ label poursuite3:
         A_murmure "Chut, tais-toi ! Allons vite dans la chambre de Kim."
         E "Tous deux franchissent grimpent en silence de escaliers menant à l'étage."
 
-        $compagnie_anna = True
+        $compagnie_Anna = True
 
         jump pointNclicChambreAllie
 
 label pointNclicChambreSeul:
 
+    scene chambre_pnc_objet
+    with dissolve
+
+    E "Après avoir franchi la maison, Jason arrive dans la chambre de Kim. Il ferme la porte à clé derrière lui."
+
+    if (trahison_Anna == True):
+        J_think "Putain, Anna, comment elle a pu me faire ça ! J'aurais pu y passer !"
+    else:
+        J_think "'Chier. J'espère qu'Anna va bien... Contactons les secours au plus vite."
+
+    E "Le téléphone se trouve sur le lit de Kim. Il s'en saisit."
+
+    jump to lectureMessage
+
 label pointNclicChambreAllie:
+    scene chambre_pnc_objet
+    with dissolve
+
+    E "Après avoir franchi la maison, Jason et Anna arrivent dans la chambre de Kim. Anna ferme la porte à clé derrière eux."
+    A "Je surveille l'entrée. Appelle les secours."
+    E "Le téléphone se trouve sur le lit de Kim. Jason s'en saisit."
+
+    jump to lectureMessage

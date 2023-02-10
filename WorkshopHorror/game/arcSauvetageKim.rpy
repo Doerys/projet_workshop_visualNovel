@@ -1,9 +1,9 @@
 J "Kim ! Regarde-moi… Bordel, Bryan vient m’aider ! Elle se vide de son sang !"
 B "Appuie sur ses plaies, il faut que l’on trouve de quoi bander vite !"
 
-if (troussedeSoin =False):
+if (go_with_Anna == True):
     jump postTelephone
-elif (truc on est avec bryan):
+elif (compagnie_Bryan):
     jump postSoinsBryan
 else:
     jump postSoinsSeul

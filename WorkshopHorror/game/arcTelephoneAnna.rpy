@@ -1,11 +1,25 @@
-
+label lectureMessage:
 E "Alors que Jason regarde dans le téléphone pour appeler les secours, un message attire son attention."
 J_think "Attends, qu’est-ce que c’est que ça…"
 J_think "Kim ? Mais qu’est-ce que ?"
-E "“Tu dis qu j’ai que de la gueule ms le jour ou on va te retrouver crevée ds le canal tu rigolera plus, sale chienne. Essaye même pas de te plaindre à quelquun, personne écoutera ta sale gueule de pute.”"
-E "“Alors vas y continu de faire la meuf quand y a du monde autour, je sais que tout ce que tu veux cest te tirer une balle pour arreter ta vie de merde”"
+E "“Kimou : Tu dis qu j’ai que de la gueule ms le jour ou on va te retrouver crevée ds le canal tu rigolera plus, sale chienne. Essaye même pas de te plaindre à quelquun, personne écoutera ta sale gueule de pute.”"
+E "“Kimou : Alors vas y continu de faire la meuf quand y a du monde autour, je sais que tout ce que tu veux cest te tirer une balle pour arreter ta vie de merde”"
+J_think "Je reconnais ce numéro... C'est adressé à Nancy ! Quelle horreur... Kim, qu'est-ce qui t'a pris ?"
 
-if (go_with_Anna == True):
+J_think "Attend, et qu'est-ce que c'est que ça ?"
+E "D'autres séries de messages apparaissent dans la messagerie du téléphone."
+E "CONTACT : B <3"
+E "Kim : ct trop bien hier soir, on refait sa quand tu veux <3"
+E "B : c'est vrai, ta kiffé ?"
+E "Kim : fais pas genre, mdr, le gars veut satisfaire son ego"
+E "B : je peux te satisfaire autant que tu veux, tkt"
+E "Kim : mdr, tg, t'es trop con"
+E "B : coquine"
+E "Kim : lov <3" 
+
+J_think : "Putain, c'est quoi cette merde ? ''B'' ? Non... me dis pas que..."
+
+if (compagnie_Anna == True):
     jump policecallAnna
 else:
     jump policeCallAlone
@@ -37,8 +51,8 @@ label policecallAnna:
         "Réclamer de l'aide pour Kim":
             J "Mon amie est blessée, on a besoin d’aide, s’il vous plaît !"
 
-    E "Aucune réponse"
-    A "Donne leur l'adresse"
+    E "Un bruit sourd résonne à l'intérieur de la maison."
+    A "Donne leur l'adresse."
     J "On est au 18 Stanway Road! Dépêchez vous!"
 
     play sound "audio/Sounds/Phone Off.mp3"
@@ -46,9 +60,7 @@ label policecallAnna:
     A "Ils arrivent quand?"
     J "Je ne sais pas. Le téléphone adu mal à passer, j'espère qu'ils ont réussi à m'entendre."
 
-    N_shout "Anna ! Je sais que t’es dans la maison !"
-    N_shout "Oooooooh… Aahh… Viens là !"
-
+    E "Le hurlement de Kim résonne à l'intérieur de la maison."
     J "C’était quoi ça ?"
     A "Elle arrive ! Oh mon dieu, elle arrive !"
 
@@ -56,6 +68,8 @@ label policecallAnna:
     E "Un cri aigu retentit dans la maison."
 
 label policeCallAlone:
+
+    J_think : "Non, Jason, reste concentrée, t'es en danger de mort. Aller, appeler les secours."
 
     E "Vous composez le numéro de secours."
     J "Allô ?"
@@ -72,17 +86,23 @@ label policeCallAlone:
     E "Des bruits de pas semblent se rapprocher de la porte."
     J_murmure "Allô?"
     E "La personne s’approche encore un peu plus, tournant la poignée pour ouvrir la porte."
-    E "Jason se jette sous le lit, espérant être assez caché de la tueuse."
+    E "Jason se jette derrière un placard, espérant être assez caché de la tueuse."
+
+    scene cachette_chambre
+    with dissolve
+
+    E "Un bruit de clé dans la serrure de la chambre se fait entendre. Une voix résonne à l'intérieur du téléphone. La police nous demande notre emplacement."
 
     menu:
         "Se taire":
-            E "La personne entre dans la chambre, fouillant les meubles, tournant en rond"
-            E "Elle a le souffle court, des mouvements erratiques"
+            E "La personne entre dans la chambre, fouillant les meubles, tournant en rond."
+            E "Elle a le souffle court, des mouvements erratiques."
             E "Puis soudain, plus rien. Plus un geste, plus un souffle."
             menu:                    
                 "Sortir de la cachette pour fuir":
                     A "Ah! Jason tu m'as fait peur!"
                     J "Moi aussi, Anna"
+                    jump findingAnna
                 "Rester caché":
                     jump findingAnna
         "Dire l'adresse":
@@ -91,23 +111,26 @@ label policeCallAlone:
             jump findingAnna
 
 label findingAnna:
-    A "Jason, t’es là ?"
-    J_murmure "Anna ? Tu m’as fait peur !"
-    J "Oh mon dieu, c’est toi ! Je… Je ne savais pas où tu étais passée…"
+
+    scene chambre_pnc_objet
+    with dissolve
+
+    A "Ah ! Jason tu m'as fait peur!"
+    E "Anna se trouve dans la chambre. Elle tremble encore de peur."
+    J_murmure "Putain, tu m'as foutu la frousse!"
+    J "Je… Je ne savais pas où tu étais passée…"
     A "Je… j’ai vu la tueuse… Bordel Jason, tu aura vu son couteau… Pourquoi nous ?"
 
-N_shout "Annaaaaaa ! Je sais que t’es dans la maison !"
-N_shout "Oooooooh… Aahh… Viens là !"
+E "Un bruit sourd résonne à l'intérieur de la maison."
 J "C’était quoi ça ?"
 A "Elle arrive ! Oh mon dieu, elle arrive !"
-jump kimHurlement
+jump kimHurlement_Anna
 
-label kimHurlement:
+label kimHurlement_Anna:
     E "Un cri aigu retentit dans la maison."
     J "Kim ! Nom de Dieu."
     J_shout "T’as pas intérêt à la toucher !"
     E "Vous courez en direction de la cave avec Anna, où vous aviez laissé Kim blessée."
-    E "Vous retrouvez Kim, seule, ensanglantée, sur le sol de l’entrée."
-
+    E "Vous retrouvez Kim, seule, ensanglantée, sur le sol du hall d'entrée."
 
 jump arcSauvetageKim

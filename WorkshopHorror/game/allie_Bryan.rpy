@@ -330,32 +330,31 @@ label combat_SK:
     scene entree_nuit
     with dissolve
 
-    if (menacer_psychopathe = True):
-        if (torche == True):
-        menu:
-            "L'aveugler avec la lampe":
-                jump aveugler_Bryan
-            "Fuir":
-                jump fuite_Bryan
+    if (menacer_psychopathe):
+        if (torche):
+            menu:
+                "L'aveugler avec la lampe":
+                    jump aveugler_Bryan
+                "Fuir":
+                    jump fuite_Bryan
         else : 
-        menu:
             jump fuite_Bryan
 
-    else if (menacer_psychopathe = False):
-        if (torche == True):
-        menu:
-            "Rester caché":
-                jump rester_cache
-            "L'aveugler avec la lampe":
-                jump aveugler_Bryan
-            "Fuir":
-                jump fuite_Bryan
+    elif (menacer_psychopathe == False):
+        if (torche):
+            menu:
+                "Rester caché":
+                    jump rester_cache
+                "L'aveugler avec la lampe":
+                    jump aveugler_Bryan
+                "Fuir":
+                    jump fuite_Bryan
         else : 
-        menu:
-            "Rester caché":
-                jump rester_cache
-            "Fuir":
-                jump fuite_Bryan
+            menu:
+                "Rester caché":
+                    jump rester_cache
+                "Fuir":
+                    jump fuite_Bryan
     
 label fuite_Bryan:
     J_murmure "Elle arrive vers nous..."

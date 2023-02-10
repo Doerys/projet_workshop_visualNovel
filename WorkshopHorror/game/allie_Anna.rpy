@@ -306,7 +306,7 @@ label se_cacher_Anna:
 
 label plan_fuite_Anna:
     J_murmure "Alors voilà mon plan ! Si tu..."
-    J "Héééééééééé !" cri
+    J "Héééééééééé !" # cri
     E "Anna pousse Jason contre la porte, faisant tomber son ami dans le hall d’entrée. Au-dessus de lui, la femme est entrée."
 
     scene entree_nuit
@@ -371,31 +371,31 @@ label rester_cache_Anna:
 
 label combat_SK_Anna:
 
-    if (menacer_psychopathe = True):
-        if (torche == True):
-        menu:
-            "L'aveugler avec la lampe":
-                jump aveugler_Anna
-            "Fuir":
-                jump fuite_Anna
+    if (menacer_psychopathe):
+        if (torche):
+            menu:
+                "L'aveugler avec la lampe":
+                    jump aveugler_Anna
+                "Fuir":
+                    jump fuite_Anna
         else : 
             jump fuite_Anna
 
-    else if (menacer_psychopathe = False):
-        if (torche == True):
-        menu:
-            "Rester caché":
-                jump rester_cache_Anna
-            "L'aveugler avec la lampe":
-                jump aveugler_Anna
-            "Fuir":
-                jump fuite_Anna
+    elif (menacer_psychopathe == False):
+        if (torche):
+            menu:
+                "Rester caché":
+                    jump rester_cache_Anna
+                "L'aveugler avec la lampe":
+                    jump aveugler_Anna
+                "Fuir":
+                    jump fuite_Anna
         else : 
-        menu:
-            "Rester caché":
-                jump rester_cache_Anna
-            "Fuir":
-                jump fuite_Anna
+            menu:
+                "Rester caché":
+                    jump rester_cache_Anna
+                "Fuir":
+                    jump fuite_Anna
 
 label aveugler_Anna:
 

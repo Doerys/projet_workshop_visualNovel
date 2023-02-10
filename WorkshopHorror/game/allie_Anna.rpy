@@ -33,40 +33,52 @@
     E "Le duo grimpe l'escalier menant hors de la cave, pour arriver dans un couloir."    
     J "Euh... Anna... ôte moi d’un doute, les lumières étaient éteintes tout à l’heure ?"
     A "Je... Je ne crois pas ?"
+    E "Anna clique sur un interrupteur, avant de laisser échapper un soupir."
     A "Oh non, les interrupteurs ne fonctionnent plus !"
     J "Qu’est-ce qui se passe..."
 
-
     if (torche == True):
-        E "Allumant sa lampe torche, Jason passe devant, avançant doucement à pas feutré jusque dans l’entrée de la maison."
+    E "Allumant sa lampe torche, Jason passe devant, avançant doucement à pas feutré jusqu'au hall d'entrée de la maison."
 
     elif (torche == False):
-        E "Allumant sa lampe torche, Anna passe devant, balayant le sol de son faisceau tant il est impossible d’y voir à plus de 2 mètres."
+    E "Allumant sa lampe torche, Anna passe devant, balayant le sol de son faisceau avec une prudence exacerbée."
     
     J "T’as une idée de qui pourrait avoir fait ça, toi ?"
-    A "J’en ai aucune idée, mais c’est forcément un malade. Mon dieu... qui pourrait faire ça..."
+    A "Aucune idée. Et je n'ai pas envie de le savoir. Plus vite on sera parti d'ici, plus vite on pourra oublier ça."
     J "C’est une bonne chose d’avoir laissé Bryan avec Kim, Au cas où ils se retrouvent en danger, il pourra plus facilement la défendre..."
-    A "Ouais, il faut juste espérer qu’il y ait bien qu’une seule personne..."
-    E "BRUIT DE PORTE QUI CLAQUE"
-    A "Wouaw, c’était quoi ça ?"
+    A "Ouais, il faut juste espérer qu’il y ait bien qu’une seule personne à vouloir notre peau ici..."
+    E "Une porte claque violemment derrière le duo !"
+    A "Qu'est-ce qu'il vient de se passer ?"
     J "Rien, la porte vient de claquer...J’ai eu une de ces peurs !"
-    A "Tu parles, j’ai carrément failli me pisser dessus !"
+    A "Je n'aime pas du tout ça !"
     J "Attends, tu sens le courant d’air ?"
-    A "Ouais..."
+    A "Sûrement une entrée ouverte..."
     E "Avançant pas à pas, les deux amis suivent le vent à travers le hall d’entrée."
 
-    if(vu_fenetre_ouverte = True):
+    if(vu_fenetre_ouverte == False):
 
-    A "Elle n’était pas close tout à l’heure celle-là ?"
-    J "Si. Si, je crois bien. Vas-y, va la fermer, je te couvre..."
-    A "Quoi ? T’as vu comment tu trembles, tu me couvres rien du tout !"
-    J "Mais si... Tu sais mieux fermer les fenêtres que moi !"
-    A "Je te déteste..."
-    A_shout "AHHHH"
-    J "Quoi, qu’est-ce qu’il y a ?"
-    A "Dehors ! Dehors, j’ai vu quelque chose !"
-    J "T’as vu quoi ?"
-    A "Je ne sais pas, quelque chose a bougé. Oh merde..."
+    A "Elle n’était pas fermée tout à l’heure celle-là ?"
+    J "Si. Si, je crois bien." 
+
+    jump fenetre_ouverte_Anna
+
+    if(vu_fenetre_ouverte == True):
+    
+    A "C'est la même fenêtre que tout à l'heure..."
+    J "Ca commence à devenir extrêmement flippant."
+
+    jump fenetre_ouverte_Anna
+
+label fenetre_ouverte_Anna:
+
+
+    A "Vas-y, va la fermer..."
+    E "Peu rassuré, Jason s'avance vers la fenêtre." 
+    E "En s'approchant de l'ouverture, il sursaute, lorsqu'il lui semble voir une ombre passer entre les arbres du jardin."
+    A "Quoi, qu’est-ce qu’il y a ?"
+    J "Dehors ! Dehors, j’ai vu quelque chose !"
+    A "T’as vu quoi ?"
+    J "Je ne sais pas, quelque chose a bougé. Oh merde..."
 
     if (torche == True):
 
@@ -78,25 +90,11 @@
                 "Eteindre la lampe et se cacher":
                     jump eteindre_lampe_torche_Anna
 
-
     elif (torche == False):
-        J "Hé, je crois que j’ai une idée !"
-        if (relationJtoA < 40):
-
-            A "Laisse-moi faire, je vais te montrer comment on gère ce genre de chose."
-            A_shout "Hé ! Je ne sais pas qui vous êtes mais je vous déconseille de vous approcher !"
-            A_shout "Ouais, vous là ! On est armés ici, alors dégagez avant que je vienne vous coller une balle entre les deux yeux, c’est compris ?"
-            J "Tu joues à quoi là ?"
-            A "J’ai vu ça dans les films, ça marche...souvent."
-            J "Ouais bah on est pas dans un film alors tais-toi avant de finir comme Kim, ok ?"
-            A_shout "Ouais... je pense que je l’ai impressionnée. C’est sûr, même."
-            J "... Attends, il fait du bruit, non ?"
-            E "Attentif aux bruits de l’extérieur, les deux amis tendent l’oreille... Encore... Encore..."
-
-
-            jump chouette2
-
-        elif (relationJtoA >= 40):
+    
+    J "Hé, je crois que j’ai une idée !"
+    
+        if (relationJtoA >= 0):
 
             menu:
                 "Observer dehors":
@@ -106,22 +104,41 @@
                 "Eteindre la lampe et se cacher":
                     jump eteindre_lampe_Anna
 
+            jump chouette2
+
+        elif (relationJtoA < 0):
+            
+            menu:
+                "Observer dehors":
+                    jump initiative_Anna
+                "Refermer la fenêtre":
+                    jump initiative_Anna
+                "Eteindre la lampe et se cacher":
+                    jump initiative_Anna
+
+            jump chouette2
+
+label initiative_Anna:
+
+    E "Jason n'a même pas le temps de proposer sa suggestion, Anna prend aussitôt les choses en main."
+    E "Anna s'empare d'une tapisserie, qu'elle vient aussitôt s'écarter de la fenêtre, pour s'emparer d'un tapis au sol."
+    E "Elle place ensuite le tapis au-dessus de la fenêtre, en guise de rideau."
+    A_murmure "Maintenant on ne peut plus nous voir. On attend en silence."
+
+
 label observer_dehors_torche_Anna:
     J "Laisse-moi voir un peu."
     A "Fais attention... On ne sait jamais..."
     E "Jason balaye le faisceau de lumière à travers la fenêtre. Rien ne semble bouger."
-    J "Je ne vois rien, tu es sûr de ce que tu as vu ?"
-    A "Mais quand est-ce que tu vas arrêter de douter de tout ce que je te dis !"
-
+    J "Je ne vois plus rien..."
+    A "On devrait pas perdre plus de temps, et continuer."
 
     jump chouette2
 
 
 label fermer_fenetre_torche_Anna:
-    J "Pousse toi, je vais la fermer, si tu as si peur que ça..."
-    A "Fais attention s’il te plait ! Je suis sûr de ce que j’ai vu !"
     E "Jason vient refermer la fenêtre lorsqu’il remarque un détail troublant. En effet, la poignée de la fenêtre est fracturée."
-    J_murmure "Euh... Bryan ? Regarde ça..."
+    J_murmure "Euh... Anna ? Regarde ça..."
     A_murmure "Quoi ? Oh mon dieu. Tu crois que quelqu’un l’a cassé ?"
     J_murmure "On dirait bien..."
 
@@ -132,24 +149,24 @@ label eteindre_lampe_torche_Anna:
     J "Viens vite ! Cache-toi !"
     E "Se précipitant sous le rebord de la fenêtre, les deux amis attendent en silence, cachés."
     A_murmure "On va rester ici combien de temps ?"
-    J_murmure "Jusqu’à ce qu’on puisse sortir..."
-    A_murmure "Alors ça risque d’être long..."
+    J_murmure "Jusqu’à ce qu’on soit sûr d'être hors de danger..."
+    A_murmure "Alors ça risque d’être long... Kim est en danger."
 
     jump chouette2
 
 label observer_dehors_Anna:
-    A "Laisse-moi voir un peu."
-    J "Fais attention... On ne sait jamais..."
-    E "Bryan balaye le faisceau de lumière à travers la fenêtre. Rien ne semble bouger."
+    J "Jette un oeil à travers la fenêtre avec ta lampe torche."
+    A "T'es sûr que c'est prudent ?"
+    J "Vas y."
+    E "Anna balaye le faisceau de lumière à travers la fenêtre. Rien ne semble bouger."
     A "Je ne vois rien, tu es sûr de ce que tu as vu ?"
-    J "Mais quand est-ce que tu vas arrêter de douter de tout ce que je te dis !"
+    J "Je crois..."
 
     jump chouette2
 
 label fermer_fenetre_Anna:
-    A "Pousse toi, je vais la refermer, si tu as si peur que ça..."
-    J "Fais attention s’il te plait ! Je suis sûr de ce que j’ai vu !"
-    E "Bryan vient refermer la fenêtre lorsqu’il remarque un détail troublant. En effet, la poignée de la fenêtre est fracturée."
+    J "Referme la fenêtre... C'est peut-être la personne qui a blessé Kim !"
+    E "Anna vient refermer la fenêtre lorsqu’elle remarque un détail troublant. En effet, la poignée de la fenêtre est fracturée."
     A_murmure "Euh... Jason ? Regarde ça..."
     J_murmure "Quoi ? Oh mon dieu. Tu crois que quelqu’un l’a cassé ?"
     A_murmure "On dirait bien..."
@@ -159,11 +176,11 @@ label fermer_fenetre_Anna:
 
 label eteindre_lampe_Anna:
 
-    A "Viens vite ! Cache-toi !"
+    J "Vite ! Cache-toi !"
     E "Se précipitant sous le rebord de la fenêtre, les deux amis attendent en silence, cachés."
-    J_murmure "On va rester ici combien de temps ?"
-    A_murmure "Jusqu’à ce qu’on puisse sortir..."
-    J_murmure "Alors ça risque d’être long..."
+    A_murmure "On va rester ici combien de temps ?"
+    J_murmure "Jusqu’à ce qu’on puisse sortir..."
+    A_murmure "Alors ça risque d’être long..."
 
 
 label chouette2:

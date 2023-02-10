@@ -12,30 +12,41 @@
     B "Je sais... mais je ne peux pas rester là sans rien faire. Pas pour Kim."
 
 
-    if (relationJtoB > 50):
-        B "Hé d’ailleurs, quand j’ai aidé Kim elle m’a donné ça... Je pense que ça pourrait nous être utile dans la cave... Prend-la, je me chargerai de la trousse de secours !"
+if (relationJtoK >= 0 and blessure_kim = 1):
+        B "Hé d’ailleurs, quand j’ai aidé Kim elle m’a demandé de te donner ça... Je pense que ça pourrait nous être utile... Tiens, prends-la !"
+        E "Bryan tend à Jason une lampe torche."
         $ torche = True
-    else :
-        B "Hé, d’ailleurs... Kim m’a tendu une lampe tout à l’heure... Je pense que ça pourrait nous être utile dans la cave... Je la garde. Toi, charge toi de prendre la trousse de secours."
+
+    else if (relation JtoK < 0 and blessure_kim = 1):
+        B "Hé d’ailleurs, quand j’ai aidé Kim elle m’a confié ça... Je pense que ça nous sera utile."
+        E "Bryan montre une lampe torche."
         $ torche = False
 
-    J "Ok, pas de soucis."
+    else if (blessure_kim = 2) :
+        B "Hé d’ailleurs, je viens de trouver ça dans la cave... Je pense que ça nous sera utile."
+        E "Bryan montre une lampe torche."
+        $ torche = False
+
+    J "Ok, parfait."
+
+    E "Le duo grimpe l'escalier menant hors de la cave, pour arriver dans un couloir."    
     J "Euh... Bryan... Les lumières étaient éteintes tout à l’heure ?"
     B "Je... Je ne crois pas ?"
+    E "Bryan clique sur un interrupteur, avant de le marteler avec impatience."
     B "Les interrupteurs ne fonctionnent plus !"
     J "Qu’est-ce qui se passe..."
 
 
     if (torche == True):
-        E "Allumant sa lampe torche, Jason passe devant, avançant doucement à pas feutré jusque dans l’entrée de la maison."
+        E "Allumant sa lampe torche, Jason passe devant, avançant doucement à pas feutré jusqu'au hall d'entrée de la maison."
 
     elif (torche == False):
-        E "Allumant sa lampe torche, Bryan passe devant, un peu trop sûr de lui jusque dans l’entrée de la maison."
+    E "Allumant sa lampe torche, Bryan passe devant, un peu trop sûr de lui, jusqu'au hall d'entrée de la maison."
     J "T’as une idée de qui pourrait avoir fait ça, toi ?"
     B "J’en ai aucune idée, mais c’est forcément un malade. Mon dieu... qui pourrait faire ça..."
-    J "C’est une bonne chose d’avoir laissé Anna avec Kim, déjà qu’elle connait plus de choses que nous pour la soigner, tous les deux on pourra plus facilement se défendre."
-    B "Ouais, il faut juste espérer qu’il y ait bien qu’une seule personne..."
-    E "BRUIT DE PORTE QUI CLAQUE"
+    J "C’est une bonne chose d’avoir laissé Anna avec Kim, elle connait plus de choses que nous pour la soigner, elle sera capable de la maintenir en état jusqu'à notre retour."
+    B "Ouais, il faut juste espérer qu’il y ait bien qu’une seule personne à vouloir notre peau ici..."
+    E "Une porte claque violemment derrière le duo !"
     B "Wouaw, c’était quoi ça ?"
     J "Rien, la porte vient de claquer...J’ai eu une de ces peurs !"
     B "Tu parles, j’ai carrément failli me pisser dessus !"
@@ -43,56 +54,86 @@
     J "Ouais..."
     E "Avançant pas à pas, les deux amis suivent le vent à travers le hall d’entrée."
 
-    #if (vu_fenetre_ouverte == True):
+    if(vu_fenetre_ouverte == False):
+    B "Elle n’était pas fermée tout à l’heure celle-là ?"
+    J "Si. Si, je crois bien." 
+
+    jump fenetre_ouverte_Bryan
+
+    if(vu_fenetre_ouverte == True):
+    B "Putain, c'est la même fenêtre que tout à l'heure ! Je vous l'avais dit !"
+    J "Ca commence à devenir extrêmement flippant."
+
+    jump fenetre_ouverte_Bryan
+
+label fenetre_ouverte_Bryan:
+
     B "Attends... Elle était pas fermée tout à l’heure ?"
-    J "Si. Si, je crois bien. Vas-y, va la claquer, je te couvre..."
+    J "Vas-y, va la claquer, je te couvre..."
     B "Quoi ? T’as vu comment tu trembles, tu me couvres rien du tout !"
     J "Mais si... Tu sais mieux fermer les fenêtres que moi !"
-    B "Je te déteste..."
+    B "Je te déteste... On voit qui est le plus courageux, ici."
+    E "Bryan s'avance en direction de la fenêtre, avant de sursauter brusquement."
     B_shout "AHHHH"
     J "Quoi, qu’est-ce qu’il y a ?"
     B "Dehors ! Dehors, j’ai vu quelque chose !"
     J "T’as vu quoi ?"
     B "Je ne sais pas, quelque chose a bougé. Oh merde..."
 
-    # choix si on a la torche
-
     if (torche == True):
 
         menu:
             "Observer dehors":
-                jump observer_dehors_torche
+                jump observer_dehors_torche_Bryan
             "Refermer la fenêtre":
-                jump fermer_fenetre_torche
+                jump fermer_fenetre_torche_Bryan
             "Eteindre la lampe et se cacher":
-                jump eteindre_lampe_torche
-
+                jump eteindre_lampe_torche_Bryan
 
     elif (torche == False):
-        J "Hé, je crois que j'ai une idée !"
-        if (relationJtoB < 40):
-            B "Laisse-moi faire, je vais te montrer comment on gère ce genre de chose."
-            B_shout "Hé ! Je ne sais pas qui vous êtes mais je vous déconseille de vous approcher !"
-            B_shout "Ouais, vous là ! On est armés ici, alors dégagez avant que je vienne vous coller une balle entre les deux yeux, c’est compris ?"
-            J "Tu joues à quoi là ?"
-            B "J’ai vu ça dans les films, ça marche...souvent."
-            J "Ouais bah on est pas dans un film alors tais-toi avant de finir comme Kim, ok ?"
-            B_murmure "Ouais... je pense que je l’ai impressionnée. C’est sûr, même."
-            J "... Attends, il fait du bruit, non ?"
-            E "Attentif aux bruits de l’extérieur, les deux amis tendent l’oreille... Encore... Encore..."
-            jump chouette
-
-        elif (relationJtoB >= 40):
+    
+    J "Hé, je crois que j’ai une idée !"
+    
+        if (relationJtoB >= 0):
 
             menu:
                 "Observer dehors":
-                    jump observer_dehors
+                    jump observer_dehors_Bryan
                 "Refermer la fenêtre":
-                    jump fermer_fenetre
+                    jump fermer_fenetre_Bryan
                 "Eteindre la lampe et se cacher":
-                    jump eteindre_lampe
+                    jump eteindre_lampe_Bryan
 
-label observer_dehors_torche:
+            jump chouette
+
+        elif (relationJtoB < 0):
+            
+            menu:
+                "Observer dehors":
+                    jump initiative_Bryan
+                "Refermer la fenêtre":
+                    jump initiative_Bryan
+                "Eteindre la lampe et se cacher":
+                    jump initiative_Bryan
+
+            jump chouette
+
+
+label initiative_Bryan:
+
+    E "Jason n'a même pas le temps de proposer sa suggestion, Bryan prend aussitôt les choses en main."
+    B "Laisse-moi faire, je vais te montrer comment on gère ce genre de chose."
+    B_shout "Hé ! Je ne sais pas qui vous êtes mais je vous déconseille de vous approcher !"
+    B_shout "Ouais, vous là ! On est armés ici, alors dégagez avant que je vienne vous coller une balle entre les deux yeux, c’est compris ?"
+    J "Tu joues à quoi là ?"
+    B "J’ai vu ça dans les films, ça marche...souvent."
+    J "Ouais bah on est pas dans un film alors tais-toi avant de finir comme Kim, ok ?"
+    B_murmure "Ouais... je pense que je l’ai impressionnée. C’est sûr, même."
+    J "... Attends, il fait du bruit, non ?"
+    E "Attentifs aux bruits de l’extérieur, les deux amis tendent l’oreille... Encore... Encore..."
+    jump chouette
+
+label observer_dehors_torche_Bryan:
     J "Laisse-moi voir un peu."
     B "Fais attention... On ne sait jamais..."
     E "Jason balaye le faisceau de lumière à travers la fenêtre. Rien ne semble bouger."
@@ -100,16 +141,16 @@ label observer_dehors_torche:
     B "Mais quand est-ce que tu vas arrêter de douter de tout ce que je te dis !"
     jump chouette
 
-label fermer_fenetre_torche:
+label fermer_fenetre_torche_Bryan:
     J "Pousse toi, je vais la refermer, si tu as si peur que ça..."
     B "Fais attention s’il te plait ! Je suis sûr de ce que j’ai vu !"
     E "Jason vient refermer la fenêtre lorsqu’il remarque un détail troublant. En effet, la poignée de la fenêtre est fracturée."
     J_murmure "Euh... Bryan ? Regarde ça..."
-    B_murmure "Quoi ? Oh mon dieu. Tu crois que quelqu’un l’a cassé ?"
+    B_murmure "Quoi ? Oh putain. Tu crois que quelqu’un l’a cassé ?"
     J_murmure "On dirait bien..."
     jump chouette
 
-label eteindre_lampe_torche:
+label eteindre_lampe_torche_Bryan:
     J "Viens vite ! Cache-toi !"
     E "Se précipitant sous le rebord de la fenêtre, les deux amis attendent en silence, cachés."
     B_murmure "On va rester ici combien de temps ?"
@@ -117,7 +158,8 @@ label eteindre_lampe_torche:
     B_murmure "Alors ça risque d’être long..."
     jump chouette
     
-label observer_dehors:
+label observer_dehors_Bryan:
+    J "Jette un oeil à travers la fenêtre avec ta lampe torche."
     B "Laisse-moi voir un peu."
     J "Fais attention... On ne sait jamais..."
     E "Bryan balaye le faisceau de lumière à travers la fenêtre. Rien ne semble bouger."
@@ -125,17 +167,17 @@ label observer_dehors:
     J "Mais quand est-ce que tu vas arrêter de douter de tout ce que je te dis !"
     jump chouette
 
-label fermer_fenetre:
-    B "Pousse toi, je vais la refermer, si tu as si peur que ça..."
-    J "Fais attention s’il te plait ! Je suis sûr de ce que j’ai vu !"
+label fermer_fenetre_Bryan:
+    J "Referme la fenêtre... C'est peut-être la personne qui a blessé Kim !"
+    B "Très bien, je vais la refermer, si tu as si peur que ça..."
     E "Bryan vient refermer la fenêtre lorsqu’il remarque un détail troublant. En effet, la poignée de la fenêtre est fracturée."
     B_murmure "Euh... Jason ? Regarde ça..."
     J_murmure "Quoi ? Oh mon dieu. Tu crois que quelqu’un l’a cassé ?"
     B_murmure "On dirait bien..."
     jump chouette
 
-label eteindre_lampe:
-    B "Viens vite ! Cache-toi !"
+label eteindre_lampe_Bryan:
+    J "Viens vite ! Cache-toi !"
     E "Se précipitant sous le rebord de la fenêtre, les deux amis attendent en silence, cachés."
     J_murmure "On va rester ici combien de temps ?"
     B_murmure "Jusqu’à ce qu’on puisse sortir..."
@@ -151,9 +193,7 @@ label chouette:
     J_murmure "Attends ! Ne. Bouge. Surtout. Pas." #(chuchote, doucement)
     E "Bruit de pas"
     B_murmure "Tu crois que c’est lui ?" 
-    J_murmure "Chut  ! Tais-toi !"
-
-
+    J_murmure "Chut ! Tais-toi !"
 
     menu:
         "Se cacher":

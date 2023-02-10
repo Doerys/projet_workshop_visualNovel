@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/arcSauvetageKim.rpy", line 23: expected ':' not found.
-    "Aller sauver Bryan"!:
-                        ^
+File "game/allie_Bryan.rpy", line 183: expected 'label_name' not found.
+    jump
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Thu Feb  9 18:22:43 2023
+Thu Feb  9 20:49:01 2023

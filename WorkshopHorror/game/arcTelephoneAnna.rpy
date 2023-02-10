@@ -24,7 +24,9 @@ label policecallAnna:
     A "Elle… elle ne m’a jamais dit qui c’est… Je suis désolée Jason, elle m’avait promis de t’en parler…"
     J "C’est pas possible… T’as de la chance qu’on doit partir d’ici, mais crois-moi qu’on va en reparler !"
     E "Jason compose le numéro de secours."
+
     play sound "audio/Sounds/Phone Calling.mp3"
+    
     J "Allô ?"
     E "Le téléphone grésille…"
     J "Allô, vous m’entendez ?"

@@ -1,28 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/loadLabels.rpy", line 202, in script
-    $ canGetItemAppart.remove(telecommande)
-  File "game/loadLabels.rpy", line 202, in <module>
-    $ canGetItemAppart.remove(telecommande)
-ValueError: list.remove(x): x not in list
+  File "game/loadLabels.rpy", line 252, in script
+    $ inventory.selectItem(inventory.getInv().index(telecommande))
+  File "game/loadLabels.rpy", line 252, in <module>
+    $ inventory.selectItem(inventory.getInv().index(telecommande))
+ValueError: <store.Item object at 0x0000000003fd43d0> is not in list
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/loadLabels.rpy", line 202, in script
-    $ canGetItemAppart.remove(telecommande)
-  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+  File "game/loadLabels.rpy", line 252, in script
+    $ inventory.selectItem(inventory.getInv().index(telecommande))
+  File "C:\Users\gaelb\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+  File "C:\Users\gaelb\Downloads\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/loadLabels.rpy", line 202, in <module>
-    $ canGetItemAppart.remove(telecommande)
-  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\revertable.py", line 97, in do_mutation
-    return method(self, *args, **kwargs)
-ValueError: list.remove(x): x not in list
+  File "game/loadLabels.rpy", line 252, in <module>
+    $ inventory.selectItem(inventory.getInv().index(telecommande))
+ValueError: <store.Item object at 0x0000000003fd43d0> is not in list
 
-Windows-10-10.0.19044 AMD64
+Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 J 1.0
-Thu Feb  9 18:21:44 2023
+Thu Feb  9 20:51:22 2023

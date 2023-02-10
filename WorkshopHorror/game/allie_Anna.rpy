@@ -1,5 +1,4 @@
-﻿@@ -1,511 +1,483 @@
-﻿label suivre_Anna:
+﻿﻿label suivre_Anna:
 
     $ relationJtoA += 1
 
@@ -14,7 +13,10 @@
     with dissolve
 
     E "Sans perdre un instant, Anna et Jason remontent les escaliers en direction du rez-de-chaussée."
+<<<<<<< HEAD
     E "Anna et Jason remontent les escaliers en direction du rez-de-chaussée."
+=======
+>>>>>>> 0c41905118cfb3e0c557b8550c36ac88eb193ce0
     A "Hé, Jason... Merci de m’avoir écouté..."
     J "Bryan n’a pas totalement tort, tu sais... On ne doit pas perdre de temps."
     A "Je sais... mais je ne veux pas risquer de faire une erreur. On n’a pas de deuxième chance..."
@@ -22,7 +24,10 @@
     if (relationJtoK >= 0 and blessure_kim == 1):
         A "Hé d’ailleurs, quand j’ai aidé Kim elle m’a demandé de te donner ça... Je pense que ça pourrait nous être utile... Tiens, prends-la !"
         E "Anna tend à Jason une lampe torche."
+<<<<<<< HEAD
         E "Anna vous tend une lampe torche."
+=======
+>>>>>>> 0c41905118cfb3e0c557b8550c36ac88eb193ce0
         $ torche = True
 
     elif (relationJtoK < 0 and blessure_kim == 1):
@@ -409,7 +414,10 @@ label combat_SK_Anna:
 label aveugler_Anna:
 
     J_murmure "Hé, j’ai une idée débile, mais ça peut marcher ! Je vais utilise ma lampe torche pour l’aveugler."
+<<<<<<< HEAD
     J_murmure "Hé, j’ai une idée débile, mais ça peut marcher ! Je vais utiliser ma lampe torche pour l’aveugler."
+=======
+>>>>>>> 0c41905118cfb3e0c557b8550c36ac88eb193ce0
     A_murmure "Bonne idée ! Ca nous laissera peut-être assez de temps de la semer !"
     J_murmure "Ok, bonne idée ! A trois !"
     J_murmure  "Un"
@@ -514,4 +522,3 @@ label pointNclicChambreAllie:
     E "Le téléphone se trouve sur le lit de Kim. Jason s'en saisit."
 
     jump to lectureMessage
-label pointNclicChambreAllie:

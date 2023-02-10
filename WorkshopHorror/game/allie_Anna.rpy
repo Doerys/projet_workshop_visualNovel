@@ -184,7 +184,7 @@ label eteindre_lampe_Anna:
 
 
 label chouette2:
-    E "Soudain, le cri hululement d’une chouette résonna entre les arbres du jardin."
+    E "Soudain, le hululement d’une chouette résonna entre les arbres du jardin."
     A_shout "AHHHHH"
     J "Saloperie de chouette !"
     A_shout "Non... Non, non, non !"
@@ -194,11 +194,32 @@ label chouette2:
     J "Attends, ne me dis pas que..."
     A "Si ! Non mais c’est une blague ! Mon téléphone est complètement explosé !"
     J "Il ne fonctionne plus ?"
-    A "Ahhh... non. Non, non, non, allez rallume toi, par pitié..."
+    A "Ahhh... non. Non, non, non, allez rallume toi, par pitié... Ton téléphone, Jason !"
+    E "Jason tente d'allumer à son tour son téléphone, avant de constater qu'il n'a plus de batterie."
     J "Merde, on va faire comment ?"
-    A "... Kim doit bien avoir un autre appareil chez elle, elle change de téléphone tous les mois !"
+    A "... Okay, c'est pas foutu. Kim doit bien avoir un autre appareil chez elle, elle change de téléphone tous les mois !"
+    A "Il faut qu'on atteigne sa chambre, à l'étage. On pourra appeler les secours avec ce téléphone."
     J "Ok, allons voir ça !"
+    A_murmure "Attends ! Ne. Bouge. Surtout. Pas." #(chuchote, doucement)
+    E "De l’autre côté de la porte d’entrée, des bruits de pas commencent à crisser sous des semelles de chaussures."
+    J_murmure "Tu crois que c’est lui ?" 
+    A_murmure "Chut ! Tais-toi !"
+
+    menu:
+        "Se cacher":
+            jump se_cacher_Anna
+        "Menacer":
+            jump menacer_Anna
+        "Bloquer la porte":
+            jump bloquer_Anna
+
+
+label se_cacher_Anna:
 
 
 
+label menacer_Anna:
 
+
+
+label bloquer_Anna:

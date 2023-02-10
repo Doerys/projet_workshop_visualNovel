@@ -191,7 +191,7 @@ label chouette:
     J "Ouais, mais si on voulait rester discret, maintenant c’est foutu..."
     B "C’est jamais foutu, viens, il faut qu’on y aille avant qu’il soit trop tard..."
     J_murmure "Attends ! Ne. Bouge. Surtout. Pas." #(chuchote, doucement)
-    E "Bruit de pas"
+    E "De l’autre côté de la porte d’entrée, des bruits de pas commencent à crisser sous des semelles de chaussures."
     B_murmure "Tu crois que c’est lui ?" 
     J_murmure "Chut ! Tais-toi !"
 
@@ -202,67 +202,6 @@ label chouette:
             jump menacer_Bryan
         "Bloquer la porte":
             jump bloquer_Bryan
-
-label se_cacher_Bryan:
-    E "De l’autre côté de la porte d’entrée, des bruits de pas commencent à crisser sous des semelles de chaussures."
-    J_murmure "Viens avec moi. Tout. Doucement."
-    E "Le plus discrètement possible, les deux amis reculent, recroquevillés sur eux-mêmes."
-    J_murmure "Vas dans le couloir de la cave. Maintenant !"
-    B_murmure "Mais... et si elle vient vers nous, on fait quoi ?"
-    J_murmure "On improvise. Maintenant vite !"
-    E "A peine eurent-ils le temps de s’enfermer que la poignée de la porte s’ouvrit. Doucement, comme si elle n’avait jamais été fermée."
-    B_murmure "Attends, ne ferme pas la porte..."
-    B_murmure "Il faut voir qui c’est !"
-    J_murmure "Regarde, on dirait une femme."
-    B_murmure "Une femme ? Tu connais une femme qui serai capable de planter Kim, toi ?"
-    J_murmure "Non... Maintenant tais-toi, on va se faire chopper..."
-    B_murmure "Attends, je crois que je peux être capable de l’empêcher de venir par ici."
-    J_murmure "Quoi ? Mais t’es malade !"
-    B_murmure "Non mais regarde-la ! Je sais que je peux courir plus vite qu’elle. Je te jure que je peux la distancer, comme ça t’as le temps de monter récupérer une arme ou de quoi appeler les flics"
-
-    if (relationJtoB < 40):
-        menu:
-            "Accepter":
-                jump accepter_Bryan
-
-            "Refuser":
-                jump refuser
-
-    else :
-        menu:
-            "Accepter":
-                jump accepter_Bryan
-            "Refuser":
-                jump refuser3
-       
-
-
-label accepter_Bryan:
-    J_murmure "Bon, ok. Mais fais attention à toi !"
-    B_murmure "Ne t’inquiète pas pour moi, inquiète-toi plus pour Kim maintenant"
-    E "Sans un bruit, Bryan se faufile hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison."
-    E "Dans son dos, la femme s’est lancée à sa poursuite."
-
-    jump Bryan_distraction
-
-
-label refuser1:
-    J_murmure "Mais t’es malade ! Ne fais pas ça, tu ne sais pas de quoi elle est capable !"
-    B_murmure "Alors quoi, tu veux qu’on reste ici pendant que Kim se vide de son sang ? Fais moi confiance, je suis en train de sauver ta meuf !"
-    E "Sans un bruit, Bryan se faufile hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison."
-    E "Dans son dos, la femme s’est lancée à sa poursuite."
-
-    jump Bryan_distraction
-
-label refuser3:
-    J_murmure "Mais t’es pas bien ! Si ça se trouve elle court beaucoup plus vite que toi ! Tu vas faire quoi face à une arme blanche ?"
-    B_murmure "Hmmmm."
-    B_murmure "Dans ce cas, il faut qu’on s’arme, et vite"
-    J "Ah, là je suis d’accord avec toi, mais pour l’instant reste caché et ferme-la !"
-    E "Accroupis dans la pénombre du couloir, Jason et Bryan observent la jeune femme passer devant eux, vêtue d’une longue robe et d’un masque blanc, cachant son visage aux deux jeunes hommes."
-    E "Malheureusement pour eux, plus temps avance, plus la femme se dirige dans leur direction."
-
-    jump combat_SK
 
 label menacer_Bryan:
     E "Plus ils attendent, plus les bruits de pas commencent à s’approcher dangereusement de la porte."
@@ -291,6 +230,71 @@ label bloquer_Bryan:
     E "S’élançant à travers la vitre ouverte, Bryan plonge dans l’obscurité de la nuit, entraînant derrière lui l’agresseur. Seul, Jason se précipite alors vers la cuisine, où par chance, il pourrait trouver de quoi sauver sa petite-amie."
 
     jump on_continu #point and clic sans allié
+
+label se_cacher_Bryan:
+    J_murmure "Viens avec moi. Tout. Doucement."
+    E "Le plus discrètement possible, les deux amis reculent, recroquevillés sur eux-mêmes."
+    J_murmure "Va dans le couloir. Maintenant !"
+    B_murmure "Mais... et si elle vient vers nous, on fait quoi ?"
+    J_murmure "On improvise. Maintenant vite !"
+    E "A peine ont-ils le temps de s’enfermer que la poignée de la porte s’ouvre."
+    B_murmure "Attends, ne ferme pas la porte..."
+    B_murmure "Il faut voir qui c’est !"
+    J_murmure "Regarde, on dirait une femme."
+    B_murmure "Une femme ? Tu connais une femme qui serai capable de planter Kim, toi ?"
+    J_murmure "Non... Maintenant tais-toi, on va se faire chopper..."
+    E "La tueuse continue d'arpenter le hall d'entrée, traquant, observant..."
+    B_murmure "Ecoute. Il faut récupérer au plus vite la trousse de soin. Le mieux pour ça, c'est que je fasse distraction."
+    J_murmure "Quoi ? Mais t’es malade !"
+    B_murmure "Non mais regarde-la ! Je sais que je peux courir plus vite qu’elle. Je te jure que je peux la distancer."
+    B_murmure "Et pendant ce temps-là, t’as le temps de foncer récupérer la trousse de soin."
+
+    menu:
+        "Accepter":
+            jump accepter_Bryan
+
+        "Refuser":
+            jump refuser
+
+label refuser:
+
+    if(relationJtoB < 0):
+        J "Je peux pas te laisser faire ça, c'est trop dangereux."
+        B "Ecoute mec, je vais me passer de ton avis pour le moment, désolé."
+        E "Sans plus de débat, Bryan se faufile hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison."
+        E "Dans son dos, la femme s’est lancée à sa poursuite."
+
+    if(relationJtoB >= 0):
+        J "Je peux pas te laisser faire ça, c'est trop dangereux."
+        B "Très bien. C'est toi le chef."
+
+
+label accepter_Bryan:
+    J_murmure "Bon, ok. Mais fais attention à toi !"
+    B_murmure "Ne t’inquiète pas pour moi, inquiète-toi plus pour Kim maintenant"
+    E "Sans un bruit, Bryan se faufile hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison."
+    E "Dans son dos, la femme s’est lancée à sa poursuite."
+
+    jump Bryan_distraction
+
+
+label refuser1:
+    J_murmure "Mais t’es malade ! Ne fais pas ça, tu ne sais pas de quoi elle est capable !"
+    B_murmure "Alors quoi, tu veux qu’on reste ici pendant que Kim se vide de son sang ? Fais moi confiance, je suis en train de sauver ta meuf !"
+    E "Sans un bruit, Bryan se faufile hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison."
+    E "Dans son dos, la femme s’est lancée à sa poursuite."
+
+    jump Bryan_distraction
+
+label refuser3:
+    J_murmure "Mais t’es pas bien ! Si ça se trouve elle court beaucoup plus vite que toi ! Tu vas faire quoi face à une arme blanche ?"
+    B_murmure "Hmmmm."
+    B_murmure "Dans ce cas, il faut qu’on s’arme, et vite"
+    J "Ah, là je suis d’accord avec toi, mais pour l’instant reste caché et ferme-la !"
+    E "Accroupis dans la pénombre du couloir, Jason et Bryan observent la jeune femme passer devant eux, vêtue d’une longue robe et d’un masque blanc, cachant son visage aux deux jeunes hommes."
+    E "Malheureusement pour eux, plus temps avance, plus la femme se dirige dans leur direction."
+
+    jump combat_SK
 
 label combat_SK:
 
@@ -412,4 +416,6 @@ label fuite_Bryan:
     E "Poussant la porte de toutes ses forces, Bryan réussi presque à renverser la femme lorsqu’il l’attira à l’extérieur. Attendant que la femme passe la porte, Jason se précipite dans la maison, avec comme objectif en tête de s’enfermer dans la cuisine."
 
 
+
+label Bryan_distraction:
 

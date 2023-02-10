@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 6c03d2c (Remerde)
 ﻿label mauve:
     E "Quand Jason ouvre les yeux, il est attaché sur une chaise dans la cave. Ligoté à coup de scotch, une arme à fond est attachée dans sa main."
     E "De l’autre côté du canon, Bryan est lui aussi ligoté, pieds et poings liés."
@@ -479,6 +482,7 @@ label fin_Nancy:
 
 
 
+<<<<<<< HEAD
 =======
 ﻿label mauve:
     E "Quand Jason ouvre les yeux, il est attaché sur une chaise dans la cave. Ligoté à coup de scotch, une arme à fond est attachée dans sa main."
@@ -1441,3 +1445,5 @@ label fin_Nancy:
 
 
 >>>>>>> parent of 38059ce (Merge branch 'main' of https://github.com/Doerys/projet_workshop_visualNovel)
+=======
+>>>>>>> parent of 6c03d2c (Remerde)

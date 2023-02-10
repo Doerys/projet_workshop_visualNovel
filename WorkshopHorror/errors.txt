@@ -2,25 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/partie_mauve.rpy", line 1: expected statement.
-    <<<<<<< HEAD
-                ^
-
-File "game/partie_mauve.rpy", line 2: expected statement.
-    ﻿label mauve:
-                ^
-
-File "game/partie_mauve.rpy", line 481: expected statement.
-    =======
-          ^
-
-File "game/partie_mauve.rpy", line 482: expected statement.
-    ﻿label mauve:
-                ^
-
-File "game/partie_mauve.rpy", line 961: expected statement.
-    >>>>>>> bcc6e1a03f847250e9edca78a3b9adce1648f1b3
-                                                    ^
+File "game/choixAnna.rpy", line 274: expected statement.
+    xalign 0.9
+            ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Feb 10 11:28:46 2023
+Fri Feb 10 10:51:53 2023

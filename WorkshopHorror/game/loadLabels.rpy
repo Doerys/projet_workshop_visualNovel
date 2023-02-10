@@ -8,14 +8,6 @@ label selectCraft :
     if (act_label == 'openPlacard' or act_label == 'openAppart'):
         if (inventory.getInv().count(telecommande) > 0 and inventory.getInv().count(piles) > 0):
             jump craftTelecommande
-
-        if liste.selected == True:
-            $ listeSelect = True
-        else :
-            $ listeSelect = False
-
-        if(act_label == 'openPlacard'):
-            jump openPlacard
         else :
             jump openAppart
     
@@ -42,21 +34,6 @@ label selectCraft :
             jump openAffairesKim
         else :
             jump openSalon
-    
-    if (act_label == 'openCave' or act_label == 'openCouloirBox' or act_label == 'openCouloir' or act_label == 'openBox') :
-        if lettreSK.selected == True:
-            $ lettreSKSelect = True
-        else :
-            $ lettreSKSelect = False
-
-        if(act_label == 'openCouloir'):
-            jump openCouloir
-        if(act_label == 'openCouloirBox'):
-            jump openCouloirBox
-        if(act_label == 'openBox'):
-            jump openBox
-        else :
-            jump openCave
 
 label slotSelect0 :
     $ inventory.selectItem(0)
@@ -205,8 +182,6 @@ label openAppart :
             $ inventory.removeItem(vetement)
         if (inventory.getInv().count(beuh) > 0):
             $ inventory.removeItem(beuh)
-        if (inventory.getInv().count(liste) > 0):
-            $ inventory.removeItem(liste)
 
         jump chezKim
     
@@ -629,7 +604,6 @@ label openCave :
     hide screen cle
     hide screen planches
     hide screen flecheCave
-    hide screen partir
     
     scene cave
     
@@ -640,20 +614,16 @@ label openCave :
 
     if (lettreSKSelect == True) :
         show lettreSKContent :
-            xpos 300
-            ypos 350
+            xpos 0
+            ypos 400
     else :
         hide lettreSKContent
     
     call screen inventory
 
-label toKimDead :
-    
-    J_think "On va trouver du soin Kim..." 
+# label toKimDead :
 
-    jump openCave
-
-# CouloirBox
+# Couloir
 label openCouloirBox :
 
     $ act_label = 'openCouloirBox'
@@ -661,9 +631,8 @@ label openCouloirBox :
     hide screen kimDead
     hide screen marteau
     hide screen flecheCouloirBox
-    hide screen partir
 
-    scene couloir_box
+    scene couloirBox
     
     show screen porteBarricade1
     show screen porteBarricade2
@@ -678,14 +647,9 @@ label openCouloirBox :
     show screen flecheCouloir
 
     if (lettreSKSelect == True) :
-
-        hide screen clou
-        hide screen porteBarricade1
-        hide screen porteBarricade2
-
         show lettreSKContent :
-            xpos 300
-            ypos 350
+            xpos 0
+            ypos 400
     else :
         hide lettreSKContent
     
@@ -697,7 +661,6 @@ label getLettreSK :
     if (possible) :
         hide screen lettreSK
         $ canGetItemCave.remove(lettreSK)
-        #$ lettre_Nancy = True
     else :
         J_think "Je ne peux pas prendre ça..." 
     call screen inventory
@@ -742,32 +705,8 @@ label toBarricade :
         
     call screen inventory 
 
-label toPorteBox :
 
-    if (inventory.getInv().count(cle) > 0 ) :
-        menu:
-            "Utiliser la clé pour ouvrir le box ?"
-            "Oui":
-                $ inventory.removeItem(cle)
-                $ boxOpen = True
-                call screen inventory
-                jump openCouloirBox
-            "Non":
-                call screen inventory
-                jump openCouloirBox
-
-    elif(boxOpen == True):
-
-        jump openBox
-
-    else :
-        J_think "C'est fermé à clé..."
-        jump openCouloirBox
-        
-    call screen inventory 
-
-
-# Couloir
+# CouloirBox
 label openCouloir :
 
     $ act_label = 'openCouloir'
@@ -778,7 +717,6 @@ label openCouloir :
     hide screen porteBarricade1
     hide screen porteBarricade2
     hide screen porteBox
-    hide screen partir
 
     scene couloir
 
@@ -791,10 +729,9 @@ label openCouloir :
     show screen flecheCave
 
     if (lettreSKSelect == True) :
-
         show lettreSKContent :
-            xpos 300
-            ypos 350
+            xpos 0
+            ypos 400
     else :
         hide lettreSKContent
     
@@ -835,7 +772,6 @@ label openBox :
     hide screen porteBarricade1
     hide screen porteBarricade2
     hide screen porteBox
-    hide screen partir
 
     scene box
 
@@ -847,7 +783,7 @@ label openBox :
 
     if (lettreSKSelect == True) :
         show lettreSKContent :
-            xpos 300
+            xpos 0
             ypos 400
     else :
         hide lettreSKContent

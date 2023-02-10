@@ -80,8 +80,6 @@ define config.has_voice = True
 define config.enter_transition = dissolve
 define config.exit_transition = dissolve
 
-define config.rollback_enabled = False
-
 
 ## Entre les écrans du menu du jeu.
 

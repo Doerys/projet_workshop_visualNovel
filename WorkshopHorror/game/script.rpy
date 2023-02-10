@@ -4,21 +4,21 @@
 # ex: image eileen heureuse = "eileen_heureuse.png"
 
 # Déclarez les personnages utilisés dans le jeu.
-define J = Character('Jason', color="#ffffff")
+define J = Character('Jason', color="#ffffff", what_font = 'Calvino-Regular-trial.ttf', who_font = 'UnfinishedScreamRegular.ttf')
 define J_think = Character(kind = J, what_italic = True, what_xalign = 0.5, what_layout ='subtitle')
 define J_shout = Character(kind = J, what_bold = True, what_size = 100) # Kind permet de copier un style de perso, perso qui crie
-define J_murmure = Character(kind = J, what_bold = True, what_size = 60)
-define K = Character('Kim', color= "#ff00bf")
-define K_murmure = Character (kind = K, what_size = 60)
-define K_shout = Character (kind = K, what_size = 100)
-define B = Character('Bryan', color= "#ff0000")
-define B_murmure = Character(kind = B, what_size = 60)
-define B_shout = Character(kind = B, what_size = 100)
-define A = Character('Anna', color= "#ff9100")
-define A_shout = Character(kind = A, what_size = 100)
-define A_murmure = Character(kind = A, what_size = 60)
-define N = Character('Nancy', color= "#f9fd15")
-define I = Character('Voix inconnue', color= "#48ff00")
+define J_murmure = Character(kind = J, what_bold = True, what_size = 60, what_font = 'Calvino-Regular-trial.ttf')
+define K = Character('Kim', color= "#ff00bf", what_font = 'Calvino-Regular-trial.ttf', who_font = 'UnfinishedScreamRegular.ttf')
+define K_murmure = Character (kind = K, what_size = 60,what_font = 'Calvino-Regular-trial.ttf')
+define K_shout = Character (kind = K, what_size = 100,what_font = 'Calvino-Regular-trial.ttf')
+define B = Character('Bryan', color= "#ff0000",what_font = 'Calvino-Regular-trial.ttf', who_font = 'UnfinishedScreamRegular.ttf')
+define B_murmure = Character(kind = B, what_size = 60,what_font = 'Calvino-Regular-trial.ttf')
+define B_shout = Character(kind = B, what_size = 100,what_font = 'Calvino-Regular-trial.ttf')
+define A = Character('Anna', color= "#ff9100",what_font = 'Calvino-Regular-trial.ttf', who_font = 'UnfinishedScreamRegular.ttf')
+define A_shout = Character(kind = A, what_size = 100,what_font = 'Calvino-Regular-trial.ttf')
+define A_murmure = Character(kind = A, what_size = 60,what_font = 'Calvino-Regular-trial.ttf')
+define N = Character('Nancy', color= "#f9fd15",what_font = 'Calvino-Regular-trial.ttf', who_font = 'UnfinishedScreamRegular.ttf')
+define I = Character('Voix inconnue', color= "#48ff00",what_font = 'Calvino-Regular-trial.ttf', who_font = 'UnfinishedScreamRegular.ttf')
 
 define E = Character('', color= "#ffdabc", what_italic = True) # bruitage et environnement
 

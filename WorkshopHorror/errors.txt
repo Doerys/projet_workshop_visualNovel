@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/choixAnna.rpy", line 274: expected statement.
-    xalign 0.9
-            ^
+File "game/script.rpy", line 18: invalid syntax
+    Character(kind = A, what_size = 100),what_font = 'Calvino-Regular-trial.ttf'
+                                                    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Feb 10 10:51:53 2023
+Fri Feb 10 12:03:02 2023

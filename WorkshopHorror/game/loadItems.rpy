@@ -3,7 +3,6 @@
 # -------------------- Images Clickable ------------- #
 # ----------------- FLECHE DE RETOUR ---------------- #
 
-image partir = "items/partir.png"
 image fleche = "items/fleche.png" 
 
 # -------------------- Items et Images Clickable ------------- #
@@ -22,15 +21,10 @@ init python :
     beuh = Item("Sachet de Beuh", "items/beuhItem.png", "items/beuhItemSelect.png",False)
     piles = Item("Piles", "items/pilesItem.png", "items/pilesItemSelect.png",False)
 
-    liste = Item("Liste", "items/listeItem.png", "items/listeItemSelect.png", False)
-    inventory.addItem(liste)
-
     canGetItemAppart = [bouffe, telecommande, boisson, vetement, beuh, piles]
 
     veluxOpen = True
     tabouretClick = False
-    listeSelect = False
-
     phaseTimer = True
     phaseCraft = False
 
@@ -99,6 +93,7 @@ image infirmerie = "items/infirmerie.png"
 image tiroirCuisine = "items/tiroirCuisine.png"
 image tiroirCasse = "items/tiroirCasse.png"
 image affairesKim = "items/affairesKim.png"
+image partir = "items/partir.png"
 
 image livreRecetteContent = "items/livreRecetteContenu.png"
 image mdpCarnetContent = "items/mdpCarnetContenu.png"
@@ -135,7 +130,7 @@ init python :
 
 # Ici, on load les images utilisable par renPy (ça fait un peu un double mais pas grave) 
 
-image clou = "items/boiteClou.png"
+image clou = "items/clou.png"
 image lettreSK = "items/lettreSK.png"
 image cle = "items/cle.png"
 image planches = "items/planches.png"
@@ -144,7 +139,7 @@ image marteau = "items/marteau.png"
 image kimDead = "items/kimDead.png"
 image porteBarricade1 = "items/porteBarricade1.png"
 image porteBarricade2 = "items/porteBarricade2.png"
-image porteBox = "items/porteBox.png"
+image porteBox = "items/aporteBox.png"
 
 image lettreSKContent = "items/lettreSKContent.png"
 

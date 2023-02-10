@@ -147,6 +147,7 @@ jump kimHurlement_Anna
 jump kimHurlement
 
 label kimHurlement:
+<<<<<<< HEAD
 
     if (compagnie_Bryan):
         jump kimHurlement_Bryan
@@ -191,3 +192,13 @@ label kimHurlement_seul:
     E "Vous retrouvez Kim, seule, ensanglantée, sur le sol du hall d'entrée."
 
 jump arcSauvetageKim
+=======
+    E "Un cri aigu retentit dans la maison."
+    J "Kim ! Nom de Dieu."
+    J_shout "T’as pas intérêt à la toucher !"
+    E "Vous courez en direction de la cave avec Anna, où vous aviez laissé Kim blessée."
+    E "Vous retrouvez Kim, seule, ensanglantée, sur le sol de l’entrée."
+
+
+jump arcSauvetageKim
+>>>>>>> parent of 38059ce (Merge branch 'main' of https://github.com/Doerys/projet_workshop_visualNovel)

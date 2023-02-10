@@ -175,17 +175,17 @@ label se_cacher_Bryan:
     J_murmure "Quoi ? Mais t’es malade !"
     B_murmure "Non mais regarde-la ! Je sais que je peux courir plus vite qu’elle. Je te jure que je peux la distancer, comme ça t’as le temps de monter récupérer une arme ou de quoi appeler les flics"
 
-    menu:
-        "Accepter"
-            jump accepter_Bryan
-        if (relationJtoB < 40):
-            "Refuser":
-                jump
+    #menu:
+        #"Accepter"
+            #jump accepter_Bryan
+        #if (relationJtoB < 40):
+            #"Refuser":
+            #    jump
 
 
 
-label accepter_Bryan:
-    J_murmure “Bon, ok. Mais fais attention à toi !”
-    B_murmure “Ne t’inquiète pas pour moi, inquiète-toi plus pour Kim maintenant”
-    E “Sans un bruit, Bryan se faufile hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison.”
-    E “Dans son dos, la femme s’est lancée à sa poursuite.”
+#label accepter_Bryan:
+    #J_murmure “Bon, ok. Mais fais attention à toi !”
+    #B_murmure “Ne t’inquiète pas pour moi, inquiète-toi plus pour Kim maintenant”
+    #E “Sans un bruit, Bryan se faufile hors du couloir, se place au milieu de l’entrée et hurle à plein poumons avant de sortir en courant de la maison.”
+    #E “Dans son dos, la femme s’est lancée à sa poursuite.”

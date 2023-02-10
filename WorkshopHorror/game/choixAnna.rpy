@@ -1,18 +1,23 @@
 ﻿label choix_Anna4:
+
+    $relationJtoA += 1
+    $relationJtoB -= 1
     
-    J "Ouais, donc t’es vraiment parti dans un bad trip. Lâche tes verres sinon demain tu vas finir avec un putain de mal de crâne."
+    J "Anna a raison, ça va, y'a rien d'inquiétant."
+    B "Mais putain, je sais ce que j'ai entendu !"
+    J "Ouais, donc t’es vraiment parti dans un bad trip. Lâche tes verres, sinon demain, tu vas finir avec un putain de mal de crâne."
     B "Ah donc même toi tu ne me crois pas ?"
-    A "Mais sans déconner, comment tu veux qu'on te crois ? T'es en train de finir ton cinquième verre et la soirée vient à peine de commencer !"
-    B "Mais ta gueule toi ! Ce n'est pas de ma faute si t'es pas capable de te retirer le balai que t'as de coincé !"
+    A "Mais sans déconner, comment tu veux qu'on te croit ? T'es en train de finir ton cinquième verre et la soirée vient à peine de commencer !"
+    B "Mais ta gueule toi ! C'est pas de ma faute si t'es pas capable de retirer ton balai du fiac !"
     K "Hé Bryan calme-toi !"
-    B "Non j’en ai marre que personne ne me croit jamais. Vous me dites que vous êtes mes potes mais quand je parle avec vous j’ai juste l’impression d’être le con de service qui se met des caisses à chaque fois qu’on fait une soirée..."
+    B "Non, j’en ai marre que personne ne me croit jamais. Vous me dites que vous êtes mes potes mais quand je parle avec vous j’ai juste l’impression d’être le con de service qui se met des caisses à chaque fois qu’on fait une soirée..."
     J "En même temps, mon pote..."
-    B "Oh c’est bon vous me soulez tous."
-    E "Bryan se lève du canapé énervé, et disparaît dans le coin d’un couloir."
-    K "Je ne sais pas ce qu’il a, mais il va falloir qu’il apprenne à se calmer 'ton pote'... Bon, aller. Je vais descendre chercher une autre bouteille, avant qu’il ne vide toutes celles qu’on a avant qu’on puisse y toucher."
+    B "Oh c’est bon, vous me saoulez tous."
+    E "Bryan se lève du canapé énervé, et disparaît en direction de la cuisine."
+    K "Je ne sais pas ce qu’il a, mais il va falloir qu’il apprenne à se calmer 'ton pote'... Bon, aller. Je vais descendre à la cave chercher une autre bouteille, avant qu’il ne vide toutes celles qu’on a."
     A "Tu crois que c’est une bonne idée de ramener une nouvelle bouteille après le cinéma qu’il vient de nous faire ?"
     K "On aura qu’à la lui cacher... Je n’ai pas envie de passer une soirée coincée du cul parce que 'monsieur' ne sait pas se tenir."
-    E "Kim sort de la maison, laissant derrière ses amis, mais attirant Jason d’un léger clin d’oeil."
+    E "Kim sort de la pièce, laissant derrière elle ses amis, mais attirant Jason d’un léger clin d’oeil."
 
     menu:
         "Aller voir Bryan dans la cuisine":
@@ -20,63 +25,99 @@
 
         "Rester dans le salon avec Anna":
             jump Anna_salon
+        
+        "Accompagner Kim discrètement"
+            jump Kim_couloir
 
-    label Bryan_cuisine:
+label Bryan_cuisine:
 
+        E "Dans la cuisine, Bryan semble en train de calmer sa colère."
         J "Hé Bryan ?"
-        B "Quoi tu veux encore te foutre de ma gueule c’est ça ?"
+        B "Quoi, tu veux encore te foutre de ma gueule c’est ça ?"
         J "Oh arrête un peu, tu sais que je rigole. T’as l’air à cran aujourd’hui, on voulait juste rigoler un peu avec les autres. Tout va bien ?"
-        B "C’est à vous de demander ça ! Je vous jure que j’entends quelque chose et la seule réponse que vous avez c’est vous foutre de ma gueule ! Tout ça parce qu’Anna est trop conne pour me croire."
+        B "C’est à vous de demander ça ! Je vous jure que j’entends quelque chose et la seule réaction que vous avez, c’est vous foutre de ma gueule ! Tout ça parce qu’Anna est trop conne pour me croire."
         J "Hé, lâche un peu l’affaire... Vous n’avez pas réussi à vous parler depuis votre embrouille de la dernière fois ?"
-        A "Tu parles... J’ai essayé, mais la seule chose que je me prends c’est soit des critiques soit un vent."
+        A "Tu parles... J’ai essayé, mais la seule chose que je me prends c’est soit des critiques, soit des vents."
         J "Alors arrête d’aller la voir ! Laisse couler !"
 
         menu:
-            "La situation est inssuportable...":
+            "Anna est insuportable...":
                 jump situation_inssup
 
-            "Vous êtes tous les deux inssuportables...":
+            "Vous êtes tous les deux insuportables...":
                 jump deux_inssup
 
-            "Tu es inssuportable...":
+            "Tu es insuportable...":
                 jump Bryan_inssup
 
 
     label situation_inssup:
-        J "Là, la seule chose que vous faites c’est vous engueuler en boucle. Vous tournez en rond et pour nous c’est insupportable."
+        J "On est d'accord, Anna est une grosse prétentieuse. Mais là, la seule chose que vous faites, c’est vous engueuler en boucle. Vous tournez en rond et pour nous c’est insupportable."
         B "Pourquoi tu me dis ça à moi ? Va voir Anna, va lui dire tout ça, c’est elle qui doit se calmer !"
         J "Ne t’inquiète pas, je vais le faire. Il faut que Kim aille lui en parler parce qu’elle commence aussi à lui faire perdre ses nerfs, mais en attendant, évite d’aller la chercher, sinon on avancera jamais."
+
+        $relationJtoB += 1
 
         jump suite7
 
     label deux_inssup:
         B "J’aimerai bien laisser couler, mais hé, comment veux-tu que je fasse quand elle est là en boucle à venir me faire chier ?"
-        J "Dans ce cas arrête d’aller la faire chier aussi ! Tu te plains mais t’es pas vraiment mieux qu’elle !"
-        B "Hé je t’emmerde !"
+        J "Dans ce cas arrête d’aller la faire chier aussi ! Tu te plains, mais t’es pas vraiment mieux qu’elle ! Vous êtes tous les deux insupportables !"
 
         jump suite7
 
     label Bryan_inssup:
         J "Regarde l’ambiance que t’as foutu ! Arrête d’aller la voir, sinon on avancera jamais !"
-        B "Hé, c’est à elle de dire ça ! C’est elle qui..."
+        B "Hé je t’emmerde ! C’est à elle qu'il faut dire ça ! C’est elle qui..."
         J "Non, arrête de faire genre que c’est elle qui vient toujours te faire chier ! Ce soir c’est de ta faute si la soirée est gâchée !"
+        B "Ben merci pour ton soutien..."
+
+        $relationJtoB -= 1
 
     label suite7:
-        J "Bon, viens on va voir où en est Anna, mais s'il te plait, ne fais pas de conneries d'accord ?"
-        E "Bryan gromelle en suivant Jason à travers la maison."
+        B "Bon, pour ce soir, je vais tâcher de me tenir. Pour Kim."
+        J "A propos de Kim, faut que je te confie quelque chose. Ca va pas fort en ce moment."
+        J "On s'est encore disputé hier... Tu sais comment ça se passe dans ces moments-là."
+        B "Bah, ça va passer ! T'as pas de soucis à te faire, je suis certain que c'est qu'une passe."
+
+        menu:
+            "Demander conseil":
+                jump demande_conseil
+            "Donner crédit à Bryan":
+                jump credit_bryan
+
+    label demande_conseil:
+        J "Tu comprends pas la situation, je pense que c'est plus grave que ça."
+        J "T'aurais pas un conseil pour arranger les choses ?"
+        B "Honnêtement, je pense que c'est surtout un problème entre toi et elle. Je vais pouvoir t'aider beaucoup sur ce coup-là, désolé."
+        J "Hum... t'inquiète pas, je m'en sortirai."
+
+        jump suite9bis
+
+    label credit_bryan:
+        J "Hum t'as raison. La situation va finir par s'arranger. Merci, vieux."
+        B "A ton service mon pote ! Toujours écouter mes conseils, c'est ma devise !"
+        E "Bryan donne une tape amicale dans le dos de Jason."
+
+        $relationJtoB += 1
+
+        jump suite9bis
+
+
+    label suite9bis:
+        J "Bon, viens, on va voir où en est Anna, mais s'il te plait, ne fais pas de conneries d'accord ?"
+        E "Bryan gromelle en suivant Jason jusqu'au salon."
 
         jump reunion
 
 
+label Anna_salon:
 
-
-
-    label Anna_salon:
-        E "Kim s’en va dans la cave, laissant Jason et Anna seuls dans le salon"
+        E "Dans le salon, Anna est visiblement agacée par la situation."
         J "Je suis désolé pour le comportement de Bryan... Je ne sais pas ce qui lui prend, il n’est pas comme ça d’habitude."
         A "Ouais... tu sais, je ne suis pas contre lui. J’ai essayé d’aller le voir, mais il est toujours renfermé sur lui-même, il refuse de me parler."
         J "Il ne t’a jamais expliqué pourquoi ?"
-        A "Non, jamais ! Après je m’en fous hein, à la base ce n’est pas mon pote, mais pour Kim j’aimerai bien qu’on arrive enfin à passer une soirée tous ensemble sans aucune embrouilles."
+        A "Non, jamais ! Après je m’en fous hein, à la base ce n’est pas mon pote, mais pour Kim j’aimerais bien qu’on arrive enfin à passer une soirée tous ensemble sans aucune embrouilles."
 
         menu:
             "Approuver":
@@ -88,19 +129,21 @@
 
 
     label approuver:
-        J "Tu sais, c’est le genre de mec à s’emporter toujours trop vite, il est sanguin..."
-        A "Ouais bah faudrait que tu ailles lui parler parce qu’à terme on va juste tous finir par péter un plomb."
+        J "Je suis d'accord avec toi, t'as totalement raison. Mais tu sais, c’est le genre de mec à s’emporter toujours trop vite, il est sanguin..."
+        A "Ouais bah faudrait que tu ailles lui parler parce qu’à terme on va tous finir par péter un plomb."
         J "J'essaierai. Il est parti dans la cuisine, il faut lui laisser du temps, il va se calmer tout seul."
         A "C’est bien, qu’il décuve un peu..."
         J "C’est ça. Tu sais, je sais comment il fonctionne maintenant. Laisse-lui cinq minutes et il reviendra calme quand il verra qu’il est en train de gâcher la soirée de Kim."
+
+        $relationJtoA += 1
 
         jump suite8
 
     label deux_coupables:
         J "Dans ce cas, évite aussi d’aller le chercher quand tu vois qu’il est en train de se chauffer tout seul. Ça ne sert à rien, au contraire..."
         A "Je veux juste qu’il se rende compte de ses erreurs."
-        J "Arrête, ce n’est pas en l’énervant que tu vas lui faire comprendre ses conneries. Tout ce que tu vas réussir à faire c’est le braquer davantage."
-        A "Ça ce n’est pas mon problème ! Il n’a pas à réagir comme ça..."
+        J "Vous êtes tous les deux dans l'erreur. Ce n’est pas en l’énervant que tu vas lui faire comprendre ses conneries. Tout ce que tu vas réussir à faire c’est le braquer davantage."
+        A "C'est pas mon problème ! Il n’a pas à réagir comme ça..."
         J "Anna, s’il te plaît, arrête d’envenimer la situation, par pitié... La soirée de Kim est déjà bien assez gâchée comme ça..."
 
         jump suite8
@@ -111,6 +154,10 @@
         J "Mais il n’a pas besoin d’aide ! Il veut juste que tu le laisses tranquille !"
         A "Parce que tu trouves que je suis trop sur ses côtes ?"
         J "Tu rigoles j’espère ? T’es tout le temps en train de le critiquer. Enfin... merde Anna... T’es bien plus intelligente que ça !"
+
+        $relationJtoA -= 1
+
+        jump suite8
 
 
     label suite8:
@@ -138,42 +185,49 @@
         J "Vraiment ?"
         A "C’est toujours la même histoire avec elle, il y a toujours un moment où tout n’est pas rose avec elle et elle finit par se renfermer sur elle-même. La seule chose que je peux te dire c’est de lui laisser du temps..."
         J "Mais toi, tu n’es pas au courant de quelque chose ? Elle va vraiment bien ?"
-        A "Laisse lui du temps, vraiment... Si elle doit te dire quelque chose, elle le fera d’elle-même mais insister c’est risquer de la brusquer..."
+        A "N'insiste pas. Laisse lui du temps, vraiment... Si elle doit te dire quelque chose, elle le fera d’elle-même..."
 
         jump suite9
 
     label excuser2:
-        J "Ouais, je comprends. Je suis désolé de te faire entrer dans cette histoire débile, je pensais que tu saurai au moins si je dois m’inquiéter ou non..."
+        J "Ouais, je comprends. Je suis désolé de te faire entrer dans cette histoire débile, je pensais que tu saurais au moins si je dois m’inquiéter ou non..."
         A "Tu connais Kim, tu sais comment gérer, tu sauras mieux que moi comment gérer..."
         J "J’espère..."
 
+        $relationJtoA += 1
+        jump suite9
+
 
     label suite9:
-        J "Bon aller, viens voir, peut-être que Bryan a fini par se calmer."
+        J "Ah, regarde, Bryan est de retour."
+        A "Il a l'air de s'être calmé."
 
 
+label reunion:
 
-    label reunion:
+        if (telephone_oublie == True):
+            E "Ensemble, les trois amis finissent par se retrouver sur le canapé du salon, bière à la main, essayant tant bien que mal d’enterrer la hache de guerre. Un long moment passe..."
+            A "Dîtes, ça fait quand même un sacré moment qu'on n'a pas revu Kim. C'est normal qu'elle prenne autant de temps ?"
+            J "C'est vrai que ça commence à devenir bizarre"
+            B "Bah allez, on perd pas de temps, on va la rejoindre ! Elle prépare sans doute une connerie, la connaissant."
 
-        # Kim a son téléphone
-        E "Ensemble, les trois amis finissent par se retrouver sur le canapé du salon, bière à la main, essayant tant bien que mal d’enterrer la hache de guerre."
-        B "Du coup, il faut que je vous raconte ! J’ai rencontré quelqu’un !"
-        J "Pardon ? Depuis quand ?"
-        B "Ça fait quelques semaines, mais je crois que c’est bien parti entre nous !"
-        A "Trop bien, je suis contente pour toi !"
-        J "Il faut que tu me la montre que je…"
-        E "Soudain le téléphone de Jason se met à sonner. Sur l’écran, le nom de Kim apparaît."
-        J "Kim ? Pourquoi est-ce que tu…"
-        K_shout "Jason !"
-        K_shout "Jason ! Elle… !"
-        E "Le téléphone se coupe, un message d’erreur de réseau apparaît."
-        J "Les gars ! Putain de merde !"
-        B "Quoi ? Qu’est-ce qu’il se passe ?"
-        J "Kim a un problème. Putain de… putain !"
-        E "Ensemble, les trois amis sortent de la maison en trombe en direction de la cave."
-        
-        $ seul = False
+            jump scene_cave
 
-        jump scene_cave
-
-        #Résultat final ???
+        elif (telephone_oublie == False):
+            E "Ensemble, les trois amis finissent par se retrouver sur le canapé du salon, bière à la main, essayant tant bien que mal d’enterrer la hache de guerre."
+            B "Du coup, il faut que je vous raconte ! J’ai rencontré quelqu’un !"
+            J "Pardon ? Depuis quand ?"
+            B "Ça fait quelques semaines, mais je crois que c’est bien parti entre nous !"
+            A "Trop bien, je suis contente pour toi !"
+            J "Il faut que tu me la montres que je…"
+            E "Soudain le téléphone de Jason se met à sonner. Sur l’écran, le nom de Kim apparaît."
+            J "Kim ? Pourquoi est-ce que tu…"
+            K_shout "Jason !"
+            K_shout "Jason ! Elle… !"
+            E "Le téléphone se coupe, un message d’erreur de réseau apparaît."
+            J "Les gars ! Putain de merde !"
+            B "Quoi ? Qu’est-ce qu’il se passe ?"
+            J "Kim a un problème. Putain de… putain !"
+            E "Ensemble, les trois amis sortent de la maison en trombe en direction de la cave."
+            
+            jump scene_cave

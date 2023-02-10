@@ -45,12 +45,15 @@ label start:
     $ lifeA = 100 #vie Anna
     $ lifeN = 100 #vie Nancy
 
+    $ harcelement_kim_info = False
 
-    $ seul = True
+    $ obstacles = 0
+    $ seul = False
     $ torche = False
     $ vu_fenetre_ouverte = False
     $ go_with_Anna = False
     $ go_with_Bryan = False
+    $ telephone_oublie = False
 
     $ traitement_conseil = False
 
@@ -59,8 +62,6 @@ label start:
     J_think "Aujourd'hui, c'est le grand jour. Il ne me reste plus beaucoup de temps avant de devoir partir, et il ne faut pas que je gâche la soirée, sinon Kim ne me le pardonnera jamais."
     J_think " Depuis le temps qu'elle s'embête à tout bien organiser, la moindre petite faute de goût pourrait me coûter très cher."
     J_think "On se connait déjà depuis plusieurs années, et je n'ai pas envie de savoir comment elle réagira... Surtout depuis la dispute d’hier."
-
-
 
     scene chambre_jason
 
@@ -101,7 +102,7 @@ label start:
         xalign 1.5 yalign -0.5
         linear 0.8 xalign 0.9
 
-    N "Hey hey hey, comment tu vas ?"
+    N "Hey Jason ! Comment tu vas ?"
     J "Salut Nancy, ça va et toi ?"
     N "Ouais ça va, je voulais juste t'appeler parce que je sors de chez le psy, j'avais rendez-vous cet après-midi..."
     J "Déjà ? Ton dernier rendez-vous était il y a à peine deux semaines, pourquoi voulait-il te revoir si vite ?"
@@ -126,7 +127,7 @@ label start:
         J "Fais moi confiance Nan'..."
         N "..."
 
-        traitement_conseil = True;
+        $ traitement_conseil = True;
 
         jump suite
         
@@ -147,13 +148,13 @@ label start:
         N "Ouais, non... si c'est pour être avec eux, je préfère dire non... Je suis pas la bienvenue, tu le sais bien."
 
         menu :
-            "En parler":
+            "En demander plus":
                 jump en_parler
 
             "Être désolé":
                 jump desole
 
-            "Lui dire que ça va passer":
+            "Dédramatiser":
                 jump passer
 
     label en_parler:
@@ -164,6 +165,7 @@ label start:
         J "Je vais gérer ça avec eux. Fais-moi confiance, et ne pense plus à ça. Profite de ta soirée, tu le mérites."
 
         $ relationJtoN += 1
+        $ harcelement_kim_info = True
 
         jump suite2
 
@@ -199,10 +201,10 @@ label start:
 
 
     label chezKim:
-        scene
+        scene fond_noir
         with dissolve
 
-        E "Depuis l'extérieur, les fenêtres de la maison de Kim semblent éclairées. au loin, quelques ombres dansent sur les murs du salon. La soirée a déjà commencé."
+        E "Depuis l'extérieur, les fenêtres de la maison de Kim semblent éclairées. Quelques ombres témoignent de la présence de certaines personnes. La soirée a déjà commencé."
         J_think "Merde, je suis le dernier. J'espère que je n'ai pas raté grand chose."
 
         play sound "audio/Sounds/Carillon.mp3"
@@ -212,7 +214,6 @@ label start:
         scene entree_kim
         show kim_content:
             yalign -0.5
-
 
         K "Ah bah enfin te voilà ! T'es le dernier à arriver, on a cru que tu allais oublier la soirée !"
         J "Désolé, j'ai pris trop de temps sur le chemin, le bus a fait un détour."
@@ -230,6 +231,8 @@ label start:
             K "Tu te moques de moi là j'espère ? Non mais, tu espères vraiment me faire croire que tu as complètement oublié et tu ne m'as même pas envoyé un message pour me prévenir ?"
             K "Jay... Je... Tu m'énerves ! Viens, sinon je vais finir par t'étriper avant même que tu rentres..."
 
+            $ relationJtoK -= 1
+
             jump suite3
         
         label moitie :
@@ -245,32 +248,36 @@ label start:
             K "Bon, allons dans le salon, on était en train de jouer et... Ne t'inquiètes pas, j'ai une petite surprise pour toi après la soirée, une petite récompense..."
             E "Un clien d'oeil plus tard, Kim invite Jason à le suivre dans l'appartement où ils retrouvent Bryan et Anna autour d'une table de jeu dans le salon."
 
+            $ relationJtoK += 1
 
         label suite3 :
             scene canape_kim
-            E "Dans le salon, Bryan et Anna sont tous les deux assis autour d'une  table où s'étaient déjà écoulées quelques bouteilles d'alcool."
+            E "Dans le salon, Bryan et Anna sont tous les deux assis autour d'une table où quelques bouteilles d'alcool ont déjà été vidées."
             B "Hééééé ! Mais c'est l'autre qui se décide enfin à arriver ! Viens dépêches-toi, je te sers un verre, il faut que tu me rattrapes !"
             A "Tu vas vraiment continuer de boire toute la soirée ? T'es déjà explosé..."
             K "Ouais, s'il te plait, calme toi un peu... Je n'ai pas envie de te récupérer en train de dormir sur le sol parce que tu t'es enquillé trop de verres d'alcool..."
             B "Mais fermez là... Il va falloir qu'on apprenne à vous décoincer un peu, un jour... Pas vrai Jason ?"
-            B "Bon d'ailleurs, on était dans un débat, est-ce que tu penses que tu peux compter sur moi en cas de problèmes ou pas ?"
+            B "Bon d'ailleurs, on était dans un débat : est-ce que tu penses que tu peux compter sur moi en cas de problèmes ou pas ?"
             J "C'est quoi cette question ?"
             A "On s'ennuyait en t'attendant du coup, Kim a décidé de nous lancer une série de questions pour savoir qui on préférait dans le groupe."
             A "On en était à 'Sur qui tu peux compter ?' là."
 
             menu:
                 "Sur qui compter ?"
-                "Bryan":
+                "Bryan, mon ami d'enfance":
                     jump choix_Bryan
-                "Anna":
+                "Anna, la plus intelligente":
                     jump choix_Anna
-                "Kim":
+                "Kim, ma petite amie":
                     jump choix_Kim
         
         label choix_Bryan:
             J "Elle est nulle la question… Pour moi ça restera toujours Bryan. Il a beau être un peu con, il me colle au train depuis trop longtemps pour que je le laisse de côté."
             B "Ah ! Vous voyez je vous l’avais dit ! Il fait passer la famille avant le coeur !"
             K "Ouais, je vois ça… Je vois surtout qu’il va finir par dormir tout seul ce soir..."
+
+            $relationJtoB += 1
+
             jump suite4
 
         label choix_Anna:
@@ -278,12 +285,17 @@ label start:
             B "Hé ! C’est quoi ce choix de merde là !"
             J "Non mais juste réfléchis un peu : elle est la plus calme, elle est la plus réfléchie d’entre nous, si il y a bien une personne qui peut me sauver le cul sans trembler c’est bien elle !"
             A "Et faut arrêter d’être jaloux Bryan. Elle baisse ta cote, assume-le, il préfère passer par d’autres gens que par toi."
+
+            $relationJtoA += 1
             jump suite4
 
         label choix_Kim:
             
-            J "Non mais ne me posez pas la question, je suis le seul en couple de nous trois. Si je dois appeler quelqu’un entre nous trois, c’est forcément Kim, je sais que je peux lui faire confiance."
+            J "Non mais ne me posez pas la question, je suis le seul en couple. Si je dois appeler quelqu’un entre vous trois, c’est forcément Kim, je sais que je peux lui faire confiance."
             A "Ah ! Tu vois Bryan, c’était évident. Son couple passera toujours devant toi, ne viens pas chialer."
+
+            $relationJtoK += 1
+            jump suite4
         
         label suite4:
             J "Forcément, elle était trop simple cette question... Vous en avez une autre ?"
@@ -300,12 +312,14 @@ label start:
                     jump choix_Kim2
 
         label choix_Bryan2:
-            B "Arrête de me regarder en rigolant, tu sais très bien que je survivrai longtemps !"
+            B "Arrête de me regarder en rigolant, tu sais très bien que je serai le best survivor !"
             J "Je suis désolé mais celui d’entre nous qui durera le moins longtemps, c’est toi."
-            B "Mais n’importe quoi ! Je suis le seul qui fait du sport entre nous, vous allez être tellement lent que vous allez crever en moins de deux."
-            B "Regarde Anna, même réfléchir ça lui prend du temps alors je te dis pas si il faut qu’elle court !"
-            A "Hé ! Va te faire ! Assume-le, t’es juste trop con tu tomberai dans tous les pièges"
+            B "Mais n’importe quoi ! Je suis le seul qui fait du sport, vous allez être tellement lent que vous allez crever en moins de deux."
+            B "Regarde Anna, même réfléchir ça lui prend du temps, alors je te dis pas si il faut qu’elle court !"
+            A "Hé ! Va te faire ! Assume-le, t’es juste trop con, tu tomberais dans tous les pièges."
             B "Humpf… Je savais que ça allait être un jeu de merde de toute manière..."
+
+            $relationJtoB -= 1
 
             jump suite5
 
@@ -314,9 +328,11 @@ label start:
             A "Hé, arrête de me fixer comme ça, si il y en a bien une qui peut survivre c’est bien moi !"
             J "Alors oui, mais tu n’es pas assez sportive. Si on se fait attaquer, je pense que celle qui a le moins de chance..."
             A "Sans moi vous ne durerez pas plus de quelques jours."
-            B_murmure "Tu parles, sans toi putain on serait tranquille..."
+            B_murmure "Tu parles, sans toi, putain, on serait tranquille..."
             A "Tu viens de dire quoi là ?"
             K "Bryan laisse-la tranquille un peu, tu veux ?"
+
+            $relationJtoA -= 1
 
             jump suite5
         
@@ -329,9 +345,12 @@ label start:
             K "Tu veux que je t’en colle une, voir si je suis si faible que ça ?"
             J "Non mais le prends pas comme ça mon coeur, hé !"
 
+            $relationJtoK -= 1
+            jump suite5
+
         label suite5:
-            J "Vas-y, je change de question avant que ça parte encore plus en couilles. Si l’un d’entre nous était un dangereux psychopathe, vous pensez que ça serait qui ?"
-            K "Elle est dure ta question..."
+            K "Bon, je change de question avant que ça parte encore plus en couilles. Si l’un d’entre nous était un dangereux psychopathe, vous pensez que ça serait qui ?"
+            B "Elle est dure ta question..."
 
             menu:
                 "Qui serait un psychopathe ?"
@@ -352,6 +371,7 @@ label start:
 
         label choix_Kim3:
             J "Moi je pense que je te dirai, toi. Entre nous tous, je suis sûr que t’es la plus fourbe, tu pourrais..."
+            jump suite6
 
 
         label suite6:
@@ -362,14 +382,15 @@ label start:
             K "Non, non… Arrête tu commences à me faire flipper..."
             A "Non mais laisse tomber, regarde tout ce qu’il a bu, il est encore en train d’avoir des hallucinations."
             B "Anna, arrête. Je suis sûr de ce que j’ai entendu..."
-            K "Mais c’était quoi, une voix, un bruit de pas..."
+            K "Mais c’était quoi, une voix, un bruit de pas... ?"
             B "Je n’en sais rien..."
-    
+            K "Je commence à avoir peur..."
+            A "Vous paniquez pour que dalle, y'a vraiment rien à craindre à part le coma éthylique de Bryan."
 
             menu:
-                "Croire Bryan":
+                "Croire Bryan : aller inspecter":
                     jump choix_Bryan4
-                "Croire Anna":
+                "Croire Anna : rassurer Kim":
                     jump choix_Anna4
 
 

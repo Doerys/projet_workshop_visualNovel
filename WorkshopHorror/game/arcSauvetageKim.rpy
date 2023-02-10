@@ -62,7 +62,7 @@ label porterKim:
     J "Je m’occupe de Kim, toi cours !"
     E "Devant vous, Anna commence à courir entre les arbres. Trop lourd avec Kim, vous n’arrivez pas à la rattraper."
     E "Dans votre dos, les bruits de pas se rapprochent de plus en plus, jusqu’à ce qu’un choc vous fasse perdre connaissance."   
-    jump sequence4
+    jump mauve
 label diversionPoursuite:
     J "Prends Kim avec toi, je vais essayer de te faire gagner du temps !"
     A "Quoi ? T’es sûr ?"
@@ -72,7 +72,7 @@ label diversionPoursuite:
     E "La femme ne réponds pas."
     J "Attends… Ne me dis pas que…"
     E "D’un coup vif, elle vient planter son couteau dans votre chair avant de vous asséner un violent coup à la tête."
-    jump sequence4
+    jump mauve
 label confrontationTueuse:
     J "Prends Kim avec toi, je vais essayer de te faire gagner du temps !"
     A "Quoi !? Mais qu’est-ce que tu fais ?"
@@ -87,7 +87,7 @@ label confrontationTueuse:
     J "La police va arriver, ok ? Alors tire-toi putain !"
     E "Reculant dans les arbres, vous vous cognez à l’un d’entre eux."
     E "La femme se rapproche, tend le bras, et vous assène un violent coup. Vous vous effondrez, inconscient."
-    jump sequence4
+    jump mauve
     #if (relationJtoA >= 100):
         #Anna et Kim survivent
     #else:
@@ -119,10 +119,14 @@ label postSoinsBryan:
     B "Quoi ? Tu ne vois pas que Kim se vide de son sang ? Elle s’est refaite planter ! Si on ne la sort pas de là, elle va y passer la prochaine fois !"
     J "On ne va pas la laisser crever !"
     B "Alors vas y, fonce ! Je m’occupe de Kim, toi, vas aider Anna !"
-    E "Vous vous précipitez dans les escaliers"
+    E "Jason se précipite dans les escaliers"
     E "Dans la cave, Anna est à genoux, de larges coupures sur les bras et le visage tuméfié."
+
+    if (troussedeSoin == 0 and blessure_kim == 2):
+        $ lifeK = 0
+
     jump lamentationNancy
-    jump sequence4
+    jump mauve
 
 label lamentationNancy:
     N "Jamais… Jamais… C’est terminé, maintenant."
@@ -134,6 +138,8 @@ label lamentationNancy:
     E "La femme baisse la tête. Vous en profitez pour lui bondir dessus."
     E "Dans l'action, sa lame glisse contre vos côtes."
     E "Vous vous effondrez de douleur avant de recevoir un grand coup sur le crâne"
+
+    jump mauve
 
 label postSoinsSeul:
 
@@ -153,18 +159,51 @@ label postSoinsSeul:
 
 label saveKim:
     J "Hé, je reste avec toi alors ne me laisse pas, ok ?"
-    E "Vous utilisez le contenu de la trousse pour sauver Kim."
+    E "Jason utilise le contenu de la trousse pour sauver Kim."
     J "J’irai aider Anna plus tard, pour l’instant, il faut que je te sauve toi."
-    E "Après avoir soigné votre petite amie, vous vous assurez que sa situation est stable, puis partez en direction de la cave."
-    J_shout "Anna ! Tu es où ?"
-    J_shout "Anna !"
-    E "La cave est silencieuse. Pas un bruit."
-    J "Anna ? Oh non… Non, mon Dieu… Non, Anna !"
-    E "Dans la pièce, seul le cadavre d’Anna repose."
-    J "Ce n’est pas possible… Je suis désolé… Je suis si désolé…"
-    J "Je… putain… Anna !"
-    E "Penché sur le cadavre de son ami, vous n'entendez pas les bruits de pas arriver dans votre dos."
 
+    if (troussedeSoin == 1):
+        E "Jason utilise la trousse de soin sur Kim. Après avoir soigné sa petite amie, Jason s'assure que sa situation est stable, puis part en direction de la cave."
+        J_shout "Anna ! Tu es où ?"
+        J_shout "Anna !"
+        E "La cave est silencieuse. Pas un bruit."
+        J "Anna ? Oh non… Non, mon Dieu… Non, Anna !"
+        E "Dans la pièce, seul le cadavre d’Anna repose."
+        J "Ce n’est pas possible… Je suis désolé… Je suis si désolé…"
+        J "Je… putain… Anna !"
+        E "Penché sur le cadavre de son amie, Jason n'entend pas les bruits de pas arriver dans son dos."
+
+        $ lifeA == 1
+
+    if (troussedeSoin == 0 and blessure_kim == 2):
+        E "Jason tente de soigner Kim malgré l'absence de trousse de soin, mais constate qu'il est trop tard, Kim a perdu trop de sang."
+        J_shout "Kim ! Non !"
+        E "Un nouveau cri d'Anna résonne."
+        J_shout "Anna !"
+        E "Pris par les événements, Jason s'élance en direction de la cave."
+        E "La cave est silencieuse. Pas un bruit."
+        J "Anna ? Oh non… Non, mon Dieu… Non, Anna !"
+        E "Dans la pièce, seul le cadavre d’Anna repose."
+        J "Ce n’est pas possible… Je suis désolé… Je suis si désolé…"
+        J "Je… putain… Anna !"
+        E "Penché sur le cadavre de son amie, Jason n'entend pas les bruits de pas arriver dans son dos."
+
+        $ lifeA == 0
+
+    if (troussedeSoin == 0 and blessure_kim == 1):
+        E "Jason tente de soigner Kim malgré l'absence de trousse de soin. Après s'être assuré que sa situation est stable, Jason part en direction de la cave."
+        J_shout "Anna ! Tu es où ?"
+        J_shout "Anna !"
+        E "La cave est silencieuse. Pas un bruit."
+        J "Anna ? Oh non… Non, mon Dieu… Non, Anna !"
+        E "Dans la pièce, seul le cadavre d’Anna repose."
+        J "Ce n’est pas possible… Je suis désolé… Je suis si désolé…"
+        J "Je… putain… Anna !"
+        E "Penché sur le cadavre de son amie, Jason n'entend pas les bruits de pas arriver dans son dos."
+
+        $ lifeA == 0
+
+    jump mauve
 
 label saveAnna:
     J "Hé mon coeur, je vais revenir, d’accord ?"

@@ -348,7 +348,7 @@ screen partirCave:
         idle "partir"
         hovered (SetVariable("directionDroit", "Partir"))
         unhovered (SetVariable("directionDroit", " "))
-        action [SetVariable("directionDroit", ""),Jump("versAnnaDitQueKim")]
+        action [SetVariable("directionDroit", ""),Jump("choix_cave")]
     text directionDroit size 80 :
         xpos 3000
         ypos 1450

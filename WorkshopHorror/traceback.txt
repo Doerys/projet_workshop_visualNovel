@@ -1,15 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
+<<<<<<< HEAD
 While loading <renpy.display.im.Image object ('items/aorteBox.png') at 0x0000000008b740a0>:
   File "game/loadLabels.rpy", line 685, in script
     call screen inventory
   File "renpy/common/000statements.rpy", line 609, in execute_call_screen
     store._return = renpy.call_screen(name, *args, **kwargs)
 OSError: Couldn't find file 'items/aorteBox.png'.
+=======
+While loading <renpy.display.im.Image object ('images/place holder personnage/kim_content.png') at 0x0000000005336910>:
+  File "game/script.rpy", line 253, in script
+    K "Bon, allons dans le salon, on était en train de jouer et... Ne t'inquiètes pas, j'ai une petite surprise pour toi après la soirée, une petite récompense..."
+OSError: Couldn't find file 'images/place holder personnage/kim_content.png'.
+>>>>>>> bcc6e1a03f847250e9edca78a3b9adce1648f1b3
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+<<<<<<< HEAD
   File "game/loadLabels.rpy", line 685, in script
     call screen inventory
   File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\ast.py", line 2232, in execute
@@ -75,8 +83,69 @@ Full traceback:
   File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
     raise IOError("Couldn't find file '%s'." % name)
 OSError: Couldn't find file 'items/aorteBox.png'.
+=======
+  File "game/script.rpy", line 253, in script
+    K "Bon, allons dans le salon, on était en train de jouer et... Ne t'inquiètes pas, j'ai une petite surprise pour toi après la soirée, une petite récompense..."
+  File "D:\Games\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Games\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
+    who(what, *args, **kwargs)
+  File "D:\Games\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\Games\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
+    display_say(who,
+  File "D:\Games\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\Games\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 495, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\transform.py", line 747, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\image.py", line 506, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\image.py", line 309, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\im.py", line 627, in render
+    return cache.get(self, render=True)
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\im.py", line 295, in get
+    surf = image.load()
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\im.py", line 720, in load
+    raise e
+  File "D:\Games\renpy-8.0.3-sdk\renpy\display\im.py", line 685, in load
+    filelike = renpy.loader.load(self.filename)
+  File "D:\Games\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'images/place holder personnage/kim_content.png'.
+>>>>>>> bcc6e1a03f847250e9edca78a3b9adce1648f1b3
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 J 1.0
+<<<<<<< HEAD
 Fri Feb 10 10:45:58 2023
+=======
+Fri Feb 10 11:00:38 2023
+>>>>>>> bcc6e1a03f847250e9edca78a3b9adce1648f1b3

@@ -54,6 +54,10 @@ label start:
     $ go_with_Anna = False
     $ go_with_Bryan = False
     $ telephone_oublie = False
+    $compagnie_bryan = False
+    $compagnie_anna = False
+    $menacer_psychopathe = False
+
 
     $ traitement_conseil = False
 
@@ -216,7 +220,7 @@ label start:
         E "Ding dong"
         play music "audio/Music/Soiree1.mp3" loop fadeout 1
 
-        scene entree_kim
+        scene entree
         show kim_content:
             yalign -0.5
 
@@ -256,7 +260,8 @@ label start:
             $ relationJtoK += 1
 
         label suite3 :
-            scene canape_kim
+            scene salon_jour
+            with dissolve
             show kim_normal:
                 xalign 0.5
             show bryan_drague:

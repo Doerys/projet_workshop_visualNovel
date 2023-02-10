@@ -649,7 +649,7 @@ label openCave :
 
 label toKimDead :
     
-    J_think "Kim..." 
+    J_think "On va trouver du soin Kim..." 
 
     jump openCave
 

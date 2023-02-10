@@ -1,5 +1,8 @@
 label Kim_couloir:
 
+    scene couloir_jour
+    with dissolve
+
 E "Kim se trouve un peu plus loin, dans un couloir non loin de la cave, l'air d'attendre Jason."
 K "Ah, te voilà enfin !"
 J "Bien sûr que je suis là."

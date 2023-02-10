@@ -102,6 +102,7 @@ label start:
         xalign 1.5 yalign -0.5
         linear 0.8 xalign 0.9
 
+    E "Le téléphone de Jason sonne."
     N "Hey Jason ! Comment tu vas ?"
     J "Salut Nancy, ça va et toi ?"
     N "Ouais ça va, je voulais juste t'appeler parce que je sors de chez le psy, j'avais rendez-vous cet après-midi..."

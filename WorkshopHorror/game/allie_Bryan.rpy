@@ -1,9 +1,12 @@
 ﻿label suivre_Bryan:
+
+    $ relationJtoA += 1
+
     J "Euh... Je pense que Bryan a raison. Surtout que les secours n’arriveront pas tout de suite."
     A "Mais... Vous savez au moins ce que vous allez faire une fois que vous aurez la trousse de secours ?"
     B "On improvisera ! Il faut qu’on essaie, on ne va pas la laisser crever là dans le froid !"
     A "Non mais j’hallucine... Bon allez-y dépêchez-vous !"
-    E "Sans perdre un instant, Bryan et Jason remontent les escaliers en direction de la maison de Kim."
+    E "Sans perdre un instant, Bryan et Jason remontent les escaliers en direction du rez-de-chaussée."
     B "Hé, Jason... Merci de m’avoir écouté..."
     J "Anna n’a pas totalement tort, tu sais... Je ne sais pas soigner les gens."
     B "Je sais... mais je ne peux pas rester là sans rien faire. Pas pour Kim."

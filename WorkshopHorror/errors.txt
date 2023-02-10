@@ -30,19 +30,5 @@ File "game/arcSauvetageKim.rpy", line 127: choice menuitem expects a non-empty b
     "Sauver Kim":
                  ^
 
-File "game/choixAnna.rpy", line 54: Indentation mismatch.
-
-File "game/choixBryan.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/kim_chaudasse.rpy", line 30: reached end of line when expecting ':'.
-    if (harcelement_kim_info == True)
-                                     ^
-
-File "game/kim_chaudasse.rpy", line 40: reached end of line when expecting ':'.
-    if (harcelement_kim_info == False)
-                                      ^
-
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Feb 10 01:54:17 2023
+Fri Feb 10 02:04:58 2023

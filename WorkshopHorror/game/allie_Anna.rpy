@@ -1,23 +1,36 @@
 ﻿label suivre_Anna:
+
+    $ relationJtoA += 1
+
     J "Euh... Je pense qu’Anna a raison... Je ne sais pas me servir d’une trousse de secours et on a pas de temps à perdre à essayer quoi que ce soit..."
     B "T’es sérieux ? Je te jure que si jamais il lui arrive quoi que ce soit pendant qu’on attends, c’est de ta faute."
     J "Attends, sérieusement Bryan ? Tu crois vraiment que je me fiche de ce qu’il peut arriver à ma copine ? J’essaie de faire au mieux, ok ?"
-    A "Jason, si tu veux m’aider c’est maintenant ou jamais !"
+    A "Jason, si tu veux m’aider, c’est maintenant ou jamais !"
     J "J’arrive ! Juste Bryan... Fais moi confiance. S’il te plait. Le temps qu’on soit parti, essaie de maintenir la pression, assure-toi qu’elle reste en sécurité ici. On va faire vite."
     B "Ouais, ouais... C’est ça... Allez-y, mais dépêchez-vous. Par pitié, grouillez-vous !"
-    E "Sans perdre un instant, Anna et Jason remontent les escaliers en direction de la maison de Kim."
+    E "Sans perdre un instant, Anna et Jason remontent les escaliers en direction du rez-de-chaussée."
     A "Hé, Jason... Merci de m’avoir écouté..."
     J "Bryan n’a pas totalement tort, tu sais... On ne doit pas perdre de temps."
     A "Je sais... mais je ne veux pas risquer de faire une erreur. On n’a pas de deuxième chance..."
 
-    if (relationJtoA > 50):
-        A "Hé d’ailleurs, quand j’ai aidé Kim elle m’a donné ça... Je pense que ça pourrait nous être utile dans la cave... Prend-la, je me chargerai de la trousse de secours !"
+    if (relationJtoK >= 0 and blessure_kim = 1):
+        A "Hé d’ailleurs, quand j’ai aidé Kim elle m’a demandé de te donner ça... Je pense que ça pourrait nous être utile... Tiens, prends-la !"
+        E "Anna tend à Jason une lampe torche."
         $ torche = True
-    else :
-        A "Hé, d’ailleurs... Kim m’a tendu une torche tout à l’heure... Je pense que ça pourrait nous être utile dans la cave... Je la garde. Toi, charge toi de prendre la trousse de secours."
+
+    else if (relation JtoK < 0 and blessure_kim = 1):
+        A "Hé d’ailleurs, quand j’ai aidé Kim elle m’a confié ça... Je pense que ça nous sera utile."
+        E "Anna montre une lampe torche."
         $ torche = False
-    J "Ok, pas de soucis."
-    
+
+    else if (blessure_kim = 2) :
+        A "Hé d’ailleurs, je viens de trouver ça dans la cave... Je pense que ça nous sera utile."
+        E "Anna montre une lampe torche."
+        $ torche = False
+
+    J "Ok, parfait."
+
+    E "Le duo grimpe l'escalier menant hors de la cave, pour arriver dans un couloir."    
     J "Euh... Anna... ôte moi d’un doute, les lumières étaient éteintes tout à l’heure ?"
     A "Je... Je ne crois pas ?"
     A "Oh non, les interrupteurs ne fonctionnent plus !"
@@ -42,7 +55,7 @@
     A "Ouais..."
     E "Avançant pas à pas, les deux amis suivent le vent à travers le hall d’entrée."
 
-        #déjà vu la fenêtre ouverte
+    if(vu_fenetre_ouverte = True):
 
     A "Elle n’était pas close tout à l’heure celle-là ?"
     J "Si. Si, je crois bien. Vas-y, va la fermer, je te couvre..."
@@ -54,7 +67,6 @@
     A "Dehors ! Dehors, j’ai vu quelque chose !"
     J "T’as vu quoi ?"
     A "Je ne sais pas, quelque chose a bougé. Oh merde..."
-
 
     if (torche == True):
 

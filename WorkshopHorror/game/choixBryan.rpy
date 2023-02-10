@@ -3,7 +3,7 @@
     $relationJtoA -= 1
     $relationJtoB += 1
     $ vu_fenetre_ouverte = True
-    
+
     J "Tu veux qu’on aille voir ce que c’était ?"
     A "Ne me dites pas que vous allez le croire quand même !"
     J "On ne sait jamais... Et puis si jamais c’est juste un courant d’air on n’aura qu’à fermer la porte."
@@ -26,12 +26,12 @@ E "Kim s'en va, en laissant derrière elle son téléphone."
 
 $ telephone_oublie = True
 
-    menu:
-        "Calmer la dispute entre Bryan et Anna":
-            jump calmer_dispute
+menu:
+    "Calmer la dispute entre Bryan et Anna":
+        jump calmer_dispute
 
-        "Accompagner Kim":
-            jump Kim_couloir
+    "Accompagner Kim":
+        jump Kim_couloir
 
 label calmer_dispute:
 

@@ -35,4 +35,4 @@ File "game/allie_Bryan.rpy", line 344: expected ':' not found.
          ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Feb 10 09:53:40 2023
+Fri Feb 10 10:01:39 2023

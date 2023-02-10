@@ -22,6 +22,7 @@ label postTelephone:
             jump kimAbri
         "Aller sauver Bryan":
             jump sauvetageBryan
+    jump sequence4
 
 label kimAbri:
     J "Ok, porte la… Il faut qu’on se dépêche, avant qu’elle ne perde trop de sang !"
@@ -58,6 +59,7 @@ label porterKim:
     J "Je m’occupe de Kim, toi cours !"
     E "Devant vous, Anna commence à courir entre les arbres. Trop lourd avec Kim, vous n’arrivez pas à la rattraper."
     E "Dans votre dos, les bruits de pas se rapprochent de plus en plus, jusqu’à ce qu’un choc vous fasse perdre connaissance."   
+    jump sequence4
 label diversionPoursuite:
     J "Prends Kim avec toi, je vais essayer de te faire gagner du temps !"
     A "Quoi ? T’es sûr ?"
@@ -67,6 +69,7 @@ label diversionPoursuite:
     E "La femme ne réponds pas."
     J "Attends… Ne me dis pas que…"
     E "D’un coup vif, elle vient planter son couteau dans votre chair avant de vous asséner un violent coup à la tête."
+    jump sequence4
 label confrontationTueuse:
     J "Prends Kim avec toi, je vais essayer de te faire gagner du temps !"
     A "Quoi !? Mais qu’est-ce que tu fais ?"
@@ -81,6 +84,7 @@ label confrontationTueuse:
     J "La police va arriver, ok ? Alors tire-toi putain !"
     E "Reculant dans les arbres, vous vous cognez à l’un d’entre eux."
     E "La femme se rapproche, tend le bras, et vous assène un violent coup. Vous vous effondrez, inconscient."
+    jump sequence4
     #if (relationJtoA >= 100):
         #Anna et Kim survivent
     #else:
@@ -112,6 +116,7 @@ label postSoinsBryan:
     E "Vous vous précipitez dans les escaliers"
     E "Dans la cave, Anna est à genoux, de larges coupures sur les bras et le visage tuméfié."
     jump lamentationNancy
+    jump sequence4
 
 label lamentationNancy:
     N "Jamais… Jamais… C’est terminé, maintenant."
@@ -120,7 +125,9 @@ label lamentationNancy:
     N "Non..."
     N "Non !"
     N "Je dois le faire… Je dois…"
-    E "La femme baisse la tête. Vous en profitez pour lui bondir dessus. Dans le mouvement, la lame glisse contre vos côtes. Vosu vous effondrez de ouleur avant de recevoir un grand coup sur le crâne"
+    E "La femme baisse la tête. Vous en profitez pour lui bondir dessus."
+    E "Dans l'action, sa lame glisse contre vos côtes."
+    E "Vous vous effondrez de douleur avant de recevoir un grand coup sur le crâne"
 
 label postSoinsSeul:
     menu:
@@ -128,6 +135,7 @@ label postSoinsSeul:
             jump saveKim
         "Sauver Anna":
             jump saveAnna
+    jump sequence4
 
 label saveKim:
     J "Hé, je reste avec toi alors ne me laisse pas, ok ?"
@@ -147,8 +155,9 @@ label saveKim:
 label saveAnna:
     J "Hé mon coeur, je vais revenir, d’accord ?"
     J "Je vais juste aider Anna, d’accord. Je vais revenir, je te le promet. Je t’aime."
-    E "Laissant Kim derrière lui, Jason retourne dans la cave d’où vient les cris."
-    J_shout "Anna? Où est-ce que tu es ?"
+    E "Laissant Kim derrière lui, vous retournez dans la cave d’où vient le cri."
+    J_shout "Anna? T'es où?"
     J_think "J’espère qu’il n’est pas trop tard…"
     E "Dans la cave, Anna est à genoux, de larges coupures sur les bras et le visage tuméfié."
     jump lamentationNancy
+

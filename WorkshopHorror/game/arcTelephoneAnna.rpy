@@ -2,16 +2,13 @@
 E "Alors que Jason regarde dans le téléphone pour appeler les secours, un message attire son attention."
 J_think "Attends, qu’est-ce que c’est que ça…"
 J_think "Kim ? Mais qu’est-ce que ?"
-
-#insultes à insérer ici
-
+E "“Tu dis qu j’ai que de la gueule ms le jour ou on va te retrouver crevée ds le canal tu rigolera plus, sale chienne. Essaye même pas de te plaindre à quelquun, personne écoutera ta sale gueule de pute.”"
+E "“Alors vas y continu de faire la meuf quand y a du monde autour, je sais que tout ce que tu veux cest te tirer une balle pour arreter ta vie de merde”"
 
 if (go_with_Anna == True):
     jump policecallAnna
 else:
     jump policeCallAlone
-
-
 
 label policecallAnna:
     J "Hé, regarde ça !"
@@ -60,9 +57,7 @@ label policecallAnna:
 
 label policeCallAlone:
 
-
-
-    E "Jason compose le numéro de secours."
+    E "Vous composez le numéro de secours."
     J "Allô ?"
     E "Le téléphone grésille…"
     J "Allô, vous m’entendez ?"
@@ -101,8 +96,7 @@ label findingAnna:
     J "Oh mon dieu, c’est toi ! Je… Je ne savais pas où tu étais passée…"
     A "Je… j’ai vu la tueuse… Bordel Jason, tu aura vu son couteau… Pourquoi nous ?"
 
-
-N_shout "Anna ! Je sais que t’es dans la maison !"
+N_shout "Annaaaaaa ! Je sais que t’es dans la maison !"
 N_shout "Oooooooh… Aahh… Viens là !"
 J "C’était quoi ça ?"
 A "Elle arrive ! Oh mon dieu, elle arrive !"
@@ -112,5 +106,8 @@ label kimHurlement:
     E "Un cri aigu retentit dans la maison."
     J "Kim ! Nom de Dieu."
     J_shout "T’as pas intérêt à la toucher !"
-    E "Jason, court en direction de la cave avec Anna, où ils avaient laissé Kim blessée."
-    E "Jason retrouve Kim retrouve, seule, ensanglantée, sur le sol de l’entrée."
+    E "Vous courez en direction de la cave avec Anna, où vous aviez laissé Kim blessée."
+    E "Vous retrouvez Kim, seule, ensanglantée, sur le sol de l’entrée."
+
+
+jump arcSauvetageKim

@@ -148,6 +148,10 @@ jump kimHurlement
 
 label kimHurlement:
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 6c03d2c (Remerde)
 
     if (compagnie_Bryan):
         jump kimHurlement_Bryan
@@ -192,6 +196,7 @@ label kimHurlement_seul:
     E "Vous retrouvez Kim, seule, ensanglantée, sur le sol du hall d'entrée."
 
 jump arcSauvetageKim
+<<<<<<< HEAD
 =======
     E "Un cri aigu retentit dans la maison."
     J "Kim ! Nom de Dieu."
@@ -202,3 +207,15 @@ jump arcSauvetageKim
 
 jump arcSauvetageKim
 >>>>>>> parent of 38059ce (Merge branch 'main' of https://github.com/Doerys/projet_workshop_visualNovel)
+=======
+    E "Un cri aigu retentit dans la maison."
+    J "Kim ! Nom de Dieu."
+    J_shout "T’as pas intérêt à la toucher !"
+    E "Vous courez en direction de la cave avec Anna, où vous aviez laissé Kim blessée."
+    E "Vous retrouvez Kim, seule, ensanglantée, sur le sol de l’entrée."
+
+
+jump arcSauvetageKim
+>>>>>>> parent of 38059ce (Merge branch 'main' of https://github.com/Doerys/projet_workshop_visualNovel)
+=======
+>>>>>>> parent of 6c03d2c (Remerde)

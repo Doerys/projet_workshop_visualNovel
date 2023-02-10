@@ -438,12 +438,9 @@ label start:
             B "Je n’en sais rien..."
             K "Je commence à avoir peur..."
             A "Vous paniquez pour que dalle, y'a vraiment rien à craindre à part le coma éthylique de Bryan."
-
+            play music "audio/Music/Tension Nonstop - Myuu.mp3" loop fadeout 1
             menu:
                 "Croire Bryan : aller inspecter":
                     jump choix_Bryan4
                 "Croire Anna : rassurer Kim":
                     jump choix_Anna4
-
-
-    return # Quitte la partie, partie terminée

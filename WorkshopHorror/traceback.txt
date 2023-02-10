@@ -1,13 +1,35 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
+<<<<<<< HEAD
+While running game code:
+  File "game/loadLabels.rpy", line 652, in script
+    J_think "On va trouver du soin Kim..."
+ScriptError: could not find label 'choix_cave'.
+=======
 While loading <renpy.display.im.Image object ('images/place holder personnage/kim_content.png') at 0x0000000005336910>:
   File "game/script.rpy", line 253, in script
     K "Bon, allons dans le salon, on était en train de jouer et... Ne t'inquiètes pas, j'ai une petite surprise pour toi après la soirée, une petite récompense..."
 OSError: Couldn't find file 'images/place holder personnage/kim_content.png'.
+>>>>>>> 0c41905118cfb3e0c557b8550c36ac88eb193ce0
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+<<<<<<< HEAD
+  File "C:\Users\game\Desktop\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "C:\Users\game\Desktop\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
+    run(restart)
+  File "C:\Users\game\Desktop\renpy-8.0.3-sdk\renpy\main.py", line 146, in run
+    renpy.execution.run_context(True)
+  File "C:\Users\game\Desktop\renpy-8.0.3-sdk\renpy\execution.py", line 938, in run_context
+    context.run()
+  File "game/loadLabels.rpy", line 652, in script
+    J_think "On va trouver du soin Kim..."
+  File "C:\Users\game\Desktop\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'choix_cave'.
+=======
   File "game/script.rpy", line 253, in script
     K "Bon, allons dans le salon, on était en train de jouer et... Ne t'inquiètes pas, j'ai une petite surprise pour toi après la soirée, une petite récompense..."
   File "D:\Games\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
@@ -63,8 +85,13 @@ Full traceback:
   File "D:\Games\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
     raise IOError("Couldn't find file '%s'." % name)
 OSError: Couldn't find file 'images/place holder personnage/kim_content.png'.
+>>>>>>> 0c41905118cfb3e0c557b8550c36ac88eb193ce0
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 J 1.0
+<<<<<<< HEAD
+Fri Feb 10 11:53:37 2023
+=======
 Fri Feb 10 11:00:38 2023
+>>>>>>> 0c41905118cfb3e0c557b8550c36ac88eb193ce0

@@ -27,23 +27,23 @@ label refuser2:
     J "Kim, arrête... arrête !"
     K "Quoi, qu’est-ce qui t’arrives ?"
 
-    if (harcelement_kim_info == True)
+    if (harcelement_kim_info == True):
 
-    menu:
-        "Inquiet":
-            jump inquiet2
-        "Pourquoi les avoir invité ?":
-            jump pourquoi_invite
-        "Nancy":
-            jump discussion_Nancy
+        menu:
+            "Inquiet":
+                jump inquiet2
+            "Pourquoi les avoir invité ?":
+                jump pourquoi_invite
+            "Nancy":
+                jump discussion_Nancy
 
-    if (harcelement_kim_info == False)
+    if (harcelement_kim_info == False):
 
-    menu:
-        "Inquiet":
-            jump inquiet2
-        "Pourquoi les avoir invité ?":
-            jump pourquoi_invite
+        menu:
+            "Inquiet":
+                jump inquiet2
+            "Pourquoi les avoir invité ?":
+                jump pourquoi_invite
 
     label inquiet2:
         J "Arrête, ce n’est pas le moment..."

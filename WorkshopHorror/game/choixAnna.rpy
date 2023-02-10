@@ -26,7 +26,7 @@
         "Rester dans le salon avec Anna":
             jump Anna_salon
         
-        "Accompagner Kim discrètement"
+        "Accompagner Kim discrètement":
             jump Kim_couloir
 
 label Bryan_cuisine:
@@ -51,64 +51,64 @@ label Bryan_cuisine:
                 jump Bryan_inssup
 
 
-    label situation_inssup:
-        J "On est d'accord, Anna est une grosse prétentieuse. Mais là, la seule chose que vous faites, c’est vous engueuler en boucle. Vous tournez en rond et pour nous c’est insupportable."
-        B "Pourquoi tu me dis ça à moi ? Va voir Anna, va lui dire tout ça, c’est elle qui doit se calmer !"
-        J "Ne t’inquiète pas, je vais le faire. Il faut que Kim aille lui en parler parce qu’elle commence aussi à lui faire perdre ses nerfs, mais en attendant, évite d’aller la chercher, sinon on avancera jamais."
+label situation_inssup:
+    J "On est d'accord, Anna est une grosse prétentieuse. Mais là, la seule chose que vous faites, c’est vous engueuler en boucle. Vous tournez en rond et pour nous c’est insupportable."
+    B "Pourquoi tu me dis ça à moi ? Va voir Anna, va lui dire tout ça, c’est elle qui doit se calmer !"
+    J "Ne t’inquiète pas, je vais le faire. Il faut que Kim aille lui en parler parce qu’elle commence aussi à lui faire perdre ses nerfs, mais en attendant, évite d’aller la chercher, sinon on avancera jamais."
 
-        $relationJtoB += 1
+    $relationJtoB += 1
 
-        jump suite7
+    jump suite7
 
-    label deux_inssup:
-        B "J’aimerai bien laisser couler, mais hé, comment veux-tu que je fasse quand elle est là en boucle à venir me faire chier ?"
-        J "Dans ce cas arrête d’aller la faire chier aussi ! Tu te plains, mais t’es pas vraiment mieux qu’elle ! Vous êtes tous les deux insupportables !"
+label deux_inssup:
+    B "J’aimerai bien laisser couler, mais hé, comment veux-tu que je fasse quand elle est là en boucle à venir me faire chier ?"
+    J "Dans ce cas arrête d’aller la faire chier aussi ! Tu te plains, mais t’es pas vraiment mieux qu’elle ! Vous êtes tous les deux insupportables !"
 
-        jump suite7
+    jump suite7
 
-    label Bryan_inssup:
-        J "Regarde l’ambiance que t’as foutu ! Arrête d’aller la voir, sinon on avancera jamais !"
-        B "Hé je t’emmerde ! C’est à elle qu'il faut dire ça ! C’est elle qui..."
-        J "Non, arrête de faire genre que c’est elle qui vient toujours te faire chier ! Ce soir c’est de ta faute si la soirée est gâchée !"
-        B "Ben merci pour ton soutien..."
+label Bryan_inssup:
+    J "Regarde l’ambiance que t’as foutu ! Arrête d’aller la voir, sinon on avancera jamais !"
+    B "Hé je t’emmerde ! C’est à elle qu'il faut dire ça ! C’est elle qui..."
+    J "Non, arrête de faire genre que c’est elle qui vient toujours te faire chier ! Ce soir c’est de ta faute si la soirée est gâchée !"
+    B "Ben merci pour ton soutien..."
 
-        $relationJtoB -= 1
+    $relationJtoB -= 1
 
-    label suite7:
-        B "Bon, pour ce soir, je vais tâcher de me tenir. Pour Kim."
-        J "A propos de Kim, faut que je te confie quelque chose. Ca va pas fort en ce moment."
-        J "On s'est encore disputé hier... Tu sais comment ça se passe dans ces moments-là."
-        B "Bah, ça va passer ! T'as pas de soucis à te faire, je suis certain que c'est qu'une passe."
+label suite7:
+    B "Bon, pour ce soir, je vais tâcher de me tenir. Pour Kim."
+    J "A propos de Kim, faut que je te confie quelque chose. Ca va pas fort en ce moment."
+    J "On s'est encore disputé hier... Tu sais comment ça se passe dans ces moments-là."
+    B "Bah, ça va passer ! T'as pas de soucis à te faire, je suis certain que c'est qu'une passe."
 
-        menu:
-            "Demander conseil":
-                jump demande_conseil
-            "Donner crédit à Bryan":
-                jump credit_bryan
+    menu:
+        "Demander conseil":
+            jump demande_conseil
+        "Donner crédit à Bryan":
+            jump credit_bryan
 
-    label demande_conseil:
-        J "Tu comprends pas la situation, je pense que c'est plus grave que ça."
-        J "T'aurais pas un conseil pour arranger les choses ?"
-        B "Honnêtement, je pense que c'est surtout un problème entre toi et elle. Je vais pouvoir t'aider beaucoup sur ce coup-là, désolé."
-        J "Hum... t'inquiète pas, je m'en sortirai."
+label demande_conseil:
+    J "Tu comprends pas la situation, je pense que c'est plus grave que ça."
+    J "T'aurais pas un conseil pour arranger les choses ?"
+    B "Honnêtement, je pense que c'est surtout un problème entre toi et elle. Je vais pouvoir t'aider beaucoup sur ce coup-là, désolé."
+    J "Hum... t'inquiète pas, je m'en sortirai."
 
-        jump suite9bis
+    jump suite9bis
 
-    label credit_bryan:
-        J "Hum t'as raison. La situation va finir par s'arranger. Merci, vieux."
-        B "A ton service mon pote ! Toujours écouter mes conseils, c'est ma devise !"
-        E "Bryan donne une tape amicale dans le dos de Jason."
+label credit_bryan:
+    J "Hum t'as raison. La situation va finir par s'arranger. Merci, vieux."
+    B "A ton service mon pote ! Toujours écouter mes conseils, c'est ma devise !"
+    E "Bryan donne une tape amicale dans le dos de Jason."
 
-        $relationJtoB += 1
+    $relationJtoB += 1
 
-        jump suite9bis
+    jump suite9bis
 
 
-    label suite9bis:
-        J "Bon, viens, on va voir où en est Anna, mais s'il te plait, ne fais pas de conneries d'accord ?"
-        E "Bryan gromelle en suivant Jason jusqu'au salon."
+label suite9bis:
+    J "Bon, viens, on va voir où en est Anna, mais s'il te plait, ne fais pas de conneries d'accord ?"
+    E "Bryan gromelle en suivant Jason jusqu'au salon."
 
-        jump reunion
+    jump reunion
 
 
 label Anna_salon:
@@ -128,79 +128,79 @@ label Anna_salon:
                 jump desapprouver
 
 
-    label approuver:
-        J "Je suis d'accord avec toi, t'as totalement raison. Mais tu sais, c’est le genre de mec à s’emporter toujours trop vite, il est sanguin..."
-        A "Ouais bah faudrait que tu ailles lui parler parce qu’à terme on va tous finir par péter un plomb."
-        J "J'essaierai. Il est parti dans la cuisine, il faut lui laisser du temps, il va se calmer tout seul."
-        A "C’est bien, qu’il décuve un peu..."
-        J "C’est ça. Tu sais, je sais comment il fonctionne maintenant. Laisse-lui cinq minutes et il reviendra calme quand il verra qu’il est en train de gâcher la soirée de Kim."
+label approuver:
+    J "Je suis d'accord avec toi, t'as totalement raison. Mais tu sais, c’est le genre de mec à s’emporter toujours trop vite, il est sanguin..."
+    A "Ouais bah faudrait que tu ailles lui parler parce qu’à terme on va tous finir par péter un plomb."
+    J "J'essaierai. Il est parti dans la cuisine, il faut lui laisser du temps, il va se calmer tout seul."
+    A "C’est bien, qu’il décuve un peu..."
+    J "C’est ça. Tu sais, je sais comment il fonctionne maintenant. Laisse-lui cinq minutes et il reviendra calme quand il verra qu’il est en train de gâcher la soirée de Kim."
 
-        $relationJtoA += 1
+    $relationJtoA += 1
 
-        jump suite8
+    jump suite8
 
-    label deux_coupables:
-        J "Dans ce cas, évite aussi d’aller le chercher quand tu vois qu’il est en train de se chauffer tout seul. Ça ne sert à rien, au contraire..."
-        A "Je veux juste qu’il se rende compte de ses erreurs."
-        J "Vous êtes tous les deux dans l'erreur. Ce n’est pas en l’énervant que tu vas lui faire comprendre ses conneries. Tout ce que tu vas réussir à faire c’est le braquer davantage."
-        A "C'est pas mon problème ! Il n’a pas à réagir comme ça..."
-        J "Anna, s’il te plaît, arrête d’envenimer la situation, par pitié... La soirée de Kim est déjà bien assez gâchée comme ça..."
+label deux_coupables:
+    J "Dans ce cas, évite aussi d’aller le chercher quand tu vois qu’il est en train de se chauffer tout seul. Ça ne sert à rien, au contraire..."
+    A "Je veux juste qu’il se rende compte de ses erreurs."
+    J "Vous êtes tous les deux dans l'erreur. Ce n’est pas en l’énervant que tu vas lui faire comprendre ses conneries. Tout ce que tu vas réussir à faire c’est le braquer davantage."
+    A "C'est pas mon problème ! Il n’a pas à réagir comme ça..."
+    J "Anna, s’il te plaît, arrête d’envenimer la situation, par pitié... La soirée de Kim est déjà bien assez gâchée comme ça..."
 
-        jump suite8
+    jump suite8
 
-    label desapprouver:
-        J "Dans ce cas arrête d’aller le faire chier."
-        A "Hé, j’essaie juste de l’aider ! Je ne comprends pas pourquoi Kim s’entête à l’inviter si c’est tout la même chose."
-        J "Mais il n’a pas besoin d’aide ! Il veut juste que tu le laisses tranquille !"
-        A "Parce que tu trouves que je suis trop sur ses côtes ?"
-        J "Tu rigoles j’espère ? T’es tout le temps en train de le critiquer. Enfin... merde Anna... T’es bien plus intelligente que ça !"
+label desapprouver:
+    J "Dans ce cas arrête d’aller le faire chier."
+    A "Hé, j’essaie juste de l’aider ! Je ne comprends pas pourquoi Kim s’entête à l’inviter si c’est tout la même chose."
+    J "Mais il n’a pas besoin d’aide ! Il veut juste que tu le laisses tranquille !"
+    A "Parce que tu trouves que je suis trop sur ses côtes ?"
+    J "Tu rigoles j’espère ? T’es tout le temps en train de le critiquer. Enfin... merde Anna... T’es bien plus intelligente que ça !"
 
-        $relationJtoA -= 1
+    $relationJtoA -= 1
 
-        jump suite8
-
-
-    label suite8:
-        A "Ok, ok... je veux bien essayer de faire des efforts. Pour ce soir au moins, et pour Kim."
-        J "Merci. Hé, d’ailleurs en parlant de Kim, elle va bien ?"
-        A "Euh, oui ? Pourquoi est-ce que tu me demandes ça ?"
-        J "Bah je ne sais pas, regarde-la. Elle a l’air moins enjouée que d’habitude. Rien qu’hier, elle est venue me prendre la tête sur des détails à la con, je n’ai pas compris pourquoi."
-        A "Et tu lui as demandé ?"
-        J "Ouais, mais pour elle tout est normal, sauf que je la connais assez pour savoir que c’est faux. Quelque chose ne tourne pas rond."
-        A "Je suis désolé pour toi, mais je ne peux pas vraiment te donner mon avis là-dessus, elle ne m’a pas parlé de la dispute avec toi, du coup je ne sais pas ce qu’elle t’a dit..."
-        J "Elle ne t’en a pas parlé ?"
-        A "Non. Tu sais, elle est plus du genre à garder les choses pour elle. Ça ne me regarde pas vraiment, elle ne va pas venir m’en parler d'elle-même..."
+    jump suite8
 
 
-        menu:
-            "Elle cache quelque chose ?":
-                jump secret
-
-            "S'excuser":
-                jump excuser2
-
-    label secret:
-        J "Tu sais, j’ai peur qu’elle me cache quelque chose, c’est la première fois que je la vois comme ça..."
-        A "Après c’est Kim, ça ne me choque pas d’elle."
-        J "Vraiment ?"
-        A "C’est toujours la même histoire avec elle, il y a toujours un moment où tout n’est pas rose avec elle et elle finit par se renfermer sur elle-même. La seule chose que je peux te dire c’est de lui laisser du temps..."
-        J "Mais toi, tu n’es pas au courant de quelque chose ? Elle va vraiment bien ?"
-        A "N'insiste pas. Laisse lui du temps, vraiment... Si elle doit te dire quelque chose, elle le fera d’elle-même..."
-
-        jump suite9
-
-    label excuser2:
-        J "Ouais, je comprends. Je suis désolé de te faire entrer dans cette histoire débile, je pensais que tu saurais au moins si je dois m’inquiéter ou non..."
-        A "Tu connais Kim, tu sais comment gérer, tu sauras mieux que moi comment gérer..."
-        J "J’espère..."
-
-        $relationJtoA += 1
-        jump suite9
+label suite8:
+    A "Ok, ok... je veux bien essayer de faire des efforts. Pour ce soir au moins, et pour Kim."
+    J "Merci. Hé, d’ailleurs en parlant de Kim, elle va bien ?"
+    A "Euh, oui ? Pourquoi est-ce que tu me demandes ça ?"
+    J "Bah je ne sais pas, regarde-la. Elle a l’air moins enjouée que d’habitude. Rien qu’hier, elle est venue me prendre la tête sur des détails à la con, je n’ai pas compris pourquoi."
+    A "Et tu lui as demandé ?"
+    J "Ouais, mais pour elle tout est normal, sauf que je la connais assez pour savoir que c’est faux. Quelque chose ne tourne pas rond."
+    A "Je suis désolé pour toi, mais je ne peux pas vraiment te donner mon avis là-dessus, elle ne m’a pas parlé de la dispute avec toi, du coup je ne sais pas ce qu’elle t’a dit..."
+    J "Elle ne t’en a pas parlé ?"
+    A "Non. Tu sais, elle est plus du genre à garder les choses pour elle. Ça ne me regarde pas vraiment, elle ne va pas venir m’en parler d'elle-même..."
 
 
-    label suite9:
-        J "Ah, regarde, Bryan est de retour."
-        A "Il a l'air de s'être calmé."
+    menu:
+        "Elle cache quelque chose ?":
+            jump secret
+
+        "S'excuser":
+            jump excuser2
+
+label secret:
+    J "Tu sais, j’ai peur qu’elle me cache quelque chose, c’est la première fois que je la vois comme ça..."
+    A "Après c’est Kim, ça ne me choque pas d’elle."
+    J "Vraiment ?"
+    A "C’est toujours la même histoire avec elle, il y a toujours un moment où tout n’est pas rose avec elle et elle finit par se renfermer sur elle-même. La seule chose que je peux te dire c’est de lui laisser du temps..."
+    J "Mais toi, tu n’es pas au courant de quelque chose ? Elle va vraiment bien ?"
+    A "N'insiste pas. Laisse lui du temps, vraiment... Si elle doit te dire quelque chose, elle le fera d’elle-même..."
+
+    jump suite9
+
+label excuser2:
+    J "Ouais, je comprends. Je suis désolé de te faire entrer dans cette histoire débile, je pensais que tu saurais au moins si je dois m’inquiéter ou non..."
+    A "Tu connais Kim, tu sais comment gérer, tu sauras mieux que moi comment gérer..."
+    J "J’espère..."
+
+    $relationJtoA += 1
+    jump suite9
+
+
+label suite9:
+    J "Ah, regarde, Bryan est de retour."
+    A "Il a l'air de s'être calmé."
 
 
 label reunion:

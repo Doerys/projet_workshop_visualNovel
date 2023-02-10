@@ -101,4 +101,48 @@ image lettreCoquineContent = "items/lettreCoquineContenu.png"
 
 image cadena = "items/cadena.png"
 
+# -------------------- Items et Images Clickable ------------- #
+# -------------------------- Cave ---------------------------- #
+
+init python :
+
+    # Ici on load le nom de l'item, l'image de l'item puis l'image en version selectioné
+
+        # Cave
+        # Couloir Box
+    clou = Item("Boîte de clou", "items/boiteClouItem.png", "items/boiteClouItemSelect.png",False)
+    lettreSK = Item("Lettre de Nancy", "items/lettreSKItem.png", "items/lettreSKItemSelect.png",False)
+        # Couloir
+    cle = Item("Clé du box", "items/cleItem.png", "items/cleItemSelect.png",False)
+    planches = Item("Planches", "items/planchesItem.png", "items/planchesItemSelect.png",False)
+        # Box 
+    marteau = Item("Marteau", "items/marteauItem.png", "items/marteauItemSelect.png",False)
+
+    canGetItemCave = [clou, lettreSK, cle, planches, marteau]
+
+    boxOpen = False
+    barricade = False
+
+    lettreSKSelect = False
+
+    phaseTimerSoin = True
+    phaseCraftSoin = False
+
+# Ici, on load les images utilisable par renPy (ça fait un peu un double mais pas grave) 
+
+image clou = "items/clou.png"
+image lettreSK = "items/lettreSK.png"
+image cle = "items/cle.png"
+image planches = "items/planches.png"
+image marteau = "items/marteau.png"
+
+image kimDead = "items/kimDead.png"
+image porteBarricade1 = "items/porteBarricade1.png"
+image porteBarricade2 = "items/porteBarricade2.png"
+image porteBox = "items/aporteBox.png"
+
+image lettreSKContent = "items/lettreSKContent.png"
+
+
+
 

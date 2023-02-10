@@ -26,12 +26,12 @@ E "Kim s'en va, en laissant derrière elle son téléphone."
 
 $ telephone_oublie = True
 
-    menu:
-        "Calmer la dispute entre Bryan et Anna":
-            jump calmer_dispute
+menu:
+    "Calmer la dispute entre Bryan et Anna":
+        jump calmer_dispute
 
-        "Accompagner Kim":
-            jump Kim_couloir
+    "Accompagner Kim":
+        jump Kim_couloir
 
 label calmer_dispute:
 

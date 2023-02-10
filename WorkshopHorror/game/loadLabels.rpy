@@ -377,7 +377,6 @@ label getLettreCoquine :
     if (possible) :
         hide screen lettreCoquine
         $ canGetItemSoin.remove(lettreCoquine)     
-        
     else :
         J_think "Je ne peux pas prendre ça..." 
     call screen inventory
@@ -595,7 +594,209 @@ label openCuisine :
     call screen inventory
 
 
+# Cave ===========================================================================
+
+# Cave
+label openCave :
+
+    $ act_label = 'openCave'
+    
+    hide screen cle
+    hide screen planches
+    hide screen flecheCave
+    
+    scene cave
+    
+    show screen kimDead
+
+    show screen partirCave
+    show screen flecheCouloirBox
+
+    if (lettreSKSelect == True) :
+        show lettreSKContent :
+            xpos 0
+            ypos 400
+    else :
+        hide lettreSKContent
+    
+    call screen inventory
+
+# label toKimDead :
+
+# Couloir
+label openCouloirBox :
+
+    $ act_label = 'openCouloirBox'
+    
+    hide screen kimDead
+    hide screen marteau
+    hide screen flecheCouloirBox
+
+    scene couloirBox
+    
+    show screen porteBarricade1
+    show screen porteBarricade2
+    show screen porteBox
+
+    if (canGetItemCave.count(clou)>0):
+        show screen clou
+    if (canGetItemCave.count(lettreSK)>0):
+        show screen lettreSK
+
+    show screen partir
+    show screen flecheCouloir
+
+    if (lettreSKSelect == True) :
+        show lettreSKContent :
+            xpos 0
+            ypos 400
+    else :
+        hide lettreSKContent
+    
+    call screen inventory
+
+label getLettreSK :
+
+    $ possible = inventory.addItem(lettreSK)
+    if (possible) :
+        hide screen lettreSK
+        $ canGetItemCave.remove(lettreSK)
+    else :
+        J_think "Je ne peux pas prendre ça..." 
+    call screen inventory
+    jump openCouloirBox
+
+label getClou :
+
+    $ possible = inventory.addItem(clou)
+    if (possible) :
+        hide screen clou
+        $ canGetItemCave.remove(clou)
+    else :
+        J_think "Je ne peux pas prendre ça..." 
+    call screen inventory
+    jump openCouloirBox
+
+label toBarricade :
+
+    if (inventory.getInv().count(marteau) > 0 and inventory.getInv().count(planches) > 0 and inventory.getInv().count(clou) > 0) :
+        menu:
+            "Utiliser le martaux, les planches et les clous pour barricader ?"
+            "Oui":
+                $ inventory.removeItem(marteau)
+                $ inventory.removeItem(planches)
+                $ inventory.removeItem(clou)
+                $ barricade = True
+                call screen inventory
+                jump openCouloirBox
+            "Non":
+                call screen inventory
+                jump openCouloirBox
+
+    elif(barricade == True):
+
+        J_think "Belle barricade"
+
+        jump openCouloirBox
+
+    else :
+        J_think "Je dois barricader ce passage..."
+        jump openCouloirBox
+        
+    call screen inventory 
 
 
+# CouloirBox
+label openCouloir :
+
+    $ act_label = 'openCouloir'
+    
+    hide screen clou
+    hide screen lettreSK
+    hide screen flecheCouloir
+    hide screen porteBarricade1
+    hide screen porteBarricade2
+    hide screen porteBox
+
+    scene couloir
+
+    if (canGetItemCave.count(planches)>0):
+        show screen planches
+    if (canGetItemCave.count(cle)>0):
+        show screen cle
+
+    show screen partir
+    show screen flecheCave
+
+    if (lettreSKSelect == True) :
+        show lettreSKContent :
+            xpos 0
+            ypos 400
+    else :
+        hide lettreSKContent
+    
+    call screen inventory
+
+label getCle :
+
+    $ possible = inventory.addItem(cle)
+    if (possible) :
+        hide screen cle
+        $ canGetItemCave.remove(cle)   
+        J_think "Des clés... que peuvent-t-elles bien ouvrir ?"  
+    else :
+        J_think "Je ne peux pas prendre ça..." 
+    call screen inventory
+    jump openCouloir
+
+label getPlanches :
+
+    $ possible = inventory.addItem(planches)
+    if (possible) :
+        hide screen planches
+        $ canGetItemCave.remove(planches)     
+    else :
+        J_think "Je ne peux pas prendre ça..." 
+    call screen inventory
+    jump openCouloir
 
 
+# Box
+label openBox :
+
+    $ act_label = 'openBox'
+    
+    hide screen clou
+    hide screen lettreSK
+    hide screen flecheCouloir
+    hide screen porteBarricade1
+    hide screen porteBarricade2
+    hide screen porteBox
+
+    scene box
+
+    if (canGetItemCave.count(marteau)>0):
+        show screen marteau
+
+    show screen partir
+    show screen flecheCouloirBox
+
+    if (lettreSKSelect == True) :
+        show lettreSKContent :
+            xpos 0
+            ypos 400
+    else :
+        hide lettreSKContent
+    
+    call screen inventory
+
+label getMarteau :
+
+    $ possible = inventory.addItem(marteau)
+    if (possible) :
+        hide screen marteau
+        $ canGetItemCave.remove(marteau)     
+    else :
+        J_think "Je ne peux pas prendre ça..." 
+    call screen inventory
+    jump openBox

@@ -103,8 +103,6 @@ A "Elle arrive ! Oh mon dieu, elle arrive !"
 jump kimHurlement
 
 label kimHurlement:
-<<<<<<< HEAD
-=======
 
     if (compagnie_Bryan):
         jump kimHurlement_Bryan
@@ -112,7 +110,6 @@ label kimHurlement:
         jump kimHurlement_seul
 
 label kimHurlement_Anna:
->>>>>>> ebed712b80e21e6987274dc2ac3ad65f4464ad0b
     E "Un cri aigu retentit dans la maison."
     A "Kim ! Nom de Dieu."
     J_shout "T’as pas intérêt à la toucher !"
@@ -142,17 +139,11 @@ label kimHurlement_seul:
     E "Un cri aigu retentit dans la maison."
     J "Kim ! Nom de Dieu."
     J_shout "T’as pas intérêt à la toucher !"
-<<<<<<< HEAD
-    E "Vous courez en direction de la cave avec Anna, où vous aviez laissé Kim blessée."
-    E "Vous retrouvez Kim, seule, ensanglantée, sur le sol de l’entrée."
-
-=======
     E "Vous courez en direction de la cave, où vous aviez laissé Kim blessée."
 
     scene entree_nuit
     with dissolve
 
     E "Vous retrouvez Kim, seule, ensanglantée, sur le sol du hall d'entrée."
->>>>>>> ebed712b80e21e6987274dc2ac3ad65f4464ad0b
 
 jump arcSauvetageKim

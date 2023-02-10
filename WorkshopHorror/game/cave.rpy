@@ -169,7 +169,9 @@ label suite15:
     A "Pendant ce temps là Jason, fouilles la cave, et barricade l'accès. Qui que ce soit qui ait fait ça, il faut pas qu'il nous retombe dessus."
 
 # séquence Point and click ?
-    E "Séquence point and click de la cave"
+    jump openCave
+
+label choix_cave:
 
     A "Ok, les gars c’est la merde. Bryan vient voir ! J’ai regardé sa plaie, ce n’est pas joli à voir. Loin de là. je ne sais pas qui lui a fait ça, mais elle ne l’a pas raté !"
     J "Tu crois qu’elle est en danger ?"

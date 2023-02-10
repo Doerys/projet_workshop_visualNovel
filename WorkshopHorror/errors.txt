@@ -2,49 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/arcTelephoneAnna.rpy", line 106: expected statement.
-    <<<<<<< HEAD
-                ^
-
-File "game/arcTelephoneAnna.rpy", line 107: expected statement.
-    =======
-          ^
-
-File "game/arcTelephoneAnna.rpy", line 115: expected statement.
-    >>>>>>> ebed712b80e21e6987274dc2ac3ad65f4464ad0b
-                                                    ^
-
-File "game/arcTelephoneAnna.rpy", line 145: expected statement.
-    <<<<<<< HEAD
-                ^
-
-File "game/arcTelephoneAnna.rpy", line 149: expected statement.
-    =======
-          ^
-
-File "game/arcTelephoneAnna.rpy", line 156: expected statement.
-    >>>>>>> ebed712b80e21e6987274dc2ac3ad65f4464ad0b
-                                                    ^
-
-File "game/partie_mauve.rpy", line 1: expected statement.
-    <<<<<<< HEAD
-                ^
-
-File "game/partie_mauve.rpy", line 2: expected statement.
-    ﻿label mauve:
-                ^
-
-File "game/partie_mauve.rpy", line 481: expected statement.
-    =======
-          ^
-
-File "game/partie_mauve.rpy", line 482: expected statement.
-    ﻿label mauve:
-                ^
-
-File "game/partie_mauve.rpy", line 961: expected statement.
-    >>>>>>> bcc6e1a03f847250e9edca78a3b9adce1648f1b3
-                                                    ^
+File "game/arcTelephoneAnna.rpy", line 155: else clause expects a non-empty block.
+    else:
+         ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Feb 10 11:49:41 2023
+Fri Feb 10 13:20:34 2023

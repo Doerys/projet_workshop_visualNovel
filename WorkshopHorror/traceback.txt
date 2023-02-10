@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/loadLabels.rpy", line 652, in script
-    J_think "On va trouver du soin Kim..."
+  File "game/loadLabels.rpy", line 649, in script
+    call screen inventory
 ScriptError: could not find label 'choix_cave'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\game\Desktop\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
     renpy.main.main()
-  File "C:\Users\game\Desktop\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
+  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
     run(restart)
-  File "C:\Users\game\Desktop\renpy-8.0.3-sdk\renpy\main.py", line 146, in run
+  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\main.py", line 146, in run
     renpy.execution.run_context(True)
-  File "C:\Users\game\Desktop\renpy-8.0.3-sdk\renpy\execution.py", line 938, in run_context
+  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\execution.py", line 938, in run_context
     context.run()
-  File "game/loadLabels.rpy", line 652, in script
-    J_think "On va trouver du soin Kim..."
-  File "C:\Users\game\Desktop\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
+  File "game/loadLabels.rpy", line 649, in script
+    call screen inventory
+  File "C:\Users\game\Downloads\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
 ScriptError: could not find label 'choix_cave'.
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 J 1.0
-Fri Feb 10 11:53:37 2023
+Fri Feb 10 13:59:26 2023

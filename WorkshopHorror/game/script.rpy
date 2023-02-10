@@ -18,15 +18,12 @@ define A = Character('Anna', color= "#ff9100",what_font = 'Calvino-Regular-trial
 define A_shout = Character(kind = A, what_size = 100,what_font = 'Calvino-Regular-trial.ttf')
 define A_murmure = Character(kind = A, what_size = 60,what_font = 'Calvino-Regular-trial.ttf')
 define N = Character('Nancy', color= "#f9fd15",what_font = 'Calvino-Regular-trial.ttf', who_font = 'UnfinishedScreamRegular.ttf')
+define N_shout = Character(kind = N, what_size = 100,what_font = 'Calvino-Regular-trial.ttf')
 define I = Character('Voix inconnue', color= "#48ff00",what_font = 'Calvino-Regular-trial.ttf', who_font = 'UnfinishedScreamRegular.ttf')
 
 define E = Character('', color= "#ffdabc", what_italic = True) # bruitage et environnement
 
-
-# Le jeu commence ici
-label start:
-
-
+init:
     # Mettre toutes les variables ici
     $ relationJtoK = 0 #Jason to Kim
     $ relationJtoB = 0 #Jason to Bryan
@@ -54,12 +51,18 @@ label start:
     $ go_with_Anna = False
     $ go_with_Bryan = False
     $ telephone_oublie = False
-    $compagnie_bryan = False
-    $compagnie_anna = False
+    $compagnie_Bryan = False
+    $compagnie_Anna = False
     $menacer_psychopathe = False
-
+    $distraction_Bryan = False
+    $trahison_Anna = False
+    $ persuation = 0
+    $police = False
 
     $ traitement_conseil = False
+
+# Le jeu commence ici
+label start:
 
     play music "audio/Music/Prologue1.mp3" loop
 

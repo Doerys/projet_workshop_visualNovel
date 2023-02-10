@@ -15,7 +15,7 @@
 
 #Prévoir K_murmure
 
-scene jour
+scene fenetre_jour
 with dissolve
 
 E "Ensemble, à pas feutrés, les quatres amis se rendent sur le palier de l’entrée, dévoilant sous leurs yeux une fenêtre légèrement entrouverte."

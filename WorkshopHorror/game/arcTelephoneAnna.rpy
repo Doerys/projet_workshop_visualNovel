@@ -7,22 +7,22 @@ E "“Kimou : Tu dis qu j’ai que de la gueule ms le jour ou on va te retrouver
 E "“Kimou : Alors vas y continu de faire la meuf quand y a du monde autour, je sais que tout ce que tu veux cest te tirer une balle pour arreter ta vie de merde”"
 J_think "Je reconnais ce numéro... C'est adressé à Nancy ! Quelle horreur... Kim, qu'est-ce qui t'a pris ?"
 
-J_think "Attend, et qu'est-ce que c'est que ça ?"
-E "D'autres séries de messages apparaissent dans la messagerie du téléphone."
+J_think "''Attend, et qu'est-ce que c'est que ça ?''"
+E "''D'autres séries de messages apparaissent dans la messagerie du téléphone.''"
 E "CONTACT : B <3"
-E "Kim : ct trop bien hier soir, on refait sa quand tu veux <3"
-E "B : c'est vrai, ta kiffé ?"
-E "Kim : fais pas genre, mdr, le gars veut satisfaire son ego"
-E "B : je peux te satisfaire autant que tu veux, tkt"
-E "Kim : mdr, tg, t'es trop con"
-E "B : coquine"
-E "Kim : lov <3" 
+E "''Kim : ct trop bien hier soir, on refait sa quand tu veux <3''"
+E "''B : c'est vrai, ta kiffé ?''"
+E "''Kim : fais pas genre, mdr, le gars veut satisfaire son ego''"
+E "''B : je peux te satisfaire autant que tu veux, tkt''"
+E "''Kim : mdr, tg, t'es trop con''"
+E "''B : coquine''"
+E "''Kim : lov <3''" 
 
-J_think : "Putain, c'est quoi cette merde ? ''B'' ? Non... me dis pas que..."
+J_think "Putain, c'est quoi cette merde ? ''B'' ? Non... me dis pas que..."
 
 if (compagnie_Anna == True):
-E "“Tu dis qu j’ai que de la gueule ms le jour ou on va te retrouver crevée ds le canal tu rigolera plus, sale chienne. Essaye même pas de te plaindre à quelquun, personne écoutera ta sale gueule de pute.”"
-E "“Alors vas y continu de faire la meuf quand y a du monde autour, je sais que tout ce que tu veux cest te tirer une balle pour arreter ta vie de merde”"
+    E "“Tu dis qu j’ai que de la gueule ms le jour ou on va te retrouver crevée ds le canal tu rigolera plus, sale chienne. Essaye même pas de te plaindre à quelquun, personne écoutera ta sale gueule de pute.”"
+    E "“Alors vas y continu de faire la meuf quand y a du monde autour, je sais que tout ce que tu veux cest te tirer une balle pour arreter ta vie de merde”"
 
 if (go_with_Anna == True):
     jump policecallAnna
@@ -62,6 +62,8 @@ label policecallAnna:
     A "Donne leur l'adresse"
     J "On est au 18 Stanway Road! Dépêchez vous!"
 
+    $police = True
+
     play sound "audio/Sounds/Phone Off.mp3"
 
     A "Ils arrivent quand?"
@@ -79,12 +81,13 @@ label policecallAnna:
 
 label policeCallAlone:
 
-    J_think : "Non, Jason, reste concentrée, t'es en danger de mort. Aller, appeler les secours."
+    J_think "Non, Jason, reste concentrée, t'es en danger de mort. Aller, appeler les secours."
 
     E "Vous composez le numéro de secours."
     J "Allô ?"
     E "Le téléphone grésille…"
     J "Allô, vous m’entendez ?"
+
     menu:
         "Parler de la tueuse":
             J "Si vous nous entendez, on est en train de se faire attaquer ! Allô ?"
@@ -121,6 +124,7 @@ label policeCallAlone:
         "Dire l'adresse":
             J_murmure "Si vous m’entendez…"
             J_murmure "Je suis au 18 Stanway… Road. Venez vite, par pitié venez vite !"
+            $police = False
             jump findingAnna
 
 label findingAnna:
@@ -135,20 +139,18 @@ label findingAnna:
     A "Jason, t’es là ?"
     J_murmure "Anna ? Tu m’as fait peur !"
     J "Oh mon dieu, c’est toi ! Je… Je ne savais pas où tu étais passée…"
-    A "Je… j’ai vu la tueuse… Bordel Jason, tu aura vu son couteau… Pourquoi nous ?"
+    A "Je… j’ai vu la tueuse… Bordel Jason, tu aurais vu son couteau… Pourquoi nous ?"
 
-E "Un bruit sourd résonne à l'intérieur de la maison."
-N_shout "Annaaaaaa ! Je sais que t’es dans la maison !"
-N_shout "Oooooooh… Aahh… Viens là !"
-J "C’était quoi ça ?"
-A "Elle arrive ! Oh mon dieu, elle arrive !"
-jump kimHurlement_Anna
-jump kimHurlement
+    E "Un bruit sourd résonne à l'intérieur de la maison."
+    N_shout "Annaaaaaa ! Je sais que t’es dans la maison !"
+    N_shout "Oooooooh… Aahh… Viens là !"
+    J "C’était quoi ça ?"
+    A "Elle arrive ! Oh mon dieu, elle arrive !"
+    jump kimHurlement_Anna
 
 label kimHurlement:
-<<<<<<< HEAD
 
-    if (compagnie_Bryan):
+    if (compagnie_Bryan == True):
         jump kimHurlement_Bryan
     else:
         jump kimHurlement_seul
@@ -164,7 +166,7 @@ label kimHurlement_Anna:
 
     E "Vous retrouvez Kim, seule, ensanglantée, sur le sol du hall d'entrée."
 
-jump arcSauvetageKim
+    jump arcSauvetageKim
 
 label kimHurlement_Bryan:
     E "Un cri aigu retentit dans la maison."
@@ -177,7 +179,7 @@ label kimHurlement_Bryan:
 
     E "Vous retrouvez Kim, seule, ensanglantée, sur le sol du hall d'entrée."
 
-jump arcSauvetageKim
+    jump arcSauvetageKim
 
 label kimHurlement_seul:
     E "Un cri aigu retentit dans la maison."
@@ -190,11 +192,4 @@ label kimHurlement_seul:
 
     E "Vous retrouvez Kim, seule, ensanglantée, sur le sol du hall d'entrée."
 
-jump arcSauvetageKim
-=======
-    E "Un cri aigu retentit dans la maison."
-    J "Kim ! Nom de Dieu."
-    J_shout "T’as pas intérêt à la toucher !"
-    E "Vous courez en direction de la cave avec Anna, où vous aviez laissé Kim blessée."
-    E "Vous retrouvez Kim, seule, ensanglantée, sur le sol de l’entrée."
-jump arcSauvetageKim
+    jump arcSauvetageKim

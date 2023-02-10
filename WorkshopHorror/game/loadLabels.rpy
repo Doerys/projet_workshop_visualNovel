@@ -401,7 +401,8 @@ label getLettreCoquine :
     $ possible = inventory.addItem(lettreCoquine)
     if (possible) :
         hide screen lettreCoquine
-        $ canGetItemSoin.remove(lettreCoquine)     
+        $ canGetItemSoin.remove(lettreCoquine)
+        $ lettre_coquine = True  
     else :
         J_think "Je ne peux pas prendre ça..." 
     call screen inventory
@@ -629,7 +630,7 @@ label openCave :
     hide screen cle
     hide screen planches
     hide screen flecheCave
-    hide screen partir
+    hide screen partirCave
     
     scene cave
     
@@ -661,7 +662,7 @@ label openCouloirBox :
     hide screen kimDead
     hide screen marteau
     hide screen flecheCouloirBox
-    hide screen partir
+    hide screen partirCave
 
     scene couloir_box
     
@@ -674,7 +675,7 @@ label openCouloirBox :
     if (canGetItemCave.count(lettreSK)>0):
         show screen lettreSK
 
-    show screen partir
+    show screen partirCave
     show screen flecheCouloir
 
     if (lettreSKSelect == True) :
@@ -697,7 +698,7 @@ label getLettreSK :
     if (possible) :
         hide screen lettreSK
         $ canGetItemCave.remove(lettreSK)
-        #$ lettre_Nancy = True
+        $ lettre_Nancy = True
     else :
         J_think "Je ne peux pas prendre ça..." 
     call screen inventory
@@ -778,7 +779,7 @@ label openCouloir :
     hide screen porteBarricade1
     hide screen porteBarricade2
     hide screen porteBox
-    hide screen partir
+    hide screen partirCave
 
     scene couloir
 
@@ -787,7 +788,7 @@ label openCouloir :
     if (canGetItemCave.count(cle)>0):
         show screen cle
 
-    show screen partir
+    show screen partirCave
     show screen flecheCave
 
     if (lettreSKSelect == True) :
@@ -835,14 +836,14 @@ label openBox :
     hide screen porteBarricade1
     hide screen porteBarricade2
     hide screen porteBox
-    hide screen partir
+    hide screen partirCave
 
     scene box
 
     if (canGetItemCave.count(marteau)>0):
         show screen marteau
 
-    show screen partir
+    show screen partirCave
     show screen flecheCouloirBox
 
     if (lettreSKSelect == True) :
@@ -864,3 +865,35 @@ label getMarteau :
         J_think "Je ne peux pas prendre ça..." 
     call screen inventory
     jump openBox
+
+label hideCuisine:
+
+    hide screen flecheSalon
+    hide screen lettreCoquine
+    hide screen photoNancy
+    hide screen mdpCarnet
+    hide screen tiroirCuisine
+    hide screen livreRecette
+    hide screen infirmerie
+    hide screen affairesKim
+    hide screen mdpCarnetContent
+    hide screen lettreCoquineContent
+
+    jump kimHurlement
+
+label hideCave:
+    hide screen clou
+    hide screen lettreSK
+    hide screen cle
+    hide screen planches
+    hide screen marteau
+    hide screen kimDead
+    hide screen flecheCouloir
+    hide screen partirCave
+    hide screen flecheCave
+    hide screen flecheCouloirBox
+    hide screen porteBarricade1
+    hide screen porteBarricade2
+    hide screen porteBox
+
+    jump choix_cave

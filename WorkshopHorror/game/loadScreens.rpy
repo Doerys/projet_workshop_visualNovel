@@ -138,7 +138,7 @@ screen partir:
         idle "partir"
         hovered (SetVariable("directionDroit", "Partir"))
         unhovered (SetVariable("directionDroit", " "))
-        action [SetVariable("directionDroit", ""),Jump("kimHurlement")]
+        action [SetVariable("directionDroit", ""),Jump("hideCuisine")]
     text directionDroit size 80 :
         xpos 3000
         ypos 1450
@@ -348,11 +348,10 @@ screen partirCave:
         idle "partir"
         hovered (SetVariable("directionDroit", "Partir"))
         unhovered (SetVariable("directionDroit", " "))
-        action [SetVariable("directionDroit", ""),Jump("choix_cave")]
+        action [SetVariable("directionDroit", ""),Jump("hideCave")]
     text directionDroit size 80 :
         xpos 3000
         ypos 1450
-
 
 
 

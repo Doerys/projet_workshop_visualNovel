@@ -80,6 +80,8 @@ init python :
     mdpCarnetSelect = False
     lettreCoquineSelect = False
 
+    lettre_coquine = False
+
     phaseTimerSoin = True
     phaseCraftSoin = False
 
@@ -129,6 +131,8 @@ init python :
     barricade = False
 
     lettreSKSelect = False
+
+    lettre_Nancy = False
 
     phaseTimerSoin = True
     phaseCraftSoin = False

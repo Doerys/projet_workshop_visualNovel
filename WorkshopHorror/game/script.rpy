@@ -28,22 +28,22 @@ label start:
 
 
     # Mettre toutes les variables ici
-    $ relationJtoK = 0
-    $ relationJtoB = 0
-    $ relationJtoA = 50
-    $ relationJtoN = 50
-    $ relationKtoB = 0
-    $ relationKtoA = 0
-    $ relationKtoN = 0
-    $ relationBtoA = 0
-    $ relationBtoN = 0
-    $ relationAtoN = 0
+    $ relationJtoK = 0 #Jason to Kim
+    $ relationJtoB = 0 #Jason to Bryan
+    $ relationJtoA = 0 #Jason to Anna
+    $ relationJtoN = 0 #Jason to Nancy
+    $ relationKtoB = 0 #Kim to Bryan
+    $ relationKtoA = 0 #Kim to Anna
+    $ relationKtoN = 0 #Kim to Nancy
+    $ relationBtoA = 0 #Bryan to Anna
+    $ relationBtoN = 0 #Bryan to Nancy
+    $ relationAtoN = 0 #Anna to Nancy
 
-    $ lifeJ = 100
-    $ lifeK = 100
-    $ lifeB = 100
-    $ lifeA = 100
-    $ lifeN = 100
+    $ lifeJ = 100 #vie Jason
+    $ lifeK = 100 #vie Kim
+    $ lifeB = 100 #vie Bryan
+    $ lifeA = 100 #vie Anna
+    $ lifeN = 100 #vie Nancy
 
 
     $ seul = True
@@ -51,6 +51,8 @@ label start:
     $ vu_fenetre_ouverte = False
     $ go_with_Anna = False
     $ go_with_Bryan = False
+
+    $ traitement_conseil = False
 
     play music "audio/Music/Prologue1.mp3" loop
 
@@ -85,7 +87,7 @@ label start:
         xpos 1250
         ypos 1567
 
-    J "Ca sera l'occasion de revoir Bryan. Ça fait plusieurs semaines que je ne l’ai pas revu. Je crois que Kim a décidé d’inviter Anna aussi. J’espère que tout va bien se passer malgré leurs différents."
+    J "Ca sera l'occasion de revoir Bryan. Ça fait plusieurs semaines que je ne l’ai pas revu. Je crois que Kim a décidé d’inviter Anna aussi. J’espère que tout va bien se passer malgré leurs différends."
     J "Bon, je dois finir de me préparer avant d’arriver en retard. Je ne suis pas très convaincu de ma tenue mais tant pis, plus de temps à perdre."
     
     
@@ -105,25 +107,30 @@ label start:
     J "Déjà ? Ton dernier rendez-vous était il y a à peine deux semaines, pourquoi voulait-il te revoir si vite ?"
     N "Honnêtement je n'ai pas compris pourquoi mais mes parents ont insisté pour que je le voie alors que..."
     N "..."
-    N "Ca fait je ne sais combien de mois maintenant, il faut qu'ils passent à autre chose."
+    N "Ca fait... je ne sais combien de mois maintenant ! Il faut qu'ils passent à autre chose."
+    J "Toi, comment tu te sens ?"
+    N "Ca va ! J'en ai juste marre de ces medocs qui me shootent complètement..."
+    N "Mon psy serait pas d'accord, mais je pense peut-être arrêter mon traitement."
 
     menu:
-        "Lui conseiller de continuer son traitement ou de l'arrêter ?"
-        "Continuer":
+        "Lui conseiller de continuer son traitement ou la rassurer sur son choix ?"
+        "Continuer le traitement":
             jump continuer
-        "Arrêter":
-            jump arreter
+        "La rassurer":
+            jump rassurer
 
     label continuer:
         J "Hé, s'ils sentent que tu as besoin de continuer ton traitement, il faut que tu leur fasse confiance Nancy..."
-        J "Ça ne va pas durer, tu vas y arriver. Dans le pire des cas, vas-y et raconte n'importe quoi, ils seront contents."
+        J "Ça ne va pas durer, tu vas y arriver. Dans le pire des cas, va à tes rendez-vous, et raconte n'importe quoi, ils seront contents."
         N "Tu crois ?"
         J "Fais moi confiance Nan'..."
         N "..."
 
+        traitement_conseil = True;
+
         jump suite
         
-    label arreter:
+    label rassurer:
         J "Après tu sais, j'ai vraiment l'impression que tu vas mieux."
         N "Tu trouves aussi ? J'avais peur de me tromper mais je me sens bien en ce moment."
         J "Bah, tu es plus souriante, tu as l'air de revivre."
@@ -136,8 +143,8 @@ label start:
         N "... Hé dis-moi, ça te dit de sortir ce soir ? J'ai envie de prolonger l'euphorie pour la soirée avant que ça retombe..."
         J "Oh, euh, je ne vais pas pouvoir ce soir. Je dois aller chez Kim, on va enfin se voir avec les autres, depuis le temps."
         N "Les autres ?"
-        J "Ouais, Bryan et Anna, même si je ne comprends pas pourquoi on insiste à les faire venir ensemble vu l'ambiance que ça donne."
-        N "Ouais, non... si c'est pour être avec eux, je vais éviter de venir ce soir..."
+        J "Ouais, Bryan et Anna. Même si je ne comprends pas pourquoi on insiste à les faire venir ensemble, vu l'ambiance que ça donne."
+        N "Ouais, non... si c'est pour être avec eux, je préfère dire non... Je suis pas la bienvenue, tu le sais bien."
 
         menu :
             "En parler":
@@ -156,6 +163,8 @@ label start:
         N "Je ne suis pas sûre que ça change grand chose, c'est trop tard maintenant."
         J "Je vais gérer ça avec eux. Fais-moi confiance, et ne pense plus à ça. Profite de ta soirée, tu le mérites."
 
+        $ relationJtoN += 1
+
         jump suite2
 
     label desole:
@@ -172,9 +181,7 @@ label start:
         N "Tu sais quoi, va te faire foutre Jay ! Il faut que tu ouvres les yeux sur elle, ou elle va finir par t'avoir toi aussi."
         J "Ouais, ouais... Je sais..."
 
-        $ relationJtoN -= 10
-
-
+        $ relationJtoN -= 1
 
     label suite2:
         J "Je vais devoir te laisser Nancy, sinon je vais être en retard. Ça m'a fait plaisir de t'entendre ce soir."
@@ -192,7 +199,7 @@ label start:
 
 
     label chezKim:
-        scene fenetre_kim
+        scene
         with dissolve
 
         E "Depuis l'extérieur, les fenêtres de la maison de Kim semblent éclairées. au loin, quelques ombres dansent sur les murs du salon. La soirée a déjà commencé."
@@ -336,15 +343,15 @@ label start:
                     jump choix_Kim3
 
         label choix_Bryan3:
-            J "Tu trouves ? Moi je pense que ça pourrait être Bryan, regarde-le c’est le seul qui pourrait avoir assez de force pour..."
+            J "Moi je pense que ça pourrait être Bryan, regarde-le c’est le seul qui pourrait avoir assez de force pour..."
             jump suite6
 
         label choix_Anna3:
-            J "Tu trouves ? Moi je pense que ça pourrait être Anna. Regarde-la c’est la seule qui pourrait être assez intelligente pour..."
+            J "Moi je pense que ça pourrait être Anna. Regarde-la c’est la seule qui pourrait être assez intelligente pour..."
             jump suite6
 
         label choix_Kim3:
-            J "Tu trouves ? Moi je pense que je te dirai, toi. Entre nous tous, je suis sûr que t’es la plus fourbe, tu pourrais..."
+            J "Moi je pense que je te dirai, toi. Entre nous tous, je suis sûr que t’es la plus fourbe, tu pourrais..."
 
 
         label suite6:
@@ -358,7 +365,6 @@ label start:
             K "Mais c’était quoi, une voix, un bruit de pas..."
             B "Je n’en sais rien..."
     
-
 
             menu:
                 "Croire Bryan":

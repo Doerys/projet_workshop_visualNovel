@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/allie_Bryan.rpy", line 338: expected statement.
+File "game/2choixAnna.rpy", line 224: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
     xalign 0.5
-            ^
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Feb 10 14:20:24 2023
+Mon Feb 13 23:26:28 2023

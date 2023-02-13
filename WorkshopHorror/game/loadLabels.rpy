@@ -174,7 +174,7 @@ label openAppart :
     else :
         scene chambre_jason_sombre
 
-        J_think "Oulah, il est déjà l'heure! Si je me dépêche assez, j'ai moyen d'arriver à temps'."
+        J_think "Oula, il est déjà l'heure ! Si je me dépêche, j'ai moyen d'arriver juste à temps !"
 
         # De quoi j'ai besoin déjà ?
         # Affichage liste d'objet
@@ -185,7 +185,9 @@ label openAppart :
         elif (objetTrouve >= 1 or objetTrouve <= 3):
             J_think "Bon, au moins je n'arriverai pas les mains vides !"
         elif (objetTrouve == 4):
-            J_think "Ok, je pense que je suis bon pour ce soir !"
+            J_think "Ok, je pense que je suis bon !"
+
+        J_think "Maintenant, il reste plus qu'à espérer que rien de mal n'arrive ce soir..."
 
         hide screen bouffe
         hide screen boisson

@@ -1,0 +1,468 @@
+1script.rpy
+1script.rpyc
+2choixAnna.rpy
+2choixAnna.rpyc
+2choixBryan.rpy
+2choixBryan.rpyc
+2kim_chaudasse.rpy
+2kim_chaudasse.rpyc
+3cave.rpy
+3cave.rpyc
+4allie_Anna.rpy
+4allie_Anna.rpyc
+4allie_Bryan.rpy
+4allie_Bryan.rpyc
+5arcTelephoneAnna.rpy
+5arcTelephoneAnna.rpyc
+6arcSauvetageKim.rpy
+6arcSauvetageKim.rpyc
+7partie_mauve.rpy
+7partie_mauve.rpyc
+Calvino-Bold-Italic-trial.ttf
+Calvino-Bold-trial.ttf
+Calvino-Book-Italic-trial.ttf
+Calvino-Book-trial.ttf
+Calvino-Extrabold-Italic-trial.ttf
+Calvino-Extrabold-trial.ttf
+Calvino-Extralight-Italic-trial.ttf
+Calvino-Extralight-trial.ttf
+Calvino-Grande-Black-Italic-trial.ttf
+Calvino-Grande-Black-trial.ttf
+Calvino-Grande-Bold-Italic-trial.ttf
+Calvino-Grande-Bold-trial.ttf
+Calvino-Grande-Extrabold-Italic-trial.ttf
+Calvino-Grande-Extrabold-trial.ttf
+Calvino-Grande-Extralight-Italic-trial.ttf
+Calvino-Grande-Extralight-trial.ttf
+Calvino-Grande-Italic-Variable-trial.ttf
+Calvino-Grande-Italic-trial.ttf
+Calvino-Grande-Light-Italic-trial.ttf
+Calvino-Grande-Light-trial.ttf
+Calvino-Grande-Monoline-Italic-trial.ttf
+Calvino-Grande-Monoline-trial.ttf
+Calvino-Grande-Regular-trial.ttf
+Calvino-Grande-Semibold-Italic-trial.ttf
+Calvino-Grande-Semibold-trial.ttf
+Calvino-Grande-Thin-Italic-trial.ttf
+Calvino-Grande-Thin-trial.ttf
+Calvino-Grande-Variable-trial.ttf
+Calvino-Italic-Variable-trial.ttf
+Calvino-Italic-trial.ttf
+Calvino-Light-Italic-trial.ttf
+Calvino-Light-trial.ttf
+Calvino-Regular-trial.ttf
+Calvino-Semibold-Italic-trial.ttf
+Calvino-Semibold-trial.ttf
+Calvino-Thin-Italic-trial.ttf
+Calvino-Thin-trial.ttf
+True Lies.ttf
+UnfinishedScreamAlternative.ttf
+UnfinishedScreamRegular.ttf
+classes.rpy
+classes.rpyc
+cream-DEMO.otf
+cream-DEMO.ttf
+drive-download-20230210T071624Z-001.zip
+gui.rpy
+gui.rpyc
+loadItems.rpy
+loadItems.rpyc
+loadLabels.rpy
+loadLabels.rpyc
+loadScreens.rpy
+loadScreens.rpyc
+options.rpy
+options.rpyc
+screens.rpy
+screens.rpyc
+.vscode\settings.json
+audio\Music\Prologue1.mp3
+audio\Music\Soiree1.mp3
+audio\Music\Tension Nonstop - Myuu.mp3
+audio\Sounds\Bruit sourd.mp3
+audio\Sounds\Carillon.mp3
+audio\Sounds\Cri Kim1.mp3
+audio\Sounds\Cri Kim2.mp3
+audio\Sounds\Door opening.mp3
+audio\Sounds\Gun reloading.mp3
+audio\Sounds\Gun shot.mp3
+audio\Sounds\Gun shot2.mp3
+audio\Sounds\Heartbeat Fast.mp3
+audio\Sounds\Heartbeat Stable.mp3
+audio\Sounds\Pas sur gravier.mp3
+audio\Sounds\Phone Calling.mp3
+audio\Sounds\Phone Message.ogg
+audio\Sounds\Phone Off.mp3
+audio\Sounds\Phone Ringing.mp3
+audio\Sounds\Phone Ringing2.mp3
+audio\Sounds\Pone busy.mp3
+audio\Sounds\grab1.mp3
+audio\Sounds\grab2.mp3
+audio\Sounds\grab3.mp3
+audio\Sounds\grab4.mp3
+cache\bytecode.rpyb
+cache\py3analysis.rpyb
+cache\screens.rpyb
+cache\shaders.txt
+gui\frame.png
+gui\game_menu.png
+gui\main_menu.png
+gui\namebox.png
+gui\notify.png
+gui\nvl.png
+gui\skip.png
+gui\textbox.png
+gui\window_icon.png
+gui\bar\bottom.png
+gui\bar\left.png
+gui\bar\right.png
+gui\bar\top.png
+gui\button\check_foreground.png
+gui\button\check_selected_foreground.png
+gui\button\choice_hover_background.png
+gui\button\choice_idle_background.png
+gui\button\hover_background.png
+gui\button\idle_background.png
+gui\button\quick_hover_background.png
+gui\button\quick_idle_background.png
+gui\button\radio_foreground.png
+gui\button\radio_selected_foreground.png
+gui\button\slot_hover_background.png
+gui\button\slot_idle_background.png
+gui\overlay\confirm.png
+gui\overlay\game_menu.png
+gui\overlay\main_menu.png
+gui\phone\nvl.png
+gui\phone\textbox.png
+gui\phone\bar\bottom.png
+gui\phone\bar\left.png
+gui\phone\bar\right.png
+gui\phone\bar\top.png
+gui\phone\button\check_foreground.png
+gui\phone\button\check_selected_foreground.png
+gui\phone\button\choice_hover_background.png
+gui\phone\button\choice_idle_background.png
+gui\phone\button\hover_background.png
+gui\phone\button\idle_background.png
+gui\phone\button\radio_foreground.png
+gui\phone\button\radio_selected_foreground.png
+gui\phone\button\slot_hover_background.png
+gui\phone\button\slot_idle_background.png
+gui\phone\overlay\game_menu.png
+gui\phone\overlay\main_menu.png
+gui\phone\scrollbar\horizontal_hover_bar.png
+gui\phone\scrollbar\horizontal_hover_thumb.png
+gui\phone\scrollbar\horizontal_idle_bar.png
+gui\phone\scrollbar\horizontal_idle_thumb.png
+gui\phone\scrollbar\vertical_hover_bar.png
+gui\phone\scrollbar\vertical_hover_thumb.png
+gui\phone\scrollbar\vertical_idle_bar.png
+gui\phone\scrollbar\vertical_idle_thumb.png
+gui\phone\slider\horizontal_hover_bar.png
+gui\phone\slider\horizontal_hover_thumb.png
+gui\phone\slider\horizontal_idle_bar.png
+gui\phone\slider\horizontal_idle_thumb.png
+gui\phone\slider\vertical_hover_bar.png
+gui\phone\slider\vertical_hover_thumb.png
+gui\phone\slider\vertical_idle_bar.png
+gui\phone\slider\vertical_idle_thumb.png
+gui\scrollbar\horizontal_hover_bar.png
+gui\scrollbar\horizontal_hover_thumb.png
+gui\scrollbar\horizontal_idle_bar.png
+gui\scrollbar\horizontal_idle_thumb.png
+gui\scrollbar\vertical_hover_bar.png
+gui\scrollbar\vertical_hover_thumb.png
+gui\scrollbar\vertical_idle_bar.png
+gui\scrollbar\vertical_idle_thumb.png
+gui\slider\horizontal_hover_bar.png
+gui\slider\horizontal_hover_thumb.png
+gui\slider\horizontal_idle_bar.png
+gui\slider\horizontal_idle_thumb.png
+gui\slider\vertical_hover_bar.png
+gui\slider\vertical_hover_thumb.png
+gui\slider\vertical_idle_bar.png
+gui\slider\vertical_idle_thumb.png
+images\items\affairesKim.png
+images\items\beuh.png
+images\items\beuhItem.png
+images\items\beuhItemSelect.png
+images\items\boisson.png
+images\items\boissonItem.png
+images\items\boissonItemSelect.png
+images\items\boiteClou.png
+images\items\boiteClouItem.png
+images\items\boiteClouItemSelect.png
+images\items\bouffe.png
+images\items\bouffeItem.png
+images\items\bouffeItemSelect.png
+images\items\cadena.png
+images\items\ciseauxItem.png
+images\items\ciseauxItemSelect.png
+images\items\cle.png
+images\items\cleItem.png
+images\items\cleItemSelect.png
+images\items\fleche.png
+images\items\infirmerie.png
+images\items\kimDead.png
+images\items\lettreCoquine.png
+images\items\lettreCoquineContenu.png
+images\items\lettreCoquineItem.png
+images\items\lettreCoquineItemSelect.png
+images\items\lettreSK.png
+images\items\lettreSKContent.png
+images\items\lettreSKItem.png
+images\items\lettreSKItemSelect.png
+images\items\liste.png
+images\items\listeItem.png
+images\items\listeItemSelect.png
+images\items\livreRecette.png
+images\items\livreRecetteContenu.png
+images\items\livreRecetteItem.png
+images\items\livreRecetteItemSelect.png
+images\items\marteau.png
+images\items\marteauItem.png
+images\items\marteauItemSelect.png
+images\items\mdpCarnetContenu.png
+images\items\mdpCarnetItem.png
+images\items\mdpCarnetItemSelect.png
+images\items\partir.png
+images\items\partirCave.png
+images\items\partirCuisine.png
+images\items\photoNancy.png
+images\items\photoNancyItem.png
+images\items\photoNancyItemSelect.png
+images\items\piles.png
+images\items\pilesItem.png
+images\items\pilesItemSelect.png
+images\items\placard.png
+images\items\planches.png
+images\items\planchesItem.png
+images\items\planchesItemSelect.png
+images\items\porteBarricade1.png
+images\items\porteBarricade2.png
+images\items\porteBox.png
+images\items\tabouret.png
+images\items\telecommande.png
+images\items\telecommandeItem.png
+images\items\telecommandeItemSelect.png
+images\items\tiroirCasse.png
+images\items\tiroirCuisine.png
+images\items\trousseItem.png
+images\items\trousseItemSelect.png
+images\items\velux.png
+images\items\vetement.png
+images\items\vetementItem.png
+images\items\vetementItemSelect.png
+images\lieu\affaire_kim.png
+images\lieu\affaire_kim_objet.png
+images\lieu\box.png
+images\lieu\cachette_chambre.png
+images\lieu\cachette_placard.png
+images\lieu\canape.png
+images\lieu\carton_pnc.png
+images\lieu\carton_pnc_objet.png
+images\lieu\cave.png
+images\lieu\cave_2.png
+images\lieu\cave_pnc.png
+images\lieu\cave_pnc_objet.png
+images\lieu\chambre_jason.jpg
+images\lieu\chambre_jason_objet.png
+images\lieu\chambre_jason_pnc.png
+images\lieu\chambre_jason_sombre.jpg
+images\lieu\chambre_jason_sombre.png
+images\lieu\chambre_pnc.png
+images\lieu\chambre_pnc_objet.png
+images\lieu\corps.png
+images\lieu\couloir.png
+images\lieu\couloir_box.png
+images\lieu\couloir_choix.png
+images\lieu\couloir_jour.png
+images\lieu\couloir_nuit.png
+images\lieu\cuisine_jour.png
+images\lieu\cuisine_nuit.jpg
+images\lieu\cuisine_nuit.png
+images\lieu\dark.png
+images\lieu\entree.png
+images\lieu\entree_nuit.png
+images\lieu\entree_ouverte.png
+images\lieu\escalier.png
+images\lieu\exterieur_1.png
+images\lieu\exterieur_2.png
+images\lieu\fenetre_jour.png
+images\lieu\fenetre_nuit.png
+images\lieu\infirmerie.png
+images\lieu\placard_jason.jpg
+images\lieu\placard_jason_objet.png
+images\lieu\placard_jason_pnc.png
+images\lieu\porte_cave.png
+images\lieu\porte_cave2.png
+images\lieu\porte_entree.png
+images\lieu\porte_fin.png
+images\lieu\porte_pnc.png
+images\lieu\porte_pnc_objet.png
+images\lieu\salon.png
+images\lieu\salon_jour.png
+images\lieu\salon_nuit.png
+images\lieu\salon_nuit_objet.png
+images\lieu\sceau.png
+images\lieu\tiroir.png
+images\lieu\tiroir_cuisine.png
+images\lieu\trousse.png
+images\lieu\tueur.png
+images\place holder lieu\canape_kim.png
+images\place holder lieu\chambre_jason.png
+images\place holder lieu\couloir_kim.png
+images\place holder lieu\cuisine_kim.png
+images\place holder lieu\entree_kim.png
+images\place holder lieu\fenetre_kim.png
+images\place holder lieu\fond_noir.png
+images\place holder personnage\anna_colere_j.png
+images\place holder personnage\anna_colere_n.png
+images\place holder personnage\anna_content_j.png
+images\place holder personnage\anna_content_n.png
+images\place holder personnage\anna_jugement_j.png
+images\place holder personnage\anna_jugement_n.png
+images\place holder personnage\anna_morte_j.png
+images\place holder personnage\anna_morte_n.png
+images\place holder personnage\anna_normal2_j.png
+images\place holder personnage\anna_normal2_n.png
+images\place holder personnage\anna_normal3_j.png
+images\place holder personnage\anna_normal3_n.png
+images\place holder personnage\anna_normal_j.png
+images\place holder personnage\anna_normal_n.png
+images\place holder personnage\anna_persuasion_j.png
+images\place holder personnage\anna_persuasion_n.png
+images\place holder personnage\anna_peur_j.png
+images\place holder personnage\anna_peur_n.png
+images\place holder personnage\anna_reflechir_j.png
+images\place holder personnage\anna_reflechir_n.png
+images\place holder personnage\anna_rire_j.png
+images\place holder personnage\anna_rire_n.png
+images\place holder personnage\anna_sanslunette_j.png
+images\place holder personnage\anna_sanslunette_n.png
+images\place holder personnage\anna_surpris2_j.png
+images\place holder personnage\anna_surpris2_n.png
+images\place holder personnage\anna_surpris_j.png
+images\place holder personnage\anna_surpris_n.png
+images\place holder personnage\anna_triste_j.png
+images\place holder personnage\anna_triste_n.png
+images\place holder personnage\bryan_blesser2_j.png
+images\place holder personnage\bryan_blesser2_n.png
+images\place holder personnage\bryan_blesser_j.png
+images\place holder personnage\bryan_blesser_n.png
+images\place holder personnage\bryan_colere_j.png
+images\place holder personnage\bryan_colere_n.png
+images\place holder personnage\bryan_confiant_j.png
+images\place holder personnage\bryan_confiant_n.png
+images\place holder personnage\bryan_dragueur_j.png
+images\place holder personnage\bryan_dragueur_n.png
+images\place holder personnage\bryan_fier_j.png
+images\place holder personnage\bryan_fier_n.png
+images\place holder personnage\bryan_mort_j.png
+images\place holder personnage\bryan_mort_n.png
+images\place holder personnage\bryan_normal_j.png
+images\place holder personnage\bryan_normal_n.png
+images\place holder personnage\bryan_perdu_j.png
+images\place holder personnage\bryan_perdu_n.png
+images\place holder personnage\bryan_peur1_j.png
+images\place holder personnage\bryan_peur2_j.png
+images\place holder personnage\bryan_peur2_n.png
+images\place holder personnage\bryan_peur_n.png
+images\place holder personnage\bryan_reflechir_j.png
+images\place holder personnage\bryan_reflechir_n.png
+images\place holder personnage\bryan_rire_j.png
+images\place holder personnage\bryan_rire_n.png
+images\place holder personnage\bryan_surpris_j.png
+images\place holder personnage\bryan_surpris_n.png
+images\place holder personnage\kim_angoisse_j.png
+images\place holder personnage\kim_angoisse_n.png
+images\place holder personnage\kim_blesser1_j.png
+images\place holder personnage\kim_blesser1_n.png
+images\place holder personnage\kim_blesser2_j.png
+images\place holder personnage\kim_blesser2_n.png
+images\place holder personnage\kim_choque_j.png
+images\place holder personnage\kim_choque_n.png
+images\place holder personnage\kim_colere_j.png
+images\place holder personnage\kim_colere_n.png
+images\place holder personnage\kim_content_j.png
+images\place holder personnage\kim_content_n.png
+images\place holder personnage\kim_drague2_j.png
+images\place holder personnage\kim_drague2_n.png
+images\place holder personnage\kim_drague3_j.png
+images\place holder personnage\kim_drague3_n.png
+images\place holder personnage\kim_gentil_j.png
+images\place holder personnage\kim_gentil_n.png
+images\place holder personnage\kim_heureux_j.png
+images\place holder personnage\kim_heureux_n.png
+images\place holder personnage\kim_mort_j.png
+images\place holder personnage\kim_mort_n.png
+images\place holder personnage\kim_normal2_j.png
+images\place holder personnage\kim_normal2_n.png
+images\place holder personnage\kim_pense_j.png
+images\place holder personnage\kim_pense_n.png
+images\place holder personnage\kim_peur_j.png
+images\place holder personnage\kim_peur_n.png
+images\place holder personnage\kim_reflechir_j.png
+images\place holder personnage\kim_reflechir_n.png
+images\place holder personnage\kim_surpris_j.png
+images\place holder personnage\kim_surpris_n.png
+images\place holder personnage\kim_triste_j.png
+images\place holder personnage\kim_triste_n.png
+images\place holder personnage\nancy_colere_j.png
+images\place holder personnage\nancy_colere_n.png
+images\place holder personnage\nancy_content2_j.png
+images\place holder personnage\nancy_content2_n.png
+images\place holder personnage\nancy_content_j.png
+images\place holder personnage\nancy_content_n.png
+images\place holder personnage\nancy_decouvert_j.png
+images\place holder personnage\nancy_decouvert_n.png
+images\place holder personnage\nancy_heureux_j.png
+images\place holder personnage\nancy_heureux_n.png
+images\place holder personnage\nancy_menace_j.png
+images\place holder personnage\nancy_menace_n.png
+images\place holder personnage\nancy_perplexe_j.png
+images\place holder personnage\nancy_perplexe_n.png
+images\place holder personnage\nancy_psycho_j.png
+images\place holder personnage\nancy_psycho_n.png
+images\place holder personnage\nancy_reflechir2_j.png
+images\place holder personnage\nancy_reflechir2_n.png
+images\place holder personnage\nancy_reflechir_j.png
+images\place holder personnage\nancy_reflechir_n.png
+images\place holder personnage\nancy_sourire_j.png
+images\place holder personnage\nancy_sourire_n.png
+images\place holder personnage\sk_attaque1_j.png
+images\place holder personnage\sk_attaque1_n.png
+images\place holder personnage\sk_attaque2_j.png
+images\place holder personnage\sk_attaque2_n.png
+images\place holder personnage\sk_menace_j.png
+images\place holder personnage\sk_menace_n.png
+images\place holder personnage\sk_normal2_j.png
+images\place holder personnage\sk_normal2_n.png
+images\place holder personnage\sk_normal3_j.png
+images\place holder personnage\sk_normal3_n.png
+images\place holder personnage\sk_normal_j.png
+images\place holder personnage\sk_normal_n.png
+images\place holder personnage\sk_pointe_j.png
+images\place holder personnage\sk_pointe_n.png
+images\place holder personnage\telephone_appel.png
+images\place holder personnage\telephone_sk.png
+images\place holder personnage\telephone_sonnerie.png
+saves\1-1-LT1.save
+saves\1-2-LT1.save
+saves\1-3-LT1.save
+saves\1-4-LT1.save
+saves\_reload-2-LT1.save
+saves\auto-1-LT1.save
+saves\auto-10-LT1.save
+saves\auto-2-LT1.save
+saves\auto-3-LT1.save
+saves\auto-4-LT1.save
+saves\auto-5-LT1.save
+saves\auto-6-LT1.save
+saves\auto-7-LT1.save
+saves\auto-8-LT1.save
+saves\auto-9-LT1.save
+saves\navigation.json
+saves\persistent
+tl\None\common.rpym
+tl\None\common.rpymc

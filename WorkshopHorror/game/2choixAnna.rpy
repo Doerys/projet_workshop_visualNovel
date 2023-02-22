@@ -44,9 +44,9 @@
 
     hide kim
 
-    E "Kim sort de la pièce, laissant derrière elle ses amis, mais attirant Jason d’un léger clin d’oeil."
-
     menu:
+        "Kim sort de la pièce, laissant derrière elle ses amis, mais attirant Jason d’un léger clin d’oeil."
+
         "Aller voir Bryan dans la cuisine":
             jump Bryan_cuisine
 
@@ -114,7 +114,7 @@ label situation_inssup:
 
 label deux_inssup:
     
-    J "Honnêtement, je la supporte pas. Mais sur ce coup-là, je peux difficile te défendre, t'es comme elle !"
+    J "Honnêtement, j'ai parfois du mal à la supporter. Mais sur ce coup-là, je peux difficile te défendre, t'es comme elle !"
 
     show bryan reflechir_j
 
@@ -149,9 +149,9 @@ label suite7:
 
     show bryan dragueur_j
 
-    B "Bah, ça va passer ! T'as pas de soucis à te faire, je suis certain que c'est qu'une passe."
-
     menu:
+        B "Bah, ça va passer ! T'as pas de soucis à te faire, je suis certain que c'est qu'une passe."
+
         "Demander conseil":
             jump demander_conseil
 
@@ -214,160 +214,209 @@ label suite9bis:
 
     jump reunion
 
-#J'EN SUIS LA (YANN)
-
 label Anna_salon:
 
     scene canape
     with dissolve
-    show anna_surpris2:
-        xalign 0.5
+    show anna normal_j at center
+
     E "Dans le salon, Anna est visiblement agacée par la situation."
-    J "Je suis désolé pour le comportement de Bryan... Je ne sais pas ce qui lui prend, il n’est pas comme ça d’habitude."
+    A "Quel enfoiré. Il peut se mettre une cuve s'il veut, mais qu'il assume derrière !"
     A "Ouais... tu sais, je ne suis pas contre lui. J’ai essayé d’aller le voir, mais il est toujours renfermé sur lui-même, il refuse de me parler."
     J "Il ne t’a jamais expliqué pourquoi ?"
-    A "Non, jamais ! Après je m’en fous hein, à la base ce n’est pas mon pote, mais pour Kim j’aimerais bien qu’on arrive enfin à passer une soirée tous ensemble sans aucune embrouilles."
+
+    show anna persuasion_j
+
+    A "Non, jamais ! Après je m’en fous hein, ce n’est pas mon pote à la base."
+    A "Mais pour Kim j’aimerais bien qu’on arrive enfin à passer une soirée tous ensemble sans aucune embrouilles."
 
     menu:
+        A "Mais pour ça, faudrait déjà qu'il réussise à arrêter d'être un enfoiré."
+
         "Approuver":
             jump approuver
         "Tous les deux coupables":
             jump deux_coupables
         "Désapprouver":
             jump desapprouver
-    hide anna_surpris2_j
 
 label approuver:
-    show anna_normal3_j:
-        xalign 0.5
-    J "Je suis d'accord avec toi, t'as totalement raison. Mais tu sais, c’est le genre de mec à s’emporter toujours trop vite, il est sanguin..."
+    show anna normal3_j
+
+    J "Je suis d'accord avec toi, je suis désolé... Mais tu sais, c’est le genre de mec à s’emporter toujours trop vite, il est sanguin..."
     A "Ouais bah faudrait que tu ailles lui parler parce qu’à terme on va tous finir par péter un plomb."
     J "J'essaierai. Il est parti dans la cuisine, il faut lui laisser du temps, il va se calmer tout seul."
     A "C’est bien, qu’il décuve un peu..."
-    J "C’est ça. Tu sais, je sais comment il fonctionne maintenant. Laisse-lui cinq minutes et il reviendra calme quand il verra qu’il est en train de gâcher la soirée de Kim."
+    J "C’est ça. Tu sais, je sais comment il fonctionne maintenant."
+    J "Laisse-lui cinq minutes et il reviendra calme quand il verra qu’il est en train de gâcher la soirée de Kim."
+    A "Ouais... J'imagine que t'as raison. Merci Jason... d'être de mon côté."
 
     $relationJtoA += 1
-    hide anna_normal3_j
+
+    E "Anna s'en souviendra."
+
     jump suite8
 
 label deux_coupables:
-    show anna_normal_j:
-        xalign 0.5
+    show anna normal_j:
+
     J "Dans ce cas, évite aussi d’aller le chercher quand tu vois qu’il est en train de se chauffer tout seul. Ça ne sert à rien, au contraire..."
     A "Je veux juste qu’il se rende compte de ses erreurs."
     J "Vous êtes tous les deux dans l'erreur. Ce n’est pas en l’énervant que tu vas lui faire comprendre ses conneries. Tout ce que tu vas réussir à faire c’est le braquer davantage."
     A "C'est pas mon problème ! Il n’a pas à réagir comme ça..."
     J "Anna, s’il te plaît, arrête d’envenimer la situation, par pitié... La soirée de Kim est déjà bien assez gâchée comme ça..."
-    hide anna_normal_j
+
     jump suite8
 
 label desapprouver:
-    show anna_surpris_j:
-        xalign 0.5
+    show anna surpris_j:
+
     J "Dans ce cas arrête d’aller le faire chier."
     A "Hé, j’essaie juste de l’aider ! Je ne comprends pas pourquoi Kim s’entête à l’inviter si c’est tout la même chose."
     J "Mais il n’a pas besoin d’aide ! Il veut juste que tu le laisses tranquille !"
     A "Parce que tu trouves que je suis trop sur ses côtes ?"
     J "Tu rigoles j’espère ? T’es tout le temps en train de le critiquer. Enfin... merde Anna... T’es bien plus intelligente que ça !"
-    hide anna_surpris_j
+    A "Je pensais la même chose de toi, justemment."
+
     $relationJtoA -= 1
+
+    E "Anna s'en souviendra."
 
     jump suite8
 
-
 label suite8:
-    show anna_normal3_j:
-        xalign 0.5
-    A "Ok, ok... je veux bien essayer de faire des efforts. Pour ce soir au moins, et pour Kim."
-    J "Merci. Hé, d’ailleurs en parlant de Kim, elle va bien ?"
+    show anna normal2_j
+
+    A "Bon... je veux bien essayer de faire des efforts. Pour ce soir au moins. Mais je fais ça pour Kim."
+    J "Merci. D’ailleurs en parlant de Kim, elle va bien ?"
     A "Euh, oui ? Pourquoi est-ce que tu me demandes ça ?"
-    J "Bah je ne sais pas, regarde-la. Elle a l’air moins enjouée que d’habitude. Rien qu’hier, elle est venue me prendre la tête sur des détails à la con, je n’ai pas compris pourquoi."
-    A "Et tu lui as demandé ?"
+    J "Bah je ne sais pas, regarde-la. Elle a l’air moins enjouée que d’habitude."
+    J "Rien qu’hier, elle est venue me prendre la tête sur des détails à la con, je n’ai pas compris pourquoi."
+    A "Et tu lui as demandé ce qui n'allait pas ?"
     J "Ouais, mais pour elle tout est normal, sauf que je la connais assez pour savoir que c’est faux. Quelque chose ne tourne pas rond."
+
+    show anna reflechir_j
+
     A "Je suis désolé pour toi, mais je ne peux pas vraiment te donner mon avis là-dessus, elle ne m’a pas parlé de la dispute avec toi, du coup je ne sais pas ce qu’elle t’a dit..."
     J "Elle ne t’en a pas parlé ?"
-    A "Non. Tu sais, elle est plus du genre à garder les choses pour elle. Ça ne me regarde pas vraiment, elle ne va pas venir m’en parler d'elle-même..."
-
 
     menu:
-        "Elle cache quelque chose ?":
+        A "Non. Tu sais, elle est plutôt du genre à garder les choses pour elle. Ça ne me regarde pas vraiment, elle ne va pas venir m’en parler d'elle-même..."
+
+        "Soupçonneux : Anna cache quelque chose ?":
             jump secret
+
+        "Insister":
+            jump insister
 
         "S'excuser":
             jump excuser2
-    hide anna_normal3_j
+
 label secret:
-    show anna_normal2_j:
-        xalign 0.5
-    J "Tu sais, j’ai peur qu’elle me cache quelque chose, c’est la première fois que je la vois comme ça..."
-    A "Après c’est Kim, ça ne me choque pas d’elle."
-    J "Vraiment ?"
-    A "C’est toujours la même histoire avec elle, il y a toujours un moment où tout n’est pas rose avec elle et elle finit par se renfermer sur elle-même. La seule chose que je peux te dire c’est de lui laisser du temps..."
-    J "Mais toi, tu n’es pas au courant de quelque chose ? Elle va vraiment bien ?"
-    A "N'insiste pas. Laisse lui du temps, vraiment... Si elle doit te dire quelque chose, elle le fera d’elle-même..."
-    hide anna_normal2_j
+
+    J "Ca me paraît étonnant qu'elle ne t'ait rien dit..."
+    A "Comment ça ?"
+    J "Vous êtes meilleures amies. Je me serais attendue à ce qu'elle te confie au moins quelque chose."
+
+    show anna surpris2_j
+
+    A "Quand bien même ce serait le cas, c'est pas mon rôle de balancer les secrets de ma meilleure amie."
+    J "Anna, j'ai vraiment besoin de savoir."
+    A "Je pense plutôt que tu as vraiment besoin de comprendre que si elle doit te dire quelque chose, elle le fera elle-même."
+    J "Mais, Anna..."
+    A "N'insiste pas, Jason."
+
+    jump suite9
+
+label insister:
+
+    J "Tu sais, j’ai peur qu’elle m'en veuille pour quelque chose, c’est la première fois que je la vois comme ça..."
+    A "Désolée pour toi."
+    J "... Tu es sûre tu n’es pas au courant de quelque chose ? Elle va vraiment bien ?"
+
+    show anna normal2_j:
+
+    A "Laisse lui du temps, vraiment... Si elle doit te dire quelque chose, elle le fera d’elle-même..."
+    J "Mais je..."
+    A "N'insiste pas, Jason."
+
     jump suite9
 
 label excuser2:
-    show anna_persuasion_j:
-        xalign 0.5
+
     J "Ouais, je comprends. Je suis désolé de te faire entrer dans cette histoire débile, je pensais que tu saurais au moins si je dois m’inquiéter ou non..."
+    
+    show anna persuasion_j
+
     A "Tu connais Kim, tu sais comment gérer, tu sauras mieux que moi comment faire avec elle..."
-    J "J’espère..."
-    hide anna_persuasion_j
+    J "J’espère... Encore désolé, je voulais pas te mettre mal à l'aise."
+    A "C'est pas le cas, Jason, t'en fais pas. Mais merci d'y prêter attention."
+
     $relationJtoA += 1
+
+    E "Anna s'en souviendra."
+
     jump suite9
 
 
 label suite9:
-    show anna_content_j:
-        xalign 0.5
+    show anna content_j
+
     J "Ah, regarde, Bryan est de retour."
     A "Il a l'air de s'être calmé."
-    hide anna_content_j
+
+    jump reunion
+
+#J'EN SUIS LA (YANN)
 
 label reunion:
 
     scene canape
     with dissolve
-    show anna_reflechir_j:
+    show anna reflechir_j at center:
         xalign 0.1
-    show bryan_reflechir_j:
+    show bryan reflechir_j at center:
         xalign 0.9
     if (telephone_oublie):
         E "Ensemble, les trois amis finissent par se retrouver sur le canapé du salon, bière à la main, essayant tant bien que mal d’enterrer la hache de guerre. Un long moment passe..."
         A "Dîtes, ça fait quand même un sacré moment qu'on n'a pas revu Kim. C'est normal qu'elle prenne autant de temps ?"
         J "C'est vrai que ça commence à devenir bizarre"
+
+        show bryan confiant_j
+        show anna rire_j
+
         B "Bah allez, on perd pas de temps, on va la rejoindre ! Elle prépare sans doute une connerie, la connaissant."
-        hide anna_reflechir_j
-        hide bryan_reflechir_j
         jump scene_cave
-        show bryan_confiant_j:
-            xalign 0.1
-        show anna_rire_j:
-            xalign 0.9
+
     else:
         E "Ensemble, les trois amis finissent par se retrouver sur le canapé du salon, bière à la main, essayant tant bien que mal d’enterrer la hache de guerre."
-        B "Du coup, il faut que je vous raconte ! J’ai rencontré quelqu’un !"
+
+        show bryan normal_j
+
+        B "Oh, il faut que je vous raconte ! J’ai rencontré quelqu’un !"
         J "Pardon ? Depuis quand ?"
         B "Ça fait quelques semaines, mais je crois que c’est bien parti entre nous !"
-        A "Trop bien, je suis contente pour toi !"
+
+        show anna normal3_j
+
+        A "C'est cool pour toi."
+        J "Trop bien, je suis super contente que ça t'arrive, mon pote !"
         J "Il faut que tu me la montres que je…"
         E "Soudain le téléphone de Jason se met à sonner. Sur l’écran, le nom de Kim apparaît."
+
+        show anna normal2_j
+
         J "Kim ? Pourquoi est-ce que tu…"
         K_shout "Jason !"
         K_shout "Jason ! Elle… !"
         E "Le téléphone se coupe, un message d’erreur de réseau apparaît."
         J "Les gars ! Putain de merde !"
-        hide bryan_confiant_j
-        hide anna_rire_j
-        show bryan_peur1_j:
-            xalign 0.1
-        show anna_peur_j:
-            xalign 0.9
         B "Quoi ? Qu’est-ce qu’il se passe ?"
+
+        show bryan peur1_j
+        show anna peur_j
+
         J "Kim a un problème. Putain de… putain !"
         E "Ensemble, les trois amis sortent de la maison en trombe en direction de la cave."
-        hide bryan_peur1_j
-        hide anna_peur_j
+
         jump scene_cave

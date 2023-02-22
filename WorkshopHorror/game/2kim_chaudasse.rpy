@@ -3,22 +3,31 @@ label Kim_couloir:
     scene couloir_jour
     with dissolve
 
-E "Kim se trouve un peu plus loin, dans un couloir non loin de la cave, l'air d'attendre Jason."
-K "Ah, te voilà enfin !"
-J "Bien sûr que je suis là."
-K "Enfin débarrassés des deux cons. Je n’arrive pas à croire qu’ils n’arrivent pas à se tenir pour au moins une soirée..."
-J "Ça leur passera, ne t'inquiète pas pour eux."
-K "Bon aller, viens, j’ai une petite surprise à te donner... Si tu vois ce que je veux dire ?"
+    E "Kim se trouve un peu plus loin, dans un couloir non loin de la cave, l'air d'attendre Jason."
 
-menu:
-    "Rentrer dans le jeu de Kim":
-        jump accepter2
+    show kim normal2_j at center
 
-    "Ne pas rentrer dans son jeu":
-        jump refuser2
+    K "Ah, te voilà enfin !"
+    J "Bien sûr que je suis là."
+    K "Enfin débarrassés des deux cons. Je n’arrive pas à croire qu’ils n’arrivent pas à se tenir pour au moins une soirée..."
+    J "Ça leur passera, ne t'inquiète pas pour eux."
+
+    show kim drague2_j
+
+    K "Bon aller, viens, j’ai une petite surprise à te donner... Si tu vois ce que je veux dire ?"
+
+    menu:
+        "Rentrer dans le jeu de Kim":
+            jump accepter2
+
+        "Ne pas rentrer dans son jeu":
+            jump refuser2
 
 label accepter2:
     J "Hmmm... non je ne sais pas, dis-m'en plus ?"
+
+    show kim drague3_j
+
     K "Oh si tu vois très bien... Tu m'as manqué tu sais ?"
     J "Toi aussi tu m'as manqué mon coeur..."
 
@@ -49,6 +58,9 @@ label refuser2:
                 jump pourquoi_invite
 
     label inquiet2:
+
+        
+
         J "Arrête, ce n’est pas le moment..."
         K "Ce n’est pas le moment ?"
         J "On vient à peine de laisser Bryan et Anna alors qu’ils étaient sur le point de se taper dessus. Tu veux vraiment faire ça là, maintenant ?"
@@ -80,6 +92,9 @@ label refuser2:
     label suite10:
         E "Soudain, le téléphone de Jason se met à sonner."
         J_think "Nancy ? Pourquoi est-ce qu’elle me rappelle ?"
+
+        show kim normal2_j
+
         K "Qui c'est...?"
 
     menu:
@@ -90,9 +105,15 @@ label refuser2:
 
     label honnete2:
         J "Ouais, c’est Nancy, je ne sais pas pourquoi elle m’appelle..."
+
+        show kim pense_j
+
         K "Je ne te comprends pas, je ne comprends pas comment t’arrive encore à lui parler à cette bouffonne."
         J "Tssss... laisse tomber Kim, je n’ai pas envie de me battre avec toi..."
         K "Ouais, c’est ça, aller, répond lui, je vais chercher la bouteille !"
+
+        hide kim
+
         jump suite11
 
     label mentir2:
